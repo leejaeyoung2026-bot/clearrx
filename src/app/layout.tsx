@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Serif_Display, DM_Sans, DM_Mono } from "next/font/google";
 import ThemeProvider from "@/components/ThemeProvider";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const dmSerifDisplay = DM_Serif_Display({
@@ -103,7 +105,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="antialiased">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Nav />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
