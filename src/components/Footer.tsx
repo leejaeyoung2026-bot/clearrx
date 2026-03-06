@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VibedLabLogo from "./VibedLabLogo";
 
 export default function Footer() {
   return (
@@ -18,6 +19,17 @@ export default function Footer() {
       <p className="text-center mt-4 opacity-40">
         Reviewed by Jay, Licensed Pharmacist. Not medical advice.
       </p>
+      <div className="text-center mt-4">
+        <a
+          href="https://vibed-lab.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block opacity-50 hover:opacity-100 transition-opacity"
+          aria-label="Vibed Lab"
+        >
+          <VibedLabLogo height={20} />
+        </a>
+      </div>
     </footer>
   );
 }
