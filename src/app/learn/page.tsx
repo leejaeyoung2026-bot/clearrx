@@ -52,7 +52,7 @@ const ARTICLES = [
 
 export default function LearnPage() {
   return (
-    <div className="max-w-2xl mx-auto px-4 py-16">
+    <>
       <header className="mb-12">
         <h1 className="font-serif text-4xl">Drug Interaction Learning Hub</h1>
         <p className="mt-4 font-sans text-base" style={{ color: "var(--ink-muted)" }}>
@@ -81,6 +81,6 @@ export default function LearnPage() {
           </Link>
         ))}
       </div>
-    </div>
+    </>
   );
 }

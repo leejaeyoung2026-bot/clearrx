@@ -15,6 +15,7 @@ export default function Footer() {
           <Link href="/privacy" className="hover:opacity-100 opacity-60 transition-opacity">Privacy</Link>
           <Link href="/contact" className="hover:opacity-100 opacity-60 transition-opacity">Contact</Link>
           <Link href="/learn" className="hover:opacity-100 opacity-60 transition-opacity">Learn</Link>
+          <Link href="/glossary" className="hover:opacity-100 opacity-60 transition-opacity">Glossary</Link>
         </nav>
       </div>
       <p className="text-center mt-4 opacity-40">
