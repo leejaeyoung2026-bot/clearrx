@@ -104,59 +104,6 @@ export default function ContactPage() {
         </a>
       </section>
 
-      <section className="mb-10">
-        <h2 className="font-serif text-xl mb-3">Other Vibed Lab Projects</h2>
-        <p className="mb-4 leading-relaxed">
-          ClearRx is part of{" "}
-          <a
-            href="https://vibed-lab.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "var(--rx-accent)" }}
-          >
-            Vibed Lab
-          </a>
-          , a small portfolio of focused tools. You might also find these useful:
-        </p>
-        <div className="space-y-3">
-          <div
-            className="p-4 border"
-            style={{ borderColor: "var(--border)", background: "var(--cream)" }}
-          >
-            <a
-              href="https://backtest.vibed-lab.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium font-serif"
-              style={{ color: "var(--rx-accent)" }}
-            >
-              CryptoBacktest
-            </a>
-            <p className="text-sm mt-1" style={{ color: "var(--ink-muted)" }}>
-              backtest.vibed-lab.com — Backtest historical trading strategies
-              against real Bitcoin and crypto price data.
-            </p>
-          </div>
-          <div
-            className="p-4 border"
-            style={{ borderColor: "var(--border)", background: "var(--cream)" }}
-          >
-            <a
-              href="https://cycle.vibed-lab.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium font-serif"
-              style={{ color: "var(--rx-accent)" }}
-            >
-              BitcoinCycle Clock
-            </a>
-            <p className="text-sm mt-1" style={{ color: "var(--ink-muted)" }}>
-              cycle.vibed-lab.com — Real-time Bitcoin market cycle dashboard with
-              on-chain indicators.
-            </p>
-          </div>
-        </div>
-      </section>
     </article>
   );
 }
