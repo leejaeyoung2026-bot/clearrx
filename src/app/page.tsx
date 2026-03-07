@@ -291,6 +291,8 @@ export default function Home() {
               { href: "/learn/grapefruit-drug-interactions", text: "Grapefruit and Medications: The CYP3A4 Enzyme Story" },
               { href: "/learn/serotonin-syndrome", text: "Serotonin Syndrome: The Hidden Risk of Combining Antidepressants" },
               { href: "/learn/common-drug-pairs", text: "10 Most Commonly Checked Drug Pairs" },
+              { href: "/learn/nsaid-safety-guide", text: "NSAIDs and Your Stomach: A Safety Guide" },
+              { href: "/learn/antibiotic-food-interactions", text: "Antibiotics and Food: What Your Pharmacist Wants You to Know" },
             ].map((link) => (
               <li key={link.href}>
                 <Link href={link.href} style={{ color: "var(--rx-accent)" }}>
