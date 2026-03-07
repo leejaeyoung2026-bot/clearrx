@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import DrugSearch from "@/components/DrugSearch";
 import InteractionMap from "@/components/InteractionMap";
 import ResultsPanel from "@/components/ResultsPanel";
@@ -248,7 +249,10 @@ export default function Home() {
             each other&apos;s blood levels. Understanding which type of interaction you&apos;re dealing
             with helps predict severity and manageability. Not all interactions are dangerous —
             many are minor and manageable with monitoring. ClearRx clearly distinguishes between
-            contraindicated combinations, serious interactions, moderate ones, and minor concerns.
+            contraindicated combinations, serious interactions, moderate ones, and minor concerns.{" "}
+            <Link href="/learn/what-is-a-drug-interaction" style={{ color: "var(--rx-accent)" }}>
+              Read the full guide →
+            </Link>
           </p>
         </section>
 
@@ -276,6 +280,29 @@ export default function Home() {
             tool that treats them as intelligent adults. No account required. No data collected.
             No ads between you and the answer you need. Just the interaction check, in plain
             English, when you need it.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-serif text-2xl mb-3">Popular Drug Interaction Articles</h2>
+          <ul className="space-y-2 font-sans text-sm" style={{ color: "var(--ink-muted)" }}>
+            {[
+              { href: "/learn/warfarin-ibuprofen", text: "Warfarin + Ibuprofen: Why This Sends Thousands to the ER" },
+              { href: "/learn/grapefruit-drug-interactions", text: "Grapefruit and Medications: The CYP3A4 Enzyme Story" },
+              { href: "/learn/serotonin-syndrome", text: "Serotonin Syndrome: The Hidden Risk of Combining Antidepressants" },
+              { href: "/learn/common-drug-pairs", text: "10 Most Commonly Checked Drug Pairs" },
+            ].map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} style={{ color: "var(--rx-accent)" }}>
+                  {link.text} →
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-sm font-sans">
+            <Link href="/learn" style={{ color: "var(--rx-accent)" }}>
+              View all articles →
+            </Link>
           </p>
         </section>
 
