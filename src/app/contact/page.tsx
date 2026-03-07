@@ -155,40 +155,6 @@ export default function ContactPage() {
               on-chain indicators.
             </p>
           </div>
-          <div
-            className="p-4 border"
-            style={{ borderColor: "var(--border)", background: "var(--cream)" }}
-          >
-            <a
-              href="https://pk.vibed-lab.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium font-serif"
-              style={{ color: "var(--rx-accent)" }}
-            >
-              PK-Swift
-            </a>
-            <p className="text-sm mt-1" style={{ color: "var(--ink-muted)" }}>
-              pk.vibed-lab.com — Pharmacokinetic analysis platform for NCA calculations and AI-assisted PK data parsing.
-            </p>
-          </div>
-          <div
-            className="p-4 border"
-            style={{ borderColor: "var(--border)", background: "var(--cream)" }}
-          >
-            <a
-              href="https://vora.vibed-lab.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium font-serif"
-              style={{ color: "var(--rx-accent)" }}
-            >
-              VORA
-            </a>
-            <p className="text-sm mt-1" style={{ color: "var(--ink-muted)" }}>
-              vora.vibed-lab.com — AI-powered meeting assistant for real-time transcription and conference support.
-            </p>
-          </div>
         </div>
       </section>
     </article>
