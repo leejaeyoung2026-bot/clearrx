@@ -17,7 +17,7 @@ const jsonLd = {
     url: "https://clearrx.vibed-lab.com",
     contactPoint: {
       "@type": "ContactPoint",
-      email: "jay@vibed-lab.com",
+      email: "contact@vibed-lab.com",
       contactType: "customer support",
       availableLanguage: "English",
     },
@@ -50,7 +50,7 @@ export default function ContactPage() {
           reach me is by email:
         </p>
         <a
-          href="mailto:jay@vibed-lab.com"
+          href="mailto:contact@vibed-lab.com"
           className="inline-block font-mono text-base px-4 py-3 border transition-colors"
           style={{
             color: "var(--rx-accent)",
@@ -58,8 +58,13 @@ export default function ContactPage() {
             background: "var(--cream)",
           }}
         >
-          jay@vibed-lab.com
+          contact@vibed-lab.com
         </a>
+
+        <div className="mt-4 flex gap-4">
+          <a href="https://x.com/vibed_lab" target="_blank" rel="noopener noreferrer" style={{ color: "var(--rx-accent)", fontSize: "0.9rem" }}>X @vibed_lab</a>
+          <a href="https://www.linkedin.com/in/jae-young-lee-8516303b5/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--rx-accent)", fontSize: "0.9rem" }}>LinkedIn</a>
+        </div>
 
         <div className="mt-6">
           <p className="mb-2 text-sm" style={{ color: "var(--ink-muted)" }}>
@@ -148,6 +153,40 @@ export default function ContactPage() {
             <p className="text-sm mt-1" style={{ color: "var(--ink-muted)" }}>
               cycle.vibed-lab.com — Real-time Bitcoin market cycle dashboard with
               on-chain indicators.
+            </p>
+          </div>
+          <div
+            className="p-4 border"
+            style={{ borderColor: "var(--border)", background: "var(--cream)" }}
+          >
+            <a
+              href="https://pk.vibed-lab.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium font-serif"
+              style={{ color: "var(--rx-accent)" }}
+            >
+              PK-Swift
+            </a>
+            <p className="text-sm mt-1" style={{ color: "var(--ink-muted)" }}>
+              pk.vibed-lab.com — Pharmacokinetic analysis platform for NCA calculations and AI-assisted PK data parsing.
+            </p>
+          </div>
+          <div
+            className="p-4 border"
+            style={{ borderColor: "var(--border)", background: "var(--cream)" }}
+          >
+            <a
+              href="https://vora.vibed-lab.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium font-serif"
+              style={{ color: "var(--rx-accent)" }}
+            >
+              VORA
+            </a>
+            <p className="text-sm mt-1" style={{ color: "var(--ink-muted)" }}>
+              vora.vibed-lab.com — AI-powered meeting assistant for real-time transcription and conference support.
             </p>
           </div>
         </div>
