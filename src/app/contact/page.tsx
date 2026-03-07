@@ -6,12 +6,34 @@ export const metadata: Metadata = {
     "Contact Jay, the pharmacist behind ClearRx, for feedback, bug reports, or drug data corrections.",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact ClearRx",
+  url: "https://clearrx.vibed-lab.com/contact",
+  mainEntity: {
+    "@type": "Organization",
+    name: "ClearRx",
+    url: "https://clearrx.vibed-lab.com",
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "jay@vibed-lab.com",
+      contactType: "customer support",
+      availableLanguage: "English",
+    },
+  },
+};
+
 export default function ContactPage() {
   return (
     <article
       className="max-w-2xl mx-auto px-4 py-16"
       style={{ color: "var(--ink)" }}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h1 className="font-serif text-4xl mb-4">Contact</h1>
       <p
         className="mb-10 leading-relaxed"

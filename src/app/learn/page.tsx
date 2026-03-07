@@ -65,9 +65,37 @@ const ARTICLES = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Drug Interaction Learning Hub",
+  description:
+    "Evidence-based articles about drug interactions, written by a licensed pharmacist.",
+  url: "https://clearrx.vibed-lab.com/learn",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "ClearRx",
+    url: "https://clearrx.vibed-lab.com",
+  },
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: ARTICLES.length,
+    itemListElement: ARTICLES.map((a, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `https://clearrx.vibed-lab.com/learn/${a.slug}`,
+      name: a.title,
+    })),
+  },
+};
+
 export default function LearnPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="mb-12">
         <h1 className="font-serif text-4xl">Drug Interaction Learning Hub</h1>
         <p className="mt-4 font-sans text-base" style={{ color: "var(--ink-muted)" }}>
