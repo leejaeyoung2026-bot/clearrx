@@ -63,6 +63,11 @@ const ARTICLES = [
     title: "When to Take Your Medications: Timing Matters More Than You Think",
     summary: "Morning vs evening dosing, with/without food, spacing medications, and common timing mistakes.",
   },
+  {
+    slug: "polypharmacy-elderly",
+    title: "Polypharmacy in the Elderly: Managing Multiple Medications Safely",
+    summary: "Why seniors face higher drug interaction risks, dangerous combinations to watch for, and practical strategies for safer medication management.",
+  },
 ];
 
 const jsonLd = {

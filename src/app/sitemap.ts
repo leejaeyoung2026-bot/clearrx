@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/learn/nsaid-safety-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/learn/antibiotic-food-interactions`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/learn/medication-timing-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/learn/polypharmacy-elderly`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/glossary`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
   ];
 }

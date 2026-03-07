@@ -3010,9 +3010,9 @@ git push
 
 ---
 
-## Phase 8 — Vercel Deploy
+## Phase 8 — Cloudflare Pages Deploy
 
-### Task 21: Deploy to Vercel
+### Task 21: Deploy to Cloudflare Pages
 
 **Step 1: Build locally to verify**
 
@@ -3028,20 +3028,20 @@ Expected: `out/` directory generated with no errors.
 git push
 ```
 
-**Step 3: Create Vercel project**
+**Step 3: Create Cloudflare Pages project**
 
-1. Go to vercel.com → New Project
-2. Import `leejaeyoung2026-bot/clearrx`
-3. Framework: Next.js (auto-detected)
+1. Go to Cloudflare Dashboard → Pages → Create a project
+2. Connect to Git → Select `leejaeyoung2026-bot/clearrx`
+3. Framework preset: Next.js (static)
 4. Build command: `npm run build`
-5. Output directory: `out`
+5. Build output directory: `out`
 6. Deploy
 
 **Step 4: Configure custom subdomain**
 
-1. In Vercel project settings → Domains
+1. In Cloudflare Pages project settings → Custom domains
 2. Add `clearrx.vibed-lab.com`
-3. In Cloudflare/DNS: Add CNAME record `clearrx` → `cname.vercel-dns.com`
+3. Cloudflare will auto-configure DNS (vibed-lab.com is already on Cloudflare)
 
 **Step 5: Verify**
 
@@ -3122,4 +3122,4 @@ git push
 - [ ] /about, /privacy, /contact
 - [ ] ads.txt, robots.txt, sitemap
 - [ ] JSON-LD schema
-- [ ] Vercel deploy + subdomain
+- [ ] Cloudflare Pages deploy + subdomain

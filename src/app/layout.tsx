@@ -73,6 +73,7 @@ export const metadata: Metadata = {
     description: "Check drug interactions instantly. Written by a licensed pharmacist.",
   },
   robots: { index: true, follow: true },
+  alternates: { canonical: "https://clearrx.vibed-lab.com" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
