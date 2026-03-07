@@ -1,0 +1,16 @@
+{
+  "name": "ClearRx — Drug Interaction Checker",
+  "short_name": "ClearRx",
+  "description": "Check drug interactions instantly. Visual network diagram. Written by a licensed pharmacist.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F3",
+  "theme_color": "#5B8A8A",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

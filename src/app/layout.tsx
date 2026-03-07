@@ -66,13 +66,11 @@ export const metadata: Metadata = {
     siteName: "ClearRx",
     locale: "en_US",
     url: "https://clearrx.vibed-lab.com",
-    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "ClearRx" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "ClearRx — Know Before You Swallow",
     description: "Check drug interactions instantly. Written by a licensed pharmacist.",
-    images: ["/og-default.png"],
   },
   robots: { index: true, follow: true },
 };
@@ -104,6 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6874320463657568"
           crossOrigin="anonymous"
         />
+        <link rel="manifest" href="/manifest.json" />
         <JsonLd />
       </head>
       <body className="antialiased">
