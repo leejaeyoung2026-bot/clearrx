@@ -26,6 +26,7 @@ export interface Drug {
   interactionRiskScore: number; // 0-10, drives node size
   cypInhibitor?: string[];
   cypSubstrate?: string[];
+  cypInducer?: string[];
   inBundle: boolean;
 }
 

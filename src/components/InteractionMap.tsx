@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type cytoscape from "cytoscape";
 import type { CytoscapeElements, SeverityLevel } from "@/types/drug";
 
@@ -9,27 +9,86 @@ interface Props {
   height?: number;
 }
 
-const SEVERITY_COLORS: Record<SeverityLevel, string> = {
-  contraindicated: "#B83232",
-  serious: "#B83232",
-  moderate: "#B86B1A",
-  minor: "#7A8C2E",
-  none: "#9A9490",
+function getCategoryColor(category?: string): string {
+  const map: Record<string, string> = {
+    anticoagulant: "#C0392B",
+    antiplatelet: "#E74C3C",
+    antidepressant: "#8E44AD",
+    antidiabetic: "#27AE60",
+    antihypertensive: "#2980B9",
+    antilipid: "#1A5276",
+    statin: "#1A5276",
+    antibiotic: "#16A085",
+    antifungal: "#0E6655",
+    antiseizure: "#6C3483",
+    opioid: "#BA4A00",
+    nsaid: "#D68910",
+    supplement: "#52BE80",
+    other: "#5D6D7E",
+  };
+  return map[category ?? ""] ?? "#5D6D7E";
+}
+
+const SEVERITY_STYLES: Record<
+  SeverityLevel,
+  {
+    lineColor: string;
+    width: number;
+    lineStyle: string;
+    lineDashPattern?: number[];
+    shadowBlur?: number;
+    shadowColor?: string;
+    shadowOpacity?: number;
+  }
+> = {
+  contraindicated: {
+    lineColor: "#FF3B3B",
+    width: 4,
+    lineStyle: "solid",
+    shadowBlur: 12,
+    shadowColor: "#FF3B3B",
+    shadowOpacity: 0.7,
+  },
+  serious: {
+    lineColor: "#FF7043",
+    width: 3,
+    lineStyle: "solid",
+    shadowBlur: 6,
+    shadowColor: "#FF7043",
+    shadowOpacity: 0.4,
+  },
+  moderate: {
+    lineColor: "#FFB300",
+    width: 2.5,
+    lineStyle: "solid",
+  },
+  minor: {
+    lineColor: "#8BC34A",
+    width: 1.5,
+    lineStyle: "dashed",
+    lineDashPattern: [6, 4],
+  },
+  none: {
+    lineColor: "#9E9E9E",
+    width: 1,
+    lineStyle: "dashed",
+  },
 };
 
-const EDGE_WIDTHS: Record<SeverityLevel, number> = {
-  contraindicated: 3,
-  serious: 2.5,
-  moderate: 2,
-  minor: 1.5,
-  none: 1,
-};
+const LEGEND_ITEMS = [
+  { label: "Contraindicated", color: "#FF3B3B" },
+  { label: "Serious", color: "#FF7043" },
+  { label: "Moderate", color: "#FFB300" },
+  { label: "Minor", color: "#8BC34A" },
+];
 
 export default function InteractionMap({ elements, onEdgeClick, height = 400 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const cyRef = useRef<cytoscape.Core | null>(null);
   const onEdgeClickRef = useRef(onEdgeClick);
   onEdgeClickRef.current = onEdgeClick;
+
+  const [tooltip, setTooltip] = useState<{ x: number; y: number; label: string } | null>(null);
 
   useEffect(() => {
     let cy: cytoscape.Core | null = null;
@@ -50,17 +109,21 @@ export default function InteractionMap({ elements, onEdgeClick, height = 400 }: 
           {
             selector: "node",
             style: {
-              "background-color": "#FFFFFF",
-              "border-color": "#2E7D7A",
-              "border-width": 1.5,
-              width: "mapData(riskScore, 0, 10, 28, 52)",
-              height: "mapData(riskScore, 0, 10, 28, 52)",
+              "background-color": (ele: any) =>
+                getCategoryColor(ele.data("categories")?.[0]),
+              "border-color": "rgba(255,255,255,0.35)",
+              "border-width": 2,
+              width: "mapData(riskScore, 0, 10, 32, 68)",
+              height: "mapData(riskScore, 0, 10, 32, 68)",
               label: "data(label)",
               "font-family": "monospace",
-              "font-size": "8px",
-              color: "#1A1815",
-              "text-valign": "bottom",
-              "text-margin-y": 4,
+              "font-size": "7px",
+              "font-weight": "bold",
+              color: "#FFFFFF",
+              "text-valign": "center",
+              "text-halign": "center",
+              "text-wrap": "wrap",
+              "text-max-width": "60px",
             } as any,
           },
           {
@@ -74,59 +137,135 @@ export default function InteractionMap({ elements, onEdgeClick, height = 400 }: 
           {
             selector: "edge[severity = 'contraindicated']",
             style: {
-              "line-color": SEVERITY_COLORS.contraindicated,
-              width: EDGE_WIDTHS.contraindicated,
-              "line-style": "solid",
+              "line-color": SEVERITY_STYLES.contraindicated.lineColor,
+              width: SEVERITY_STYLES.contraindicated.width,
+              "line-style": SEVERITY_STYLES.contraindicated.lineStyle,
+              "shadow-blur": SEVERITY_STYLES.contraindicated.shadowBlur,
+              "shadow-color": SEVERITY_STYLES.contraindicated.shadowColor,
+              "shadow-opacity": SEVERITY_STYLES.contraindicated.shadowOpacity,
+              "shadow-offset-x": 0,
+              "shadow-offset-y": 0,
             } as any,
           },
           {
             selector: "edge[severity = 'serious']",
             style: {
-              "line-color": SEVERITY_COLORS.serious,
-              width: EDGE_WIDTHS.serious,
-              "line-style": "solid",
+              "line-color": SEVERITY_STYLES.serious.lineColor,
+              width: SEVERITY_STYLES.serious.width,
+              "line-style": SEVERITY_STYLES.serious.lineStyle,
+              "shadow-blur": SEVERITY_STYLES.serious.shadowBlur,
+              "shadow-color": SEVERITY_STYLES.serious.shadowColor,
+              "shadow-opacity": SEVERITY_STYLES.serious.shadowOpacity,
+              "shadow-offset-x": 0,
+              "shadow-offset-y": 0,
             } as any,
           },
           {
             selector: "edge[severity = 'moderate']",
             style: {
-              "line-color": SEVERITY_COLORS.moderate,
-              width: EDGE_WIDTHS.moderate,
-              "line-style": "solid",
+              "line-color": SEVERITY_STYLES.moderate.lineColor,
+              width: SEVERITY_STYLES.moderate.width,
+              "line-style": SEVERITY_STYLES.moderate.lineStyle,
             } as any,
           },
           {
             selector: "edge[severity = 'minor']",
             style: {
-              "line-color": SEVERITY_COLORS.minor,
-              width: EDGE_WIDTHS.minor,
-              "line-style": "dashed",
+              "line-color": SEVERITY_STYLES.minor.lineColor,
+              width: SEVERITY_STYLES.minor.width,
+              "line-style": SEVERITY_STYLES.minor.lineStyle,
+              "line-dash-pattern": SEVERITY_STYLES.minor.lineDashPattern,
             } as any,
           },
           {
             selector: "edge[severity = 'none']",
             style: {
-              "line-color": SEVERITY_COLORS.none,
-              width: EDGE_WIDTHS.none,
-              "line-style": "dashed",
+              "line-color": SEVERITY_STYLES.none.lineColor,
+              width: SEVERITY_STYLES.none.width,
+              "line-style": SEVERITY_STYLES.none.lineStyle,
+            } as any,
+          },
+          {
+            selector: ".cx-dimmed",
+            style: { opacity: 0.15 } as any,
+          },
+          {
+            selector: ".cx-highlighted",
+            style: {
+              opacity: 1,
+              width: "mapData(width, 0, 10, 1.5, 5)",
+            } as any,
+          },
+          {
+            selector: ".cx-selected",
+            style: {
+              "line-color": "#FFFFFF",
+              width: 5,
+              opacity: 1,
+            } as any,
+          },
+          {
+            selector: "node:selected",
+            style: {
+              "border-width": 3,
+              "border-color": "#FFFFFF",
+              "shadow-blur": 12,
+              "shadow-color": "#FFFFFF",
+              "shadow-opacity": 0.8,
+              "shadow-offset-x": 0,
+              "shadow-offset-y": 0,
             } as any,
           },
         ],
         layout: {
           name: "cose",
           animate: true,
-          animationDuration: 600,
-          animationEasing: "ease-out" as any,
-          randomize: false,
-          padding: 30,
-        },
+          animationDuration: 800,
+          animationEasing: "ease-out-cubic" as any,
+          randomize: true,
+          padding: 40,
+          nodeOverlap: 20,
+          idealEdgeLength: 100,
+          edgeElasticity: 0.45,
+          nestingFactor: 5,
+          gravity: 0.25,
+          numIter: 1000,
+          initialTemp: 200,
+          coolingFactor: 0.95,
+          minTemp: 1.0,
+        } as any,
         userZoomingEnabled: true,
         userPanningEnabled: true,
         minZoom: 0.5,
         maxZoom: 3,
       });
 
+      cy.on("mouseover", "node", (evt: cytoscape.EventObject) => {
+        const node = evt.target;
+        cy!.elements().addClass("cx-dimmed");
+        node.removeClass("cx-dimmed");
+        node.connectedEdges().removeClass("cx-dimmed").addClass("cx-highlighted");
+        node.connectedEdges().connectedNodes().removeClass("cx-dimmed");
+
+        const pos = evt.renderedPosition;
+        const containerRect = containerRef.current?.getBoundingClientRect();
+        if (containerRect) {
+          setTooltip({
+            x: pos.x,
+            y: pos.y - 40,
+            label: evt.target.data("label"),
+          });
+        }
+      });
+
+      cy.on("mouseout", "node", () => {
+        cy!.elements().removeClass("cx-dimmed cx-highlighted");
+        setTooltip(null);
+      });
+
       cy.on("tap", "edge", (evt: cytoscape.EventObject) => {
+        cy!.edges().removeClass("cx-selected");
+        evt.target.addClass("cx-selected");
         const pairKey = evt.target.data("pairKey");
         onEdgeClickRef.current?.(pairKey);
       });
@@ -146,13 +285,76 @@ export default function InteractionMap({ elements, onEdgeClick, height = 400 }: 
   }, [elements]);
 
   return (
-    <div
-      ref={containerRef}
-      style={{
-        width: "100%",
-        height: `${height}px`,
-        border: "1px solid var(--border)",
-      }}
-    />
+    <div style={{ position: "relative", width: "100%", height: `${height}px` }}>
+      <div
+        ref={containerRef}
+        style={{
+          width: "100%",
+          height: "100%",
+          background: "var(--cream)",
+          border: "1px solid var(--border)",
+          borderRadius: "2px",
+        }}
+      />
+
+      {elements.nodes.length > 0 && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: 12,
+            left: 12,
+            display: "flex",
+            flexDirection: "column",
+            gap: 4,
+            background: "rgba(250, 248, 243, 0.9)",
+            padding: "8px 12px",
+            border: "1px solid var(--border)",
+            fontSize: "10px",
+            fontFamily: "monospace",
+            zIndex: 5,
+          }}
+        >
+          {LEGEND_ITEMS.map((item) => (
+            <div
+              key={item.label}
+              style={{ display: "flex", alignItems: "center", gap: 8 }}
+            >
+              <div
+                style={{
+                  width: 20,
+                  height: 3,
+                  background: item.color,
+                  borderRadius: 2,
+                  flexShrink: 0,
+                }}
+              />
+              <span style={{ color: "var(--ink-muted)" }}>{item.label}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {tooltip && (
+        <div
+          style={{
+            position: "absolute",
+            left: tooltip.x,
+            top: tooltip.y,
+            transform: "translateX(-50%)",
+            background: "var(--ink)",
+            color: "var(--cream)",
+            padding: "4px 10px",
+            fontSize: "11px",
+            fontFamily: "monospace",
+            pointerEvents: "none",
+            whiteSpace: "nowrap",
+            zIndex: 10,
+            borderRadius: "2px",
+          }}
+        >
+          {tooltip.label}
+        </div>
+      )}
+    </div>
   );
 }

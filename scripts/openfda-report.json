@@ -1,0 +1,759 @@
+{
+  "generatedAt": "2026-03-07T18:04:55.362Z",
+  "source": "OpenFDA Drug Labels API (https://api.fda.gov/drug/label.json)",
+  "license": "CC0 Public Domain",
+  "summary": {
+    "totalDrugs": 35,
+    "foundInOpenFDA": 35,
+    "notFound": 0,
+    "drugsNotFound": [],
+    "existingPairsInDB": 62,
+    "potentialNewPairsFound": 36,
+    "potentialNewPairs": [
+      "atorvastatin::calcium",
+      "clopidogrel::warfarin",
+      "diazepam::fluoxetine",
+      "diazepam::omeprazole",
+      "aspirin::duloxetine",
+      "ciprofloxacin::duloxetine",
+      "duloxetine::magnesium",
+      "duloxetine::st-johns-wort",
+      "duloxetine::warfarin",
+      "aspirin::escitalopram",
+      "escitalopram::warfarin",
+      "alprazolam::fluoxetine",
+      "aspirin::fluoxetine",
+      "gabapentin::magnesium",
+      "gabapentin::naproxen",
+      "hydrochlorothiazide::spironolactone",
+      "furosemide::levothyroxine",
+      "levothyroxine::magnesium",
+      "levothyroxine::sertraline",
+      "calcium::metformin",
+      "furosemide::naproxen",
+      "magnesium::naproxen",
+      "aspirin::sertraline",
+      "diazepam::sertraline",
+      "calcium::simvastatin",
+      "simvastatin::warfarin",
+      "atorvastatin::st-johns-wort",
+      "calcium::st-johns-wort",
+      "ciprofloxacin::st-johns-wort",
+      "naproxen::st-johns-wort",
+      "tramadol::warfarin",
+      "alprazolam::warfarin",
+      "amlodipine::warfarin",
+      "amoxicillin::warfarin",
+      "atorvastatin::warfarin",
+      "prednisone::warfarin"
+    ],
+    "note": "potentialNewPairs lists pair keys that appear in OpenFDA interaction text but are absent from drug-db.json interactions[]. Review each pair before adding it to the database — OpenFDA text may reference drug CLASSES rather than specific generics, so manual validation is recommended."
+  },
+  "results": [
+    {
+      "drugId": "acetaminophen",
+      "genericName": "acetaminophen",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "ACETAMINOPHEN"
+      ],
+      "brandNamesInLabel": [
+        "Pain Reliever Extra Strength"
+      ],
+      "interactionTextLength": 0,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": null
+    },
+    {
+      "drugId": "alprazolam",
+      "genericName": "alprazolam",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "ALPRAZOLAM"
+      ],
+      "brandNamesInLabel": [
+        "Alprazolam"
+      ],
+      "interactionTextLength": 5034,
+      "mentionedDrugIds": [
+        "tramadol"
+      ],
+      "newPairKeys": [],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Use with Opioids: Increase the risk of respiratory depression. ( 7.1 ) Use with Other CNS Depressants: Produces additive CNS depressant effects. ( 7.1 ) Use with Digoxin: Increase the risk of digoxin toxicity. ( 7.1 ) Use with CYP3A Inhibitors (except ritonavir): Increase the risk of adverse reactions of alprazolam. ( 4 , 5.5 , 7.1 ) Use with CYP3A Inducers: Increase the risk of reduced efficacy of alprazolam. ( 7.1 ) 7.1 Drugs Having Clinically Important Interactions with Alprazolam Table 4 includes clinically significant drug interactions with alprazolam [see Clinical Pha …"
+    },
+    {
+      "drugId": "amlodipine",
+      "genericName": "amlodipine",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "AMLODIPINE BESYLATE"
+      ],
+      "brandNamesInLabel": [
+        "Amlodipine Besylate"
+      ],
+      "interactionTextLength": 1345,
+      "mentionedDrugIds": [
+        "simvastatin"
+      ],
+      "newPairKeys": [],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Do not exceed doses greater than 20 mg daily of simvastatin. ( 7.2 ) 7.1 Impact of Other Drugs on Amlodipine CYP3A Inhibitors Co-administration with CYP3A inhibitors (moderate and strong) results in increased systemic exposure to amlodipine and may require dose reduction. Monitor for symptoms of hypotension and edema when amlodipine is co-administered with CYP3A inhibitors to determine the need for dose adjustment [see CLINICAL PHARMACOLOGY ( 12.3 )] . CYP3A Inducers No information is available on the quantitative effects of CYP3A inducers on amlodipine. Blood pressure shou …"
+    },
+    {
+      "drugId": "amoxicillin",
+      "genericName": "amoxicillin",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "AMOXICILLIN AND CLAVULANATE POTASSIUM"
+      ],
+      "brandNamesInLabel": [
+        "AMOXICILLIN AND CLAVULANATE POTASSIUM"
+      ],
+      "interactionTextLength": 2277,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Co‑administration with probenecid is not recommended. ( 7.1 ) Concomitant use of Amoxicillin and Clavulanate Potassium and oral anticoagulants may increase the prolongation of prothrombin time.( 7.2 ) Co-administration with allopurinol increases the risk of rash. ( 7.3 ) Amoxicillin and Clavulanate Potassium may reduce efficacy of oral contraceptives. ( 7.4 ) 7.1 Probenecid Probenecid decreases the renal tubular secretion of amoxicillin but does not delay renal excretion of clavulanic acid. Concurrent use with Amoxicillin and Clavulanate Potassium may result in increased an …"
+    },
+    {
+      "drugId": "aspirin",
+      "genericName": "aspirin",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "ASPIRIN"
+      ],
+      "brandNamesInLabel": [
+        "Low Dose Aspirin"
+      ],
+      "interactionTextLength": 0,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": null
+    },
+    {
+      "drugId": "atorvastatin",
+      "genericName": "atorvastatin",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "ATORVASTATIN CALCIUM"
+      ],
+      "brandNamesInLabel": [
+        "Atorvastatin calcium"
+      ],
+      "interactionTextLength": 7453,
+      "mentionedDrugIds": [
+        "calcium"
+      ],
+      "newPairKeys": [
+        "atorvastatin::calcium"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS See full prescribing information for details regarding concomitant use of atorvastatin calcium with other drugs or grapefruit juice that increase the risk of myopathy and rhabdomyolysis ( 2.5 , 7.1 ). Rifampin: May reduce atorvastatin plasma concentrations. Administer simultaneously with atorvastatin calcium ( 7.2 ). Oral Contraceptives: May increase plasma levels of norethindrone and ethinyl estradiol; consider this effect when selecting an oral contraceptive (7.3 ). Digoxin: May increase digoxin plasma levels; monitor patients appropriately ( 7.3 ). 7.1 Drug Interactions  …"
+    },
+    {
+      "drugId": "calcium",
+      "genericName": "calcium",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "CALCIUM ACETATE"
+      ],
+      "brandNamesInLabel": [
+        "Calcium Acetate"
+      ],
+      "interactionTextLength": 1462,
+      "mentionedDrugIds": [
+        "ciprofloxacin"
+      ],
+      "newPairKeys": [],
+      "interactionExcerpt": "7 DRUG INTERACTIONS The drug interaction of calcium acetate is characterized by the potential of calcium to bind to drugs with anionic functions (e.g., carboxyl, and hydroxyl groups). Calcium acetate may decrease the bioavailability of tetracyclines or fluoroquinolones via this mechanism. There are no empirical data on avoiding drug interactions between calcium acetate and most concomitant drugs. When administering an oral medication with calcium acetate where a reduction in the bioavailability of that medication would have a clinically significant effect on its safety or efficacy, administer  …"
+    },
+    {
+      "drugId": "ciprofloxacin",
+      "genericName": "ciprofloxacin",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "CIPROFLOXACIN"
+      ],
+      "brandNamesInLabel": [
+        "ciprofloxacin"
+      ],
+      "interactionTextLength": 469,
+      "mentionedDrugIds": [
+        "warfarin"
+      ],
+      "newPairKeys": [],
+      "interactionExcerpt": "Drug Interactions: Specific drug interaction studies have not been conducted with ophthalmic ciprofloxacin. However, the systemic administration of some quinolones has been shown to elevate plasma concentrations of theophylline, interfere with the metabolism of caffeine, enhance the effects of the oral anticoagulant, warfarin, and its derivatives, and has been associated with transient elevations in serum creatinine in patients receiving cyclosporine concomitantly."
+    },
+    {
+      "drugId": "clopidogrel",
+      "genericName": "clopidogrel",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "CLOPIDOGREL BISULFATE"
+      ],
+      "brandNamesInLabel": [
+        "Clopidogrel"
+      ],
+      "interactionTextLength": 4245,
+      "mentionedDrugIds": [
+        "omeprazole",
+        "warfarin"
+      ],
+      "newPairKeys": [
+        "clopidogrel::warfarin"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS CYP2C19 inducers: Increases levels of clopidogrel active metabolite and increases platelet inhibition. ( 7.1 ) Opioids: Decreased exposure to clopidogrel. Consider use of parenteral antiplatelet agent. ( 7.3 ) Nonsteroidal anti-inflammatory drugs (NSAIDs), warfarin, selective serotonin and serotonin norepinephrine reuptake inhibitors (SSRIs, SNRIs): Increases risk of bleeding. ( 7.4 , 7.5 , 7.6 ) Other Antiplatelet Agents: Increases the risk of bleeding due to an additive effect. ( 7.7 ) Repaglinide (CYP2C8 substrates): Increases substrate plasma concentrations. ( 7.8 ) 7.1 …"
+    },
+    {
+      "drugId": "diazepam",
+      "genericName": "diazepam",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "DIAZEPAM"
+      ],
+      "brandNamesInLabel": [
+        "Diazepam"
+      ],
+      "interactionTextLength": 2150,
+      "mentionedDrugIds": [
+        "fluoxetine",
+        "omeprazole"
+      ],
+      "newPairKeys": [
+        "diazepam::fluoxetine",
+        "diazepam::omeprazole"
+      ],
+      "interactionExcerpt": "Drug Interactions Opioids The concomitant use of benzodiazepines and opioids increases the risk of respiratory depression because of actions at different receptor sites in the CNS that control respiration. Benzodiazepines interact at GABA A sites and opioids interact primarily at mu receptors. When benzodiazepines and opioids are combined, the potential for benzodiazepines to significantly worsen opioid-related respiratory depression exists. Limit dosage and duration of concomitant use of benzodiazepines and opioids, and monitor patients closely for respiratory depression and sedation. Central …"
+    },
+    {
+      "drugId": "duloxetine",
+      "genericName": "duloxetine",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "DULOXETINE HYDROCHLORIDE"
+      ],
+      "brandNamesInLabel": [
+        "Duloxetine Delayed-Release"
+      ],
+      "interactionTextLength": 7988,
+      "mentionedDrugIds": [
+        "aspirin",
+        "ciprofloxacin",
+        "fluoxetine",
+        "magnesium",
+        "st-johns-wort",
+        "warfarin"
+      ],
+      "newPairKeys": [
+        "aspirin::duloxetine",
+        "ciprofloxacin::duloxetine",
+        "duloxetine::magnesium",
+        "duloxetine::st-johns-wort",
+        "duloxetine::warfarin"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Both CYP1A2 and CYP2D6 are responsible for duloxetine metabolism. Potent inhibitors of CYP1A2 should be avoided ( 7.1 ) Potent inhibitors of CYP2D6 may increase Duloxetine delayed-release capsules concentrations ( 7.2 ) Duloxetine delayed-release capsules is a moderate inhibitor of CYP2D6 ( 7.9 ) 7.1 Inhibitors of CYP1A2 When duloxetine 60 mg was co-administered with fluvoxamine 100 mg, a potent CYP1A2 inhibitor, to male subjects (n=14) duloxetine AUC was increased approximately 6-fold, the C max was increased about 2.5-fold, and duloxetine t 1/2 was increased approximately …"
+    },
+    {
+      "drugId": "escitalopram",
+      "genericName": "escitalopram",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "ESCITALOPRAM ORAL"
+      ],
+      "brandNamesInLabel": [
+        "Escitalopram Oral Solution"
+      ],
+      "interactionTextLength": 3514,
+      "mentionedDrugIds": [
+        "aspirin",
+        "warfarin"
+      ],
+      "newPairKeys": [
+        "aspirin::escitalopram",
+        "escitalopram::warfarin"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Table 6 presents clinically important drug interactions with escitalopram. TABLE 6 Clinically Important Drug Interactions with Escitalopram Monoamine Oxidase Inhibitors (MAOIs) Clinical Impact: Concomitant use of SSRIs, including escitalopram, and MAOIs increases the risk of serotonin syndrome. Intervention: Escitalopram is contraindicated in patients taking MAOIs, including MAOIs such as linezolid or intravenous methylene blue [ see Dosage and Administration (2.7) , Contraindications (4) , and Warnings and Precautions (5.2) ] Pimozide Clinical Impact: Concomitant use of ra …"
+    },
+    {
+      "drugId": "fish-oil",
+      "genericName": "fish oil (omega-3 fatty acids)",
+      "foundInOpenFDA": true,
+      "matchedOn": "partialGenericName",
+      "genericNamesInLabel": [
+        "SILICEA"
+      ],
+      "brandNamesInLabel": [
+        "SILICEA"
+      ],
+      "interactionTextLength": 0,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": null
+    },
+    {
+      "drugId": "fluoxetine",
+      "genericName": "fluoxetine",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "FLUOXETINE HYDROCHLORIDE"
+      ],
+      "brandNamesInLabel": [
+        "Fluoxetine"
+      ],
+      "interactionTextLength": 10953,
+      "mentionedDrugIds": [
+        "alprazolam",
+        "aspirin",
+        "diazepam",
+        "warfarin"
+      ],
+      "newPairKeys": [
+        "alprazolam::fluoxetine",
+        "aspirin::fluoxetine",
+        "diazepam::fluoxetine"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS As with all drugs, the potential for interaction by a variety of mechanisms (e.g., pharmacodynamic, pharmacokinetic drug inhibition or enhancement, etc.) is a possibility. Monoamine Oxidase Inhibitors (MAOIs): ( 2.9 , 2.10 , 4.1 , 5.2 ) Drugs Metabolized by CYP2D6: Fluoxetine is a potent inhibitor of CYP2D6 enzyme pathway ( 7.7 ) Tricyclic Antidepressants (TCAs): Monitor TCA levels during coadministration with fluoxetine or when fluoxetine has been recently discontinued ( 5.2 , 7.7 ) CNS Acting Drugs: Caution should be used when taken in combination with other centrally act …"
+    },
+    {
+      "drugId": "furosemide",
+      "genericName": "furosemide",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "FUROSEMIDE"
+      ],
+      "brandNamesInLabel": [
+        "Furosemide"
+      ],
+      "interactionTextLength": 4357,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": "Drug Interactions Furosemide may increase the ototoxic potential of aminoglycoside antibiotics, especially in the presence of impaired renal function. Except in life-threatening situations, avoid this combination. Furosemide should not be used concomitantly with ethacrynic acid because of the possibility of ototoxicity. Patients receiving high doses of salicylates concomitantly with furosemide, as in rheumatic disease, may experience salicylate toxicity at lower doses because of competitive renal excretory sites. There is a risk of ototoxic effects if cisplatin and furosemide are given concomi …"
+    },
+    {
+      "drugId": "gabapentin",
+      "genericName": "gabapentin",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "GABAPENTIN"
+      ],
+      "brandNamesInLabel": [
+        "Gabapentin"
+      ],
+      "interactionTextLength": 8051,
+      "mentionedDrugIds": [
+        "magnesium",
+        "naproxen"
+      ],
+      "newPairKeys": [
+        "gabapentin::magnesium",
+        "gabapentin::naproxen"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Concentrations increased by morphine; may need dose adjustment (5.4, 7.1 ) 7.1 Opioids Respiratory depression and sedation, sometimes resulting in death, have been reported following coadministration of gabapentin with opioids (e.g., morphine, hydrocodone, oxycodone, buprenorphine) [ see Warnings and Precautions (5.7) ]. Hydrocodone Coadministration of gabapentin with hydrocodone decreases hydrocodone exposure [ see Clinical Pharmacology (12.3) ]. The potential for alteration in hydrocodone exposure and effect should be considered when gabapentin is started or discontinued  …"
+    },
+    {
+      "drugId": "hydrochlorothiazide",
+      "genericName": "hydrochlorothiazide",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "LISINOPRIL AND HYDROCHLOROTHIAZIDE TABLETS"
+      ],
+      "brandNamesInLabel": [
+        "Lisinopril and Hydrochlorothiazide"
+      ],
+      "interactionTextLength": 6679,
+      "mentionedDrugIds": [
+        "lisinopril",
+        "losartan",
+        "spironolactone"
+      ],
+      "newPairKeys": [
+        "hydrochlorothiazide::spironolactone"
+      ],
+      "interactionExcerpt": "Drug Interactions Lisinopril Hypotension - Patients on Diuretic Therapy: Patients on diuretics and especially those in whom diuretic therapy was recently instituted, may occasionally experience an excessive reduction of blood pressure after initiation of therapy with lisinopril. The possibility of hypotensive effects with lisinopril can be minimized by either discontinuing the diuretic or increasing the salt intake prior to initiation of treatment with lisinopril. If it is necessary to continue the diuretic, initiate therapy with lisinopril at a dose of 5 mg daily, and provide close medical su …"
+    },
+    {
+      "drugId": "ibuprofen",
+      "genericName": "ibuprofen",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "IBUPROFEN"
+      ],
+      "brandNamesInLabel": [
+        "Ibuprofen Dye Free"
+      ],
+      "interactionTextLength": 0,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": null
+    },
+    {
+      "drugId": "iron",
+      "genericName": "iron (ferrous sulfate)",
+      "foundInOpenFDA": true,
+      "matchedOn": "partialGenericName",
+      "genericNamesInLabel": [
+        "TRAMETINIB"
+      ],
+      "brandNamesInLabel": [
+        "Mekinist"
+      ],
+      "interactionTextLength": 204,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": "7 DRUG INTERACTIONS MEKINIST is indicated for use in combination with dabrafenib. Refer to the dabrafenib prescribing information for additional risk information that applies to combination use treatment."
+    },
+    {
+      "drugId": "levothyroxine",
+      "genericName": "levothyroxine",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "LEVOTHYROXINE SODIUM"
+      ],
+      "brandNamesInLabel": [
+        "Levothyroxine sodium"
+      ],
+      "interactionTextLength": 16230,
+      "mentionedDrugIds": [
+        "calcium",
+        "furosemide",
+        "magnesium",
+        "sertraline"
+      ],
+      "newPairKeys": [
+        "furosemide::levothyroxine",
+        "levothyroxine::magnesium",
+        "levothyroxine::sertraline"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS See full prescribing information for drugs that affect thyroid hormone pharmacokinetics and metabolism (e.g., absorption, synthesis, secretion, catabolism, protein binding, and target tissue response) and may alter the therapeutic response to levothyroxine sodium. (7) 7.1 Drugs Known to Affect Thyroid Hormone Pharmacokinetics Many drugs can exert effects on thyroid hormone pharmacokinetics and metabolism (e.g., absorption, synthesis, secretion, catabolism, protein binding, and target tissue response) and may alter the therapeutic response to levothyroxine sodium (Tables 5 t …"
+    },
+    {
+      "drugId": "lisinopril",
+      "genericName": "lisinopril",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "LISINOPRIL AND HYDROCHLOROTHIAZIDE TABLETS"
+      ],
+      "brandNamesInLabel": [
+        "Lisinopril and Hydrochlorothiazide"
+      ],
+      "interactionTextLength": 6679,
+      "mentionedDrugIds": [
+        "hydrochlorothiazide",
+        "losartan",
+        "spironolactone"
+      ],
+      "newPairKeys": [],
+      "interactionExcerpt": "Drug Interactions Lisinopril Hypotension - Patients on Diuretic Therapy: Patients on diuretics and especially those in whom diuretic therapy was recently instituted, may occasionally experience an excessive reduction of blood pressure after initiation of therapy with lisinopril. The possibility of hypotensive effects with lisinopril can be minimized by either discontinuing the diuretic or increasing the salt intake prior to initiation of treatment with lisinopril. If it is necessary to continue the diuretic, initiate therapy with lisinopril at a dose of 5 mg daily, and provide close medical su …"
+    },
+    {
+      "drugId": "losartan",
+      "genericName": "losartan",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "LOSARTAN POTASSIUM"
+      ],
+      "brandNamesInLabel": [
+        "Losartan Potassium"
+      ],
+      "interactionTextLength": 2972,
+      "mentionedDrugIds": [
+        "lisinopril"
+      ],
+      "newPairKeys": [],
+      "interactionExcerpt": "7 DRUG INTERACTIONS • Agents Increasing Serum Potassium: Risk of hyperkalemia. (7.1) • Lithium: Risk of lithium toxicity. (7.2) • NSAIDs: Increased risk of renal impairment and reduced diuretic, natriuretic, and antihypertensive effects. (7.3) • Dual Inhibition of the Renin-Angiotensin System: Increased risk of renal impairment, hypotension, syncope, and hyperkalemia. (7.4) 7.1 Agents Increasing Serum Potassium Coadministration of losartan with other drugs that raise serum potassium levels may result in hyperkalemia. Monitor serum potassium in such patients. 7.2 Lithium Increases in serum lith …"
+    },
+    {
+      "drugId": "magnesium",
+      "genericName": "magnesium",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "ESOMEPRAZOLE MAGNESIUM"
+      ],
+      "brandNamesInLabel": [
+        "Acid Reducer"
+      ],
+      "interactionTextLength": 0,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": null
+    },
+    {
+      "drugId": "metformin",
+      "genericName": "metformin",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE"
+      ],
+      "brandNamesInLabel": [
+        "ZITUVIMET"
+      ],
+      "interactionTextLength": 2660,
+      "mentionedDrugIds": [
+        "calcium"
+      ],
+      "newPairKeys": [
+        "calcium::metformin"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Table 4 presents clinically significant drug interactions with ZITUVIMET: Table 4: Clinically Significant Drug Interactions with ZITUVIMET Carbonic Anhydrase Inhibitors Clinical Impact: Carbonic anhydrase inhibitors frequently cause a decrease in serum bicarbonate and induce non-anion gap, hyperchloremic metabolic acidosis. Concomitant use of these drugs with ZITUVIMET may increase the risk for lactic acidosis. Intervention: Consider more frequent monitoring of these patients. Examples: Topiramate, zonisamide, acetazolamide or dichlorphenamide. Drugs that Reduce Metformin C …"
+    },
+    {
+      "drugId": "metoprolol",
+      "genericName": "metoprolol",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "METOPROLOL TARTRATE"
+      ],
+      "brandNamesInLabel": [
+        "Metoprolol Tartrate"
+      ],
+      "interactionTextLength": 2300,
+      "mentionedDrugIds": [
+        "fluoxetine"
+      ],
+      "newPairKeys": [],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Catecholamine-depleting drugs may have an additive effect when given with beta-blocking agents. ( 7.1 ) Patients may be unresponsive to the usual doses of epinephrine used to treat allergic reaction. ( 7.2 ) CYP2D6 Inhibitors are likely to increase metoprolol concentration. ( 7.3 ) Concomitant use of glycosides, clonidine, and diltiazem and verapamil with beta-blockers can increase the risk of bradycardia. ( 7.4 ) Beta-blockers including metoprolol, may exacerbate the rebound hypertension that can follow the withdrawal of clonidine. ( 7.4 ) 7.1 Catecholamine Depleting Drugs …"
+    },
+    {
+      "drugId": "naproxen",
+      "genericName": "naproxen",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "NAPROXEN"
+      ],
+      "brandNamesInLabel": [
+        "Naproxen"
+      ],
+      "interactionTextLength": 10898,
+      "mentionedDrugIds": [
+        "aspirin",
+        "furosemide",
+        "magnesium",
+        "warfarin"
+      ],
+      "newPairKeys": [
+        "furosemide::naproxen",
+        "magnesium::naproxen"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS See Table 1 for clinically significant drug interactions with naproxen. Table 1: Clinically Significant Drug Interactions with naproxen Drugs That Interfere with Hemostasis Clinical Impact: • Naproxen and anticoagulants such as warfarin have a synergistic effect on bleeding. The concomitant use of naproxen and anticoagulants have an increased risk of serious bleeding compared to the use of either drug alone. • Serotonin release by platelets plays an important role in hemostasis. Case-control and cohort epidemiological studies showed that concomitant use of drugs that interf …"
+    },
+    {
+      "drugId": "omeprazole",
+      "genericName": "omeprazole",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "OMEPRAZOLE"
+      ],
+      "brandNamesInLabel": [
+        "Omeprazole"
+      ],
+      "interactionTextLength": 0,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": null
+    },
+    {
+      "drugId": "prednisone",
+      "genericName": "prednisone",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "PREDNISONE"
+      ],
+      "brandNamesInLabel": [
+        "PredniSONE"
+      ],
+      "interactionTextLength": 0,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": null
+    },
+    {
+      "drugId": "sertraline",
+      "genericName": "sertraline",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "SERTRALINE HYDROCHLORIDE"
+      ],
+      "brandNamesInLabel": [
+        "Sertraline Hydrochloride"
+      ],
+      "interactionTextLength": 23937,
+      "mentionedDrugIds": [
+        "aspirin",
+        "diazepam",
+        "fluoxetine",
+        "warfarin"
+      ],
+      "newPairKeys": [
+        "aspirin::sertraline",
+        "diazepam::sertraline"
+      ],
+      "interactionExcerpt": "Drug Interactions Potential Effects of Coadministration of Drugs Highly Bound to Plasma Proteins –Because sertraline is tightly bound to plasma protein, the administration of sertraline hydrochloride to a patient taking another drug which is tightly bound to protein (e.g., warfarin, digitoxin) may cause a shift in plasma concentrations potentially resulting in an adverse effect. Conversely, adverse effects may result from displacement of protein bound sertraline hydrochloride by other tightly bound drugs. In a study comparing prothrombin time AUC (0-120 hr) following dosing with warfarin (0.75 …"
+    },
+    {
+      "drugId": "simvastatin",
+      "genericName": "simvastatin",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "SIMVASTATIN"
+      ],
+      "brandNamesInLabel": [
+        "SIMVASTATIN"
+      ],
+      "interactionTextLength": 7215,
+      "mentionedDrugIds": [
+        "amlodipine",
+        "calcium",
+        "warfarin"
+      ],
+      "newPairKeys": [
+        "calcium::simvastatin",
+        "simvastatin::warfarin"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS See full prescribing information for details regarding concomitant use of simvastatin with other drugs or grapefruit juice that increase the risk of myopathy and rhabdomyolysis. ( 2.5 , 7.1 ) Coumarin Anticoagulants: Obtain INR before simvastatin initiation and monitor INR during simvastatin dosage initiation or adjustment. ( 7.2 ) Digoxin: During simvastatin initiation, monitor digoxin levels. ( 7.2 ) 7.1 Drug Interactions that Increase the Risk of Myopathy and Rhabdomyolysis with Simvastatin Simvastatin is a substrate of CYP3A4 and of the transport protein OATP1B1. Simvas …"
+    },
+    {
+      "drugId": "spironolactone",
+      "genericName": "spironolactone",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "SPIRONOLACTONE"
+      ],
+      "brandNamesInLabel": [
+        "Spironolactone"
+      ],
+      "interactionTextLength": 2980,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Agents increasing serum potassium: Concomitant administration can lead to hyperkalemia ( 5.1 , 7.1 ). Lithium: Increased risk of lithium toxicity ( 7.2 ). NSAIDs: May reduce the diuretic, natriuretic and antihypertensive effect of spironolactone ( 7.3 ). Digoxin: spironolactone can interfere with radioimmunologic assays of digoxin exposure ( 7.4) . Cholestyramine: Hyperkalemic metabolic acidosis has been reported with concomitant use ( 7.5 ). Acetylsalicylic Acid (ASA): ASA may reduce the efficacy of spironolactone ( 7.6 ) Abiraterone: May increase prostate-specific antigen …"
+    },
+    {
+      "drugId": "st-johns-wort",
+      "genericName": "St. John's Wort",
+      "foundInOpenFDA": true,
+      "matchedOn": "partialGenericName",
+      "genericNamesInLabel": [],
+      "brandNamesInLabel": [],
+      "interactionTextLength": 13949,
+      "mentionedDrugIds": [
+        "atorvastatin",
+        "calcium",
+        "ciprofloxacin",
+        "naproxen",
+        "simvastatin"
+      ],
+      "newPairKeys": [
+        "atorvastatin::st-johns-wort",
+        "calcium::st-johns-wort",
+        "ciprofloxacin::st-johns-wort",
+        "naproxen::st-johns-wort"
+      ],
+      "interactionExcerpt": "Drug Interactions A. Effect of Drugs and Other Agents on Cyclosporine Pharmacokinetics and/or Safety All of the individual drugs cited below are well substantiated to interact with cyclosporine. In addition, concomitant use of nonsteroidal anti-inflammatory drugs (NSAIDs) with cyclosporine, particularly in the setting of dehydration, may potentiate renal dysfunction. Caution should be exercised when using other drugs which are known to impair renal function (see WARNINGS , Nephrotoxicity ) . Drugs That May Potentiate Renal Dysfunction Antibiotics Antineoplastics Antifungals Anti-Inflammatory D …"
+    },
+    {
+      "drugId": "tramadol",
+      "genericName": "tramadol",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "TRAMADOL HYDROCHLORIDE"
+      ],
+      "brandNamesInLabel": [
+        "TRAMADOL HYDROCHLORIDE"
+      ],
+      "interactionTextLength": 10115,
+      "mentionedDrugIds": [
+        "fluoxetine",
+        "gabapentin",
+        "warfarin"
+      ],
+      "newPairKeys": [
+        "tramadol::warfarin"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Table 2 includes clinically significant drug interactions with tramadol hydrochloride extended-release tablets. Table 2: Clinically Significant Drug Interactions with Tramadol Hydrochloride Extended-Release Tablets Inhibitors of CYP2D6 Clinical Impact: The concomitant use of tramadol hydrochloride extended-release tablets and CYP2D6 inhibitors may result in an increase in the plasma concentration of tramadol and a decrease in the plasma concentration of M1, particularly when an inhibitor is added after a stable dose of tramadol hydrochloride extended-release tablets is achi …"
+    },
+    {
+      "drugId": "vitamin-d",
+      "genericName": "vitamin D (cholecalciferol)",
+      "foundInOpenFDA": true,
+      "matchedOn": "partialGenericName",
+      "genericNamesInLabel": [
+        "TRAMETINIB"
+      ],
+      "brandNamesInLabel": [
+        "Mekinist"
+      ],
+      "interactionTextLength": 204,
+      "mentionedDrugIds": [],
+      "newPairKeys": [],
+      "interactionExcerpt": "7 DRUG INTERACTIONS MEKINIST is indicated for use in combination with dabrafenib. Refer to the dabrafenib prescribing information for additional risk information that applies to combination use treatment."
+    },
+    {
+      "drugId": "warfarin",
+      "genericName": "warfarin",
+      "foundInOpenFDA": true,
+      "matchedOn": "genericName",
+      "genericNamesInLabel": [
+        "WARFARIN SODIUM"
+      ],
+      "brandNamesInLabel": [
+        "Warfarin Sodium"
+      ],
+      "interactionTextLength": 6477,
+      "mentionedDrugIds": [
+        "alprazolam",
+        "amlodipine",
+        "amoxicillin",
+        "aspirin",
+        "atorvastatin",
+        "ciprofloxacin",
+        "clopidogrel",
+        "duloxetine",
+        "escitalopram",
+        "fluoxetine",
+        "ibuprofen",
+        "naproxen",
+        "omeprazole",
+        "prednisone",
+        "sertraline"
+      ],
+      "newPairKeys": [
+        "alprazolam::warfarin",
+        "amlodipine::warfarin",
+        "amoxicillin::warfarin",
+        "atorvastatin::warfarin",
+        "clopidogrel::warfarin",
+        "duloxetine::warfarin",
+        "escitalopram::warfarin",
+        "prednisone::warfarin"
+      ],
+      "interactionExcerpt": "7 DRUG INTERACTIONS Concomitant use of drugs that increase bleeding risk, antibiotics, antifungals, botanical (herbal) products, and inhibitors and inducers of CYP2C9, 1A2, or 3A4. ( 7 ) Consult labeling of all concurrently used drugs for complete information about interactions with warfarin sodium or increased risks for bleeding. ( 7 ) 7.1 General Information Drugs may interact with warfarin sodium through pharmacodynamic or pharmacokinetic mechanisms. Pharmacodynamic mechanisms for drug interactions with warfarin sodium are synergism (impaired hemostasis, reduced clotting factor synthesis),  …"
+    }
+  ]
+}
