@@ -293,6 +293,7 @@ export default function Home() {
               { href: "/learn/common-drug-pairs", text: "10 Most Commonly Checked Drug Pairs" },
               { href: "/learn/nsaid-safety-guide", text: "NSAIDs and Your Stomach: A Safety Guide" },
               { href: "/learn/antibiotic-food-interactions", text: "Antibiotics and Food: What Your Pharmacist Wants You to Know" },
+              { href: "/learn/polypharmacy-elderly", text: "Polypharmacy in the Elderly: Managing Multiple Medications Safely" },
             ].map((link) => (
               <li key={link.href}>
                 <Link href={link.href} style={{ color: "var(--rx-accent)" }}>

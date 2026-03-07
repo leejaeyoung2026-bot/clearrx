@@ -188,6 +188,26 @@ const TERMS: GlossaryTerm[] = [
     definition:
       "The range between the dose of a drug that is effective and the dose that becomes toxic. A drug with a narrow therapeutic index (like warfarin or lithium) has very little room for error \u2014 even a small increase in blood levels can cause serious harm. Drug interactions that affect medications with a narrow therapeutic index are especially dangerous and require close monitoring.",
   },
+  {
+    term: "Bioavailability",
+    definition:
+      "The fraction of an administered dose of a drug that reaches the systemic circulation in unchanged form. Oral bioavailability can be affected by first-pass metabolism, food interactions, or other drugs. A drug interaction that reduces bioavailability means less of the drug actually works \u2014 potentially causing treatment failure.",
+  },
+  {
+    term: "Cumulative Toxicity",
+    definition:
+      "When multiple drugs with the same type of side effect are taken together, their harmful effects add up even if each drug alone is safe. For example, taking two medications that each cause mild sedation can together cause dangerous drowsiness. This is especially relevant in elderly patients taking many medications.",
+  },
+  {
+    term: "Induction",
+    definition:
+      "When a drug speeds up the production of metabolic enzymes (typically CYP enzymes), causing other drugs to be broken down faster than normal. This reduces the blood levels and effectiveness of the affected drug. Rifampin, St. John's Wort, and carbamazepine are well-known enzyme inducers. The opposite of inhibition.",
+  },
+  {
+    term: "Volume of Distribution",
+    definition:
+      "A measure of how widely a drug disperses throughout the body's tissues. Drugs with a high volume of distribution spread extensively into fat and muscle, while drugs with a low volume stay mostly in the bloodstream. This property affects how long a drug stays in the body and can influence drug interaction severity.",
+  },
 ];
 
 /* Group terms by first letter */
