@@ -126,8 +126,8 @@ export default function PrivacyPage() {
           <h2 className="font-serif text-xl mb-2" style={{ color: "var(--ink)" }}>Contact</h2>
           <p>
             If you have questions about this privacy policy, reach out at{" "}
-            <a href="mailto:jay@vibed-lab.com" style={{ color: "var(--rx-accent)" }}>
-              jay@vibed-lab.com
+            <a href="mailto:contact@vibed-lab.com" style={{ color: "var(--rx-accent)" }}>
+              contact@vibed-lab.com
             </a>{" "}
             or visit the{" "}
             <Link href="/contact" style={{ color: "var(--rx-accent)" }}>
