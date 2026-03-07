@@ -68,6 +68,11 @@ const ARTICLES = [
     title: "Polypharmacy in the Elderly: Managing Multiple Medications Safely",
     summary: "Why seniors face higher drug interaction risks, dangerous combinations to watch for, and practical strategies for safer medication management.",
   },
+  {
+    slug: "supplement-drug-interactions",
+    title: "Supplement and Drug Interactions: What Your Pharmacist Wants You to Know",
+    summary: "Fish oil, vitamin E, St. John's Wort, and magnesium can all interact with medications in dangerous ways. What to watch for and what to tell your pharmacist.",
+  },
 ];
 
 const jsonLd = {
