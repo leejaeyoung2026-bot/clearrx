@@ -48,6 +48,21 @@ const ARTICLES = [
     title: "Statin Drug Interactions: What Every Cholesterol Patient Should Know",
     summary: "How CYP3A4 inhibitors affect statin levels, which statins are safest, and when rhabdomyolysis risk spikes.",
   },
+  {
+    slug: "nsaid-safety-guide",
+    title: "NSAIDs and Your Stomach: A Safety Guide",
+    summary: "NSAID risks including GI bleeding, kidney concerns, who should avoid them, and safer alternatives.",
+  },
+  {
+    slug: "antibiotic-food-interactions",
+    title: "Antibiotics and Food: What Your Pharmacist Wants You to Know",
+    summary: "How dairy, calcium, and alcohol affect antibiotic absorption, with practical timing tips.",
+  },
+  {
+    slug: "medication-timing-guide",
+    title: "When to Take Your Medications: Timing Matters More Than You Think",
+    summary: "Morning vs evening dosing, with/without food, spacing medications, and common timing mistakes.",
+  },
 ];
 
 export default function LearnPage() {
