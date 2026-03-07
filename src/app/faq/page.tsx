@@ -78,6 +78,16 @@ const FAQS = [
       "Yes. ClearRx is designed to facilitate conversations with your healthcare provider. You can print the results page or take a screenshot of the Interaction Map and severity details to bring to your next appointment. Having this information ready helps your doctor make more informed decisions about your care.",
   },
   {
+    question: "Are NSAIDs like ibuprofen safe to take with other medications?",
+    answer:
+      "NSAIDs (nonsteroidal anti-inflammatory drugs) like ibuprofen and naproxen interact with many common medications, including blood thinners, blood pressure medications, and other pain relievers. They also carry risks of GI bleeding and kidney damage, especially with long-term use. Check our NSAIDs safety guide in the Learn section for a detailed breakdown of risks and safer alternatives.",
+  },
+  {
+    question: "Can food affect how my medications work?",
+    answer:
+      "Yes, significantly. Some antibiotics lose effectiveness when taken with dairy or calcium supplements. Grapefruit juice can increase blood levels of certain medications to dangerous levels. Even the timing of meals relative to medication doses matters. Our Learn section includes detailed guides on antibiotic-food interactions and medication timing.",
+  },
+  {
     question: "Is ClearRx available in languages other than English?",
     answer:
       "Currently, ClearRx is available in English only. Drug names, interaction descriptions, and clinical explanations are all provided in English. We are exploring the possibility of adding additional languages in the future, but accuracy and pharmacist review must come first.",
