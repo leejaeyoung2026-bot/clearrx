@@ -26,11 +26,24 @@ export default function AboutPage() {
     sameAs: ["https://vibed-lab.com"],
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://clearrx.vibed-lab.com" },
+      { "@type": "ListItem", position: 2, name: "About", item: "https://clearrx.vibed-lab.com/about" },
+    ],
+  };
+
   return (
     <article className="max-w-2xl mx-auto px-4 py-16 space-y-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
       <header>
