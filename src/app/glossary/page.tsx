@@ -64,6 +64,16 @@ const TERMS: GlossaryTerm[] = [
       "The process by which a drug spreads from your bloodstream into your body's tissues and organs. Some drugs stay mostly in the blood, while others spread widely into fat, muscle, or the brain. Drug interactions can change distribution by competing for the same protein carriers in the blood.",
   },
   {
+    term: "Dose-Response Relationship",
+    definition:
+      "The connection between the amount of a drug you take and the effect it produces. Higher doses generally produce stronger effects — both beneficial and harmful. Drug interactions can shift this relationship, making a normal dose act like a higher dose (if the interacting drug slows its breakdown) or a lower dose (if the interacting drug speeds up its elimination).",
+  },
+  {
+    term: "Drug-Food Interaction",
+    definition:
+      "A change in how a medication works caused by food, beverages, or dietary supplements. Common examples include calcium in dairy products reducing antibiotic absorption, grapefruit juice inhibiting CYP3A4 enzymes, and vitamin K in leafy greens opposing warfarin's blood-thinning effect. Timing medications around meals can often prevent these interactions.",
+  },
+  {
     term: "Drug-Drug Interaction",
     definition:
       "A change in the way a medication works when it is taken with another medication. One drug may increase or decrease the effect of the other, or the combination may cause new side effects that neither drug causes alone. This is the core concept behind everything ClearRx checks for.",
@@ -107,6 +117,16 @@ const TERMS: GlossaryTerm[] = [
     term: "Interaction Severity",
     definition:
       "A rating that describes how dangerous a drug interaction is likely to be. ClearRx uses three levels: Serious (potentially life-threatening, generally avoid the combination), Moderate (may require dose changes or monitoring), and Minor (unlikely to cause significant harm for most people). Severity ratings help you prioritize which interactions to discuss with your healthcare provider first.",
+  },
+  {
+    term: "NSAID (Nonsteroidal Anti-Inflammatory Drug)",
+    definition:
+      "A class of medications that reduce pain, inflammation, and fever by blocking enzymes (COX-1 and COX-2) that produce prostaglandins. Common NSAIDs include ibuprofen, naproxen, and aspirin. NSAIDs carry risks of GI bleeding and kidney damage, especially when combined with blood thinners, ACE inhibitors, or other NSAIDs.",
+  },
+  {
+    term: "Over-the-Counter (OTC)",
+    definition:
+      "Medications available without a prescription. Many OTC drugs — including NSAIDs, antacids, antihistamines, and decongestants — can interact with prescription medications. Patients often forget to mention OTC drugs to their doctor or pharmacist, which is why ClearRx includes them in its interaction database.",
   },
   {
     term: "Mechanism-Based Inhibition",
