@@ -14,6 +14,7 @@ export default function Nav() {
       </Link>
       <nav className="flex items-center gap-4 text-sm font-sans">
         <Link href="/learn" className="opacity-60 hover:opacity-100 transition-opacity">Learn</Link>
+        <Link href="/faq" className="opacity-60 hover:opacity-100 transition-opacity">FAQ</Link>
         <Link href="/about" className="opacity-60 hover:opacity-100 transition-opacity">About</Link>
         <button
           onClick={toggle}

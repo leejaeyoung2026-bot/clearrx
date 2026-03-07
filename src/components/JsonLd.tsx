@@ -13,6 +13,7 @@ export default function JsonLd() {
       "@type": "Person",
       name: "Jay",
       jobTitle: "Licensed Pharmacist",
+      url: "https://clearrx.vibed-lab.com/about",
     },
   };
 
@@ -27,9 +28,45 @@ export default function JsonLd() {
       "@type": "Person",
       name: "Jay",
       jobTitle: "Licensed Pharmacist",
+      url: "https://clearrx.vibed-lab.com/about",
     },
     lastReviewed: "2026-03-07",
     audience: { "@type": "PatientsAudience" },
+    specialty: {
+      "@type": "MedicalSpecialty",
+      name: "Pharmacy",
+    },
+  };
+
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Vibed Lab",
+    url: "https://vibed-lab.com",
+    sameAs: [
+      "https://clearrx.vibed-lab.com",
+      "https://backtest.vibed-lab.com",
+      "https://cycle.vibed-lab.com",
+    ],
+  };
+
+  const breadcrumbList = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Vibed Lab",
+        item: "https://vibed-lab.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "ClearRx",
+        item: "https://clearrx.vibed-lab.com",
+      },
+    ],
   };
 
   return (
@@ -41,6 +78,14 @@ export default function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPage) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbList) }}
       />
     </>
   );
