@@ -92,6 +92,16 @@ const FAQS = [
     answer:
       "Currently, ClearRx is available in English only. Drug names, interaction descriptions, and clinical explanations are all provided in English. We are exploring the possibility of adding additional languages in the future, but accuracy and pharmacist review must come first.",
   },
+  {
+    question: "What is polypharmacy and why is it dangerous?",
+    answer:
+      "Polypharmacy refers to taking multiple medications simultaneously, typically defined as five or more. It is especially common in older adults managing multiple chronic conditions. The danger is that each additional drug adds more potential interaction points. With five medications, there are 10 possible drug pairs to check; with ten medications, there are 45. Elderly patients also process drugs more slowly due to age-related kidney and liver changes, causing drugs to accumulate to higher levels. Our guide on polypharmacy in the elderly covers the most dangerous combinations and practical management strategies.",
+  },
+  {
+    question: "How does my kidney function affect drug interactions?",
+    answer:
+      "Many medications are eliminated from the body through the kidneys. When kidney function declines — as it naturally does with age, or from diabetes or high blood pressure — drugs that rely on renal clearance can accumulate to toxic levels. This can turn an otherwise safe dose into an overdose. Medications like metformin, gabapentin, certain antibiotics, and direct oral anticoagulants all require dose adjustments in kidney disease. ClearRx flags interactions that become more dangerous with renal impairment.",
+  },
 ];
 
 const jsonLd = {
