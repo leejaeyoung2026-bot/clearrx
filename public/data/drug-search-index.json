@@ -1,1196 +1,581 @@
 [
   {
     "id": "acetaminophen",
-    "genericName": "acetaminophen",
-    "brandNames": [
+    "name": "acetaminophen",
+    "aliases": [
       "Tylenol",
       "Panadol"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "acetaminophen",
-      "tylenol",
-      "panadol"
     ]
   },
   {
     "id": "alprazolam",
-    "genericName": "alprazolam",
-    "brandNames": [
+    "name": "alprazolam",
+    "aliases": [
       "Xanax"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "alprazolam",
-      "xanax"
     ]
   },
   {
     "id": "amiodarone",
-    "genericName": "amiodarone",
-    "brandNames": [
+    "name": "amiodarone",
+    "aliases": [
       "Cordarone",
       "Pacerone"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "amiodarone",
-      "cordarone",
-      "pacerone"
     ]
   },
   {
     "id": "amlodipine",
-    "genericName": "amlodipine",
-    "brandNames": [
+    "name": "amlodipine",
+    "aliases": [
       "Norvasc"
-    ],
-    "categories": [
-      "antihypertensive"
-    ],
-    "tokens": [
-      "amlodipine",
-      "norvasc"
     ]
   },
   {
     "id": "amoxicillin",
-    "genericName": "amoxicillin",
-    "brandNames": [
+    "name": "amoxicillin",
+    "aliases": [
       "Amoxil",
       "Trimox"
-    ],
-    "categories": [
-      "antibiotic"
-    ],
-    "tokens": [
-      "amoxicillin",
-      "amoxil",
-      "trimox"
     ]
   },
   {
     "id": "apixaban",
-    "genericName": "apixaban",
-    "brandNames": [
+    "name": "apixaban",
+    "aliases": [
       "Eliquis"
-    ],
-    "categories": [
-      "anticoagulant"
-    ],
-    "tokens": [
-      "apixaban",
-      "eliquis"
     ]
   },
   {
     "id": "aspirin",
-    "genericName": "aspirin",
-    "brandNames": [
+    "name": "aspirin",
+    "aliases": [
       "Bayer",
       "Ecotrin"
-    ],
-    "categories": [
-      "antiplatelet",
-      "nsaid"
-    ],
-    "tokens": [
-      "aspirin",
-      "bayer",
-      "ecotrin"
     ]
   },
   {
     "id": "atorvastatin",
-    "genericName": "atorvastatin",
-    "brandNames": [
+    "name": "atorvastatin",
+    "aliases": [
       "Lipitor"
-    ],
-    "categories": [
-      "statin",
-      "antilipid"
-    ],
-    "tokens": [
-      "atorvastatin",
-      "lipitor"
     ]
   },
   {
     "id": "azithromycin",
-    "genericName": "azithromycin",
-    "brandNames": [
+    "name": "azithromycin",
+    "aliases": [
       "Zithromax",
       "Z-Pack"
-    ],
-    "categories": [
-      "antibiotic"
-    ],
-    "tokens": [
-      "azithromycin",
-      "zithromax",
-      "z-pack",
-      "pack"
     ]
   },
   {
     "id": "bupropion",
-    "genericName": "bupropion",
-    "brandNames": [
+    "name": "bupropion",
+    "aliases": [
       "Wellbutrin",
       "Zyban"
-    ],
-    "categories": [
-      "antidepressant"
-    ],
-    "tokens": [
-      "bupropion",
-      "wellbutrin",
-      "zyban"
     ]
   },
   {
     "id": "calcium",
-    "genericName": "calcium",
-    "brandNames": [
+    "name": "calcium",
+    "aliases": [
       "Caltrate",
       "Tums",
       "Os-Cal"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "calcium",
-      "caltrate",
-      "tums",
-      "os-cal",
-      "os",
-      "cal"
     ]
   },
   {
     "id": "carbamazepine",
-    "genericName": "carbamazepine",
-    "brandNames": [
+    "name": "carbamazepine",
+    "aliases": [
       "Tegretol",
       "Carbatrol"
-    ],
-    "categories": [
-      "antiseizure"
-    ],
-    "tokens": [
-      "carbamazepine",
-      "tegretol",
-      "carbatrol"
     ]
   },
   {
     "id": "ciprofloxacin",
-    "genericName": "ciprofloxacin",
-    "brandNames": [
+    "name": "ciprofloxacin",
+    "aliases": [
       "Cipro"
-    ],
-    "categories": [
-      "antibiotic"
-    ],
-    "tokens": [
-      "ciprofloxacin",
-      "cipro"
     ]
   },
   {
     "id": "clarithromycin",
-    "genericName": "clarithromycin",
-    "brandNames": [
+    "name": "clarithromycin",
+    "aliases": [
       "Biaxin"
-    ],
-    "categories": [
-      "antibiotic"
-    ],
-    "tokens": [
-      "clarithromycin",
-      "biaxin"
     ]
   },
   {
     "id": "clopidogrel",
-    "genericName": "clopidogrel",
-    "brandNames": [
+    "name": "clopidogrel",
+    "aliases": [
       "Plavix"
-    ],
-    "categories": [
-      "antiplatelet"
-    ],
-    "tokens": [
-      "clopidogrel",
-      "plavix"
     ]
   },
   {
     "id": "coenzyme-q10",
-    "genericName": "coenzyme-q10",
-    "brandNames": [
+    "name": "coenzyme-q10",
+    "aliases": [
       "CoQ10",
       "Ubiquinol"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "coenzyme-q10",
-      "coenzyme",
-      "q10",
-      "coq10",
-      "ubiquinol"
     ]
   },
   {
     "id": "cyclobenzaprine",
-    "genericName": "cyclobenzaprine",
-    "brandNames": [
+    "name": "cyclobenzaprine",
+    "aliases": [
       "Flexeril"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "cyclobenzaprine",
-      "flexeril"
     ]
   },
   {
     "id": "cyclosporine",
-    "genericName": "cyclosporine",
-    "brandNames": [
+    "name": "cyclosporine",
+    "aliases": [
       "Sandimmune",
       "Neoral",
       "Gengraf"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "cyclosporine",
-      "sandimmune",
-      "neoral",
-      "gengraf"
     ]
   },
   {
     "id": "dabigatran",
-    "genericName": "dabigatran",
-    "brandNames": [
+    "name": "dabigatran",
+    "aliases": [
       "Pradaxa"
-    ],
-    "categories": [
-      "anticoagulant"
-    ],
-    "tokens": [
-      "dabigatran",
-      "pradaxa"
     ]
   },
   {
     "id": "diazepam",
-    "genericName": "diazepam",
-    "brandNames": [
+    "name": "diazepam",
+    "aliases": [
       "Valium"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "diazepam",
-      "valium"
     ]
   },
   {
     "id": "digoxin",
-    "genericName": "digoxin",
-    "brandNames": [
+    "name": "digoxin",
+    "aliases": [
       "Lanoxin"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "digoxin",
-      "lanoxin"
     ]
   },
   {
     "id": "diphenhydramine",
-    "genericName": "diphenhydramine",
-    "brandNames": [
+    "name": "diphenhydramine",
+    "aliases": [
       "Benadryl"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "diphenhydramine",
-      "benadryl"
     ]
   },
   {
     "id": "doxycycline",
-    "genericName": "doxycycline",
-    "brandNames": [
+    "name": "doxycycline",
+    "aliases": [
       "Vibramycin",
       "Doryx"
-    ],
-    "categories": [
-      "antibiotic"
-    ],
-    "tokens": [
-      "doxycycline",
-      "vibramycin",
-      "doryx"
     ]
   },
   {
     "id": "duloxetine",
-    "genericName": "duloxetine",
-    "brandNames": [
+    "name": "duloxetine",
+    "aliases": [
       "Cymbalta"
-    ],
-    "categories": [
-      "antidepressant"
-    ],
-    "tokens": [
-      "duloxetine",
-      "cymbalta"
     ]
   },
   {
     "id": "echinacea",
-    "genericName": "echinacea",
-    "brandNames": [
+    "name": "echinacea",
+    "aliases": [
       "Echinacea purpurea"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "echinacea",
-      "echinacea purpurea",
-      "purpurea"
     ]
   },
   {
     "id": "empagliflozin",
-    "genericName": "empagliflozin",
-    "brandNames": [
+    "name": "empagliflozin",
+    "aliases": [
       "Jardiance"
-    ],
-    "categories": [
-      "antidiabetic"
-    ],
-    "tokens": [
-      "empagliflozin",
-      "jardiance"
     ]
   },
   {
     "id": "erythromycin",
-    "genericName": "erythromycin",
-    "brandNames": [
+    "name": "erythromycin",
+    "aliases": [
       "E-Mycin",
       "Erythrocin"
-    ],
-    "categories": [
-      "antibiotic"
-    ],
-    "tokens": [
-      "erythromycin",
-      "e-mycin",
-      "erythrocin",
-      "mycin"
     ]
   },
   {
     "id": "escitalopram",
-    "genericName": "escitalopram",
-    "brandNames": [
+    "name": "escitalopram",
+    "aliases": [
       "Lexapro"
-    ],
-    "categories": [
-      "antidepressant"
-    ],
-    "tokens": [
-      "escitalopram",
-      "lexapro"
     ]
   },
   {
     "id": "fish-oil",
-    "genericName": "fish oil (omega-3 fatty acids)",
-    "brandNames": [
+    "name": "fish oil (omega-3 fatty acids)",
+    "aliases": [
       "Lovaza",
       "Vascepa"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "fish oil (omega-3 fatty acids)",
-      "fish",
-      "oil",
-      "(omega",
-      "fatty",
-      "acids)",
-      "lovaza",
-      "vascepa"
     ]
   },
   {
     "id": "fluconazole",
-    "genericName": "fluconazole",
-    "brandNames": [
+    "name": "fluconazole",
+    "aliases": [
       "Diflucan"
-    ],
-    "categories": [
-      "antifungal"
-    ],
-    "tokens": [
-      "fluconazole",
-      "diflucan"
     ]
   },
   {
     "id": "fluoxetine",
-    "genericName": "fluoxetine",
-    "brandNames": [
+    "name": "fluoxetine",
+    "aliases": [
       "Prozac",
       "Sarafem"
-    ],
-    "categories": [
-      "antidepressant"
-    ],
-    "tokens": [
-      "fluoxetine",
-      "prozac",
-      "sarafem"
     ]
   },
   {
     "id": "folic-acid",
-    "genericName": "folic-acid",
-    "brandNames": [
+    "name": "folic-acid",
+    "aliases": [
       "Folvite"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "folic-acid",
-      "folic",
-      "acid",
-      "folvite"
     ]
   },
   {
     "id": "furosemide",
-    "genericName": "furosemide",
-    "brandNames": [
+    "name": "furosemide",
+    "aliases": [
       "Lasix"
-    ],
-    "categories": [
-      "antihypertensive"
-    ],
-    "tokens": [
-      "furosemide",
-      "lasix"
     ]
   },
   {
     "id": "gabapentin",
-    "genericName": "gabapentin",
-    "brandNames": [
+    "name": "gabapentin",
+    "aliases": [
       "Neurontin",
       "Gralise"
-    ],
-    "categories": [
-      "antiseizure"
-    ],
-    "tokens": [
-      "gabapentin",
-      "neurontin",
-      "gralise"
     ]
   },
   {
     "id": "garlic",
-    "genericName": "garlic",
-    "brandNames": [
+    "name": "garlic",
+    "aliases": [
       "Garlic supplement"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "garlic",
-      "garlic supplement",
-      "supplement"
     ]
   },
   {
     "id": "ginkgo",
-    "genericName": "ginkgo",
-    "brandNames": [
+    "name": "ginkgo",
+    "aliases": [
       "Ginkgo Biloba"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "ginkgo",
-      "ginkgo biloba",
-      "biloba"
     ]
   },
   {
     "id": "glipizide",
-    "genericName": "glipizide",
-    "brandNames": [
+    "name": "glipizide",
+    "aliases": [
       "Glucotrol"
-    ],
-    "categories": [
-      "antidiabetic"
-    ],
-    "tokens": [
-      "glipizide",
-      "glucotrol"
     ]
   },
   {
     "id": "haloperidol",
-    "genericName": "haloperidol",
-    "brandNames": [
+    "name": "haloperidol",
+    "aliases": [
       "Haldol"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "haloperidol",
-      "haldol"
     ]
   },
   {
     "id": "hydrochlorothiazide",
-    "genericName": "hydrochlorothiazide",
-    "brandNames": [
+    "name": "hydrochlorothiazide",
+    "aliases": [
       "Microzide",
       "HydroDIURIL"
-    ],
-    "categories": [
-      "antihypertensive"
-    ],
-    "tokens": [
-      "hydrochlorothiazide",
-      "microzide",
-      "hydrodiuril"
     ]
   },
   {
     "id": "hydrocodone",
-    "genericName": "hydrocodone",
-    "brandNames": [
+    "name": "hydrocodone",
+    "aliases": [
       "Vicodin",
       "Norco"
-    ],
-    "categories": [
-      "opioid"
-    ],
-    "tokens": [
-      "hydrocodone",
-      "vicodin",
-      "norco"
     ]
   },
   {
     "id": "ibuprofen",
-    "genericName": "ibuprofen",
-    "brandNames": [
+    "name": "ibuprofen",
+    "aliases": [
       "Advil",
       "Motrin"
-    ],
-    "categories": [
-      "nsaid"
-    ],
-    "tokens": [
-      "ibuprofen",
-      "advil",
-      "motrin"
     ]
   },
   {
     "id": "insulin",
-    "genericName": "insulin",
-    "brandNames": [
+    "name": "insulin",
+    "aliases": [
       "Humalog",
       "Novolog",
       "Lantus"
-    ],
-    "categories": [
-      "antidiabetic"
-    ],
-    "tokens": [
-      "insulin",
-      "humalog",
-      "novolog",
-      "lantus"
     ]
   },
   {
     "id": "iron",
-    "genericName": "iron (ferrous sulfate)",
-    "brandNames": [
+    "name": "iron (ferrous sulfate)",
+    "aliases": [
       "Feosol",
       "Slow Fe"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "iron (ferrous sulfate)",
-      "iron",
-      "(ferrous",
-      "sulfate)",
-      "feosol",
-      "slow fe",
-      "slow",
-      "fe"
     ]
   },
   {
     "id": "itraconazole",
-    "genericName": "itraconazole",
-    "brandNames": [
+    "name": "itraconazole",
+    "aliases": [
       "Sporanox",
       "Onmel"
-    ],
-    "categories": [
-      "antifungal"
-    ],
-    "tokens": [
-      "itraconazole",
-      "sporanox",
-      "onmel"
     ]
   },
   {
     "id": "ketoconazole",
-    "genericName": "ketoconazole",
-    "brandNames": [
+    "name": "ketoconazole",
+    "aliases": [
       "Nizoral"
-    ],
-    "categories": [
-      "antifungal"
-    ],
-    "tokens": [
-      "ketoconazole",
-      "nizoral"
     ]
   },
   {
     "id": "levothyroxine",
-    "genericName": "levothyroxine",
-    "brandNames": [
+    "name": "levothyroxine",
+    "aliases": [
       "Synthroid",
       "Levoxyl",
       "Tirosint"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "levothyroxine",
-      "synthroid",
-      "levoxyl",
-      "tirosint"
     ]
   },
   {
     "id": "lisinopril",
-    "genericName": "lisinopril",
-    "brandNames": [
+    "name": "lisinopril",
+    "aliases": [
       "Prinivil",
       "Zestril"
-    ],
-    "categories": [
-      "antihypertensive"
-    ],
-    "tokens": [
-      "lisinopril",
-      "prinivil",
-      "zestril"
     ]
   },
   {
     "id": "losartan",
-    "genericName": "losartan",
-    "brandNames": [
+    "name": "losartan",
+    "aliases": [
       "Cozaar"
-    ],
-    "categories": [
-      "antihypertensive"
-    ],
-    "tokens": [
-      "losartan",
-      "cozaar"
     ]
   },
   {
     "id": "magnesium",
-    "genericName": "magnesium",
-    "brandNames": [
+    "name": "magnesium",
+    "aliases": [
       "Mag-Ox",
       "Slow-Mag"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "magnesium",
-      "mag-ox",
-      "slow-mag",
-      "mag",
-      "ox",
-      "slow"
     ]
   },
   {
     "id": "melatonin",
-    "genericName": "melatonin",
-    "brandNames": [
+    "name": "melatonin",
+    "aliases": [
       "Melatonin"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "melatonin"
     ]
   },
   {
     "id": "metformin",
-    "genericName": "metformin",
-    "brandNames": [
+    "name": "metformin",
+    "aliases": [
       "Glucophage",
       "Glumetza"
-    ],
-    "categories": [
-      "antidiabetic"
-    ],
-    "tokens": [
-      "metformin",
-      "glucophage",
-      "glumetza"
     ]
   },
   {
     "id": "metoprolol",
-    "genericName": "metoprolol",
-    "brandNames": [
+    "name": "metoprolol",
+    "aliases": [
       "Lopressor",
       "Toprol-XL"
-    ],
-    "categories": [
-      "antihypertensive"
-    ],
-    "tokens": [
-      "metoprolol",
-      "lopressor",
-      "toprol-xl",
-      "toprol",
-      "xl"
     ]
   },
   {
     "id": "metronidazole",
-    "genericName": "metronidazole",
-    "brandNames": [
+    "name": "metronidazole",
+    "aliases": [
       "Flagyl"
-    ],
-    "categories": [
-      "antibiotic"
-    ],
-    "tokens": [
-      "metronidazole",
-      "flagyl"
     ]
   },
   {
     "id": "mirtazapine",
-    "genericName": "mirtazapine",
-    "brandNames": [
+    "name": "mirtazapine",
+    "aliases": [
       "Remeron"
-    ],
-    "categories": [
-      "antidepressant"
-    ],
-    "tokens": [
-      "mirtazapine",
-      "remeron"
     ]
   },
   {
     "id": "naproxen",
-    "genericName": "naproxen",
-    "brandNames": [
+    "name": "naproxen",
+    "aliases": [
       "Aleve",
       "Naprosyn"
-    ],
-    "categories": [
-      "nsaid"
-    ],
-    "tokens": [
-      "naproxen",
-      "aleve",
-      "naprosyn"
     ]
   },
   {
     "id": "nitroglycerin",
-    "genericName": "nitroglycerin",
-    "brandNames": [
+    "name": "nitroglycerin",
+    "aliases": [
       "Nitrostat",
       "Nitro-Dur"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "nitroglycerin",
-      "nitrostat",
-      "nitro-dur",
-      "nitro",
-      "dur"
     ]
   },
   {
     "id": "omeprazole",
-    "genericName": "omeprazole",
-    "brandNames": [
+    "name": "omeprazole",
+    "aliases": [
       "Prilosec"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "omeprazole",
-      "prilosec"
     ]
   },
   {
     "id": "oxycodone",
-    "genericName": "oxycodone",
-    "brandNames": [
+    "name": "oxycodone",
+    "aliases": [
       "OxyContin",
       "Percocet"
-    ],
-    "categories": [
-      "opioid"
-    ],
-    "tokens": [
-      "oxycodone",
-      "oxycontin",
-      "percocet"
     ]
   },
   {
     "id": "paroxetine",
-    "genericName": "paroxetine",
-    "brandNames": [
+    "name": "paroxetine",
+    "aliases": [
       "Paxil"
-    ],
-    "categories": [
-      "antidepressant"
-    ],
-    "tokens": [
-      "paroxetine",
-      "paxil"
     ]
   },
   {
     "id": "phenytoin",
-    "genericName": "phenytoin",
-    "brandNames": [
+    "name": "phenytoin",
+    "aliases": [
       "Dilantin",
       "Phenytek"
-    ],
-    "categories": [
-      "antiseizure"
-    ],
-    "tokens": [
-      "phenytoin",
-      "dilantin",
-      "phenytek"
     ]
   },
   {
     "id": "prednisone",
-    "genericName": "prednisone",
-    "brandNames": [
+    "name": "prednisone",
+    "aliases": [
       "Deltasone",
       "Rayos"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "prednisone",
-      "deltasone",
-      "rayos"
     ]
   },
   {
     "id": "quetiapine",
-    "genericName": "quetiapine",
-    "brandNames": [
+    "name": "quetiapine",
+    "aliases": [
       "Seroquel"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "quetiapine",
-      "seroquel"
     ]
   },
   {
     "id": "rifampin",
-    "genericName": "rifampin",
-    "brandNames": [
+    "name": "rifampin",
+    "aliases": [
       "Rifadin",
       "Rimactane"
-    ],
-    "categories": [
-      "antibiotic"
-    ],
-    "tokens": [
-      "rifampin",
-      "rifadin",
-      "rimactane"
     ]
   },
   {
     "id": "rivaroxaban",
-    "genericName": "rivaroxaban",
-    "brandNames": [
+    "name": "rivaroxaban",
+    "aliases": [
       "Xarelto"
-    ],
-    "categories": [
-      "anticoagulant"
-    ],
-    "tokens": [
-      "rivaroxaban",
-      "xarelto"
     ]
   },
   {
     "id": "sertraline",
-    "genericName": "sertraline",
-    "brandNames": [
+    "name": "sertraline",
+    "aliases": [
       "Zoloft"
-    ],
-    "categories": [
-      "antidepressant"
-    ],
-    "tokens": [
-      "sertraline",
-      "zoloft"
     ]
   },
   {
     "id": "sildenafil",
-    "genericName": "sildenafil",
-    "brandNames": [
+    "name": "sildenafil",
+    "aliases": [
       "Viagra",
       "Revatio"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "sildenafil",
-      "viagra",
-      "revatio"
     ]
   },
   {
     "id": "simvastatin",
-    "genericName": "simvastatin",
-    "brandNames": [
+    "name": "simvastatin",
+    "aliases": [
       "Zocor"
-    ],
-    "categories": [
-      "statin",
-      "antilipid"
-    ],
-    "tokens": [
-      "simvastatin",
-      "zocor"
     ]
   },
   {
     "id": "sitagliptin",
-    "genericName": "sitagliptin",
-    "brandNames": [
+    "name": "sitagliptin",
+    "aliases": [
       "Januvia"
-    ],
-    "categories": [
-      "antidiabetic"
-    ],
-    "tokens": [
-      "sitagliptin",
-      "januvia"
     ]
   },
   {
     "id": "spironolactone",
-    "genericName": "spironolactone",
-    "brandNames": [
+    "name": "spironolactone",
+    "aliases": [
       "Aldactone",
       "CaroSpir"
-    ],
-    "categories": [
-      "antihypertensive"
-    ],
-    "tokens": [
-      "spironolactone",
-      "aldactone",
-      "carospir"
     ]
   },
   {
     "id": "st-johns-wort",
-    "genericName": "St. John's Wort",
-    "brandNames": [],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "st. john's wort",
-      "st.",
-      "john's",
-      "wort"
-    ]
+    "name": "St. John's Wort",
+    "aliases": []
   },
   {
     "id": "tacrolimus",
-    "genericName": "tacrolimus",
-    "brandNames": [
+    "name": "tacrolimus",
+    "aliases": [
       "Prograf",
       "Astagraf"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "tacrolimus",
-      "prograf",
-      "astagraf"
     ]
   },
   {
     "id": "tadalafil",
-    "genericName": "tadalafil",
-    "brandNames": [
+    "name": "tadalafil",
+    "aliases": [
       "Cialis"
-    ],
-    "categories": [
-      "other"
-    ],
-    "tokens": [
-      "tadalafil",
-      "cialis"
     ]
   },
   {
     "id": "tramadol",
-    "genericName": "tramadol",
-    "brandNames": [
+    "name": "tramadol",
+    "aliases": [
       "Ultram",
       "ConZip"
-    ],
-    "categories": [
-      "opioid"
-    ],
-    "tokens": [
-      "tramadol",
-      "ultram",
-      "conzip"
     ]
   },
   {
     "id": "valproate",
-    "genericName": "valproate",
-    "brandNames": [
+    "name": "valproate",
+    "aliases": [
       "Depakote",
       "Depakene"
-    ],
-    "categories": [
-      "antiseizure"
-    ],
-    "tokens": [
-      "valproate",
-      "depakote",
-      "depakene"
     ]
   },
   {
     "id": "venlafaxine",
-    "genericName": "venlafaxine",
-    "brandNames": [
+    "name": "venlafaxine",
+    "aliases": [
       "Effexor"
-    ],
-    "categories": [
-      "antidepressant"
-    ],
-    "tokens": [
-      "venlafaxine",
-      "effexor"
     ]
   },
   {
     "id": "vitamin-d",
-    "genericName": "vitamin D (cholecalciferol)",
-    "brandNames": [
+    "name": "vitamin D (cholecalciferol)",
+    "aliases": [
       "Drisdol"
-    ],
-    "categories": [
-      "supplement"
-    ],
-    "tokens": [
-      "vitamin d (cholecalciferol)",
-      "vitamin",
-      "(cholecalciferol)",
-      "drisdol"
     ]
   },
   {
     "id": "warfarin",
-    "genericName": "warfarin",
-    "brandNames": [
+    "name": "warfarin",
+    "aliases": [
       "Coumadin",
       "Jantoven"
-    ],
-    "categories": [
-      "anticoagulant"
-    ],
-    "tokens": [
-      "warfarin",
-      "coumadin",
-      "jantoven"
     ]
   }
 ]

@@ -6,19 +6,12 @@ const path = require('path');
 const root = path.join(__dirname, '..');
 const db = JSON.parse(fs.readFileSync(path.join(root, 'public/data/drug-db.json'), 'utf8'));
 
-// Build search index: each drug gets a searchable entry with all names
+// Build search index: matches SearchEntry interface in search-engine.ts
+// { id, name, aliases } — name = genericName, aliases = all brand names
 const index = db.drugs.map(drug => ({
   id: drug.id,
-  genericName: drug.genericName,
-  brandNames: drug.brandNames,
-  categories: drug.categories,
-  // Searchable tokens: generic name words + all brand name words
-  tokens: [
-    drug.genericName,
-    ...drug.genericName.split(/[\s-]+/),
-    ...drug.brandNames,
-    ...drug.brandNames.flatMap(b => b.split(/[\s-]+/))
-  ].map(t => t.toLowerCase()).filter((t, i, arr) => t.length > 1 && arr.indexOf(t) === i)
+  name: drug.genericName,
+  aliases: drug.brandNames,
 }));
 
 fs.writeFileSync(
