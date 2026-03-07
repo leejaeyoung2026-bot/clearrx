@@ -33,6 +33,21 @@ const ARTICLES = [
     title: "Blood Pressure Medications You Should Never Combine",
     summary: "Which antihypertensive combinations cause dangerous additive effects, and safer alternatives.",
   },
+  {
+    slug: "common-drug-pairs",
+    title: "10 Most Commonly Checked Drug Pairs — What You Need to Know",
+    summary: "The 10 most frequently searched drug interaction pairs explained with severity ratings and practical advice.",
+  },
+  {
+    slug: "serotonin-syndrome",
+    title: "Serotonin Syndrome: The Hidden Risk of Combining Antidepressants",
+    summary: "Which drug combinations trigger serotonin syndrome, how to recognize the symptoms, and why it is often missed.",
+  },
+  {
+    slug: "statin-interactions",
+    title: "Statin Drug Interactions: What Every Cholesterol Patient Should Know",
+    summary: "How CYP3A4 inhibitors affect statin levels, which statins are safest, and when rhabdomyolysis risk spikes.",
+  },
 ];
 
 export default function LearnPage() {

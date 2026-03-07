@@ -197,6 +197,33 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trust Badges */}
+      <section className="px-4 py-10">
+        <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+          {[
+            { value: "35+", label: "Drugs in database" },
+            { value: "60+", label: "Interactions mapped" },
+            { value: "RPh", label: "Pharmacist reviewed" },
+            { value: "0", label: "Data collected" },
+          ].map((badge) => (
+            <div key={badge.label}>
+              <p
+                className="text-2xl font-mono font-bold"
+                style={{ color: "var(--rx-accent)" }}
+              >
+                {badge.value}
+              </p>
+              <p
+                className="text-xs font-sans mt-1"
+                style={{ color: "var(--ink-muted)" }}
+              >
+                {badge.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Educational static content (AdSense-critical: 700-900 words) */}
       <article className="px-4 py-16 max-w-2xl mx-auto space-y-10">
         <section>

@@ -16,6 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/learn/grapefruit-drug-interactions`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/learn/warfarin-ibuprofen`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/learn/blood-pressure-medication-combinations`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/learn/common-drug-pairs`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/learn/serotonin-syndrome`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/learn/statin-interactions`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/glossary`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
   ];
 }
