@@ -36,26 +36,17 @@ const SEVERITY_STYLES: Record<
     width: number;
     lineStyle: string;
     lineDashPattern?: number[];
-    shadowBlur?: number;
-    shadowColor?: string;
-    shadowOpacity?: number;
   }
 > = {
   contraindicated: {
     lineColor: "#FF3B3B",
     width: 4,
     lineStyle: "solid",
-    shadowBlur: 12,
-    shadowColor: "#FF3B3B",
-    shadowOpacity: 0.7,
   },
   serious: {
     lineColor: "#FF7043",
     width: 3,
     lineStyle: "solid",
-    shadowBlur: 6,
-    shadowColor: "#FF7043",
-    shadowOpacity: 0.4,
   },
   moderate: {
     lineColor: "#FFB300",
@@ -140,11 +131,6 @@ export default function InteractionMap({ elements, onEdgeClick, height = 400 }: 
               "line-color": SEVERITY_STYLES.contraindicated.lineColor,
               width: SEVERITY_STYLES.contraindicated.width,
               "line-style": SEVERITY_STYLES.contraindicated.lineStyle,
-              "shadow-blur": SEVERITY_STYLES.contraindicated.shadowBlur,
-              "shadow-color": SEVERITY_STYLES.contraindicated.shadowColor,
-              "shadow-opacity": SEVERITY_STYLES.contraindicated.shadowOpacity,
-              "shadow-offset-x": 0,
-              "shadow-offset-y": 0,
             } as any,
           },
           {
@@ -153,11 +139,6 @@ export default function InteractionMap({ elements, onEdgeClick, height = 400 }: 
               "line-color": SEVERITY_STYLES.serious.lineColor,
               width: SEVERITY_STYLES.serious.width,
               "line-style": SEVERITY_STYLES.serious.lineStyle,
-              "shadow-blur": SEVERITY_STYLES.serious.shadowBlur,
-              "shadow-color": SEVERITY_STYLES.serious.shadowColor,
-              "shadow-opacity": SEVERITY_STYLES.serious.shadowOpacity,
-              "shadow-offset-x": 0,
-              "shadow-offset-y": 0,
             } as any,
           },
           {
@@ -268,6 +249,10 @@ export default function InteractionMap({ elements, onEdgeClick, height = 400 }: 
         evt.target.addClass("cx-selected");
         const pairKey = evt.target.data("pairKey");
         onEdgeClickRef.current?.(pairKey);
+      });
+
+      cy.on("layoutstop", () => {
+        cy!.fit(undefined, 40);
       });
 
       cyRef.current = cy;

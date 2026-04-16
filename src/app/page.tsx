@@ -18,6 +18,8 @@ export default function Home() {
     status,
     selectedInteraction,
     setSelectedInteraction,
+    unresolvedIds,
+    dismissUnresolved,
     addDrug,
     removeDrug,
     checkInteractions,
@@ -74,6 +76,33 @@ export default function Home() {
 
       {/* Tool */}
       <section className="px-4 pb-16 max-w-3xl mx-auto">
+        {unresolvedIds.length > 0 && (
+          <div
+            className="mb-4 p-3 border text-sm font-sans flex items-start gap-3"
+            style={{
+              borderColor: "var(--severity-moderate)",
+              borderStyle: "dashed",
+              color: "var(--ink-muted)",
+            }}
+          >
+            <p className="flex-1 leading-relaxed">
+              <strong style={{ color: "var(--severity-moderate)" }}>
+                Heads up:
+              </strong>{" "}
+              {unresolvedIds.length} drug{unresolvedIds.length !== 1 ? "s" : ""} from the shared link could not be found in our database
+              {unresolvedIds.length <= 3 ? ` (${unresolvedIds.join(", ")})` : ""}.
+              The rest were loaded.
+            </p>
+            <button
+              type="button"
+              onClick={dismissUnresolved}
+              className="text-xs font-mono underline"
+              style={{ color: "var(--ink-muted)" }}
+            >
+              Dismiss
+            </button>
+          </div>
+        )}
         <div className="flex flex-col sm:flex-row gap-3 items-start">
           <div className="flex-1 w-full">
             <DrugSearch

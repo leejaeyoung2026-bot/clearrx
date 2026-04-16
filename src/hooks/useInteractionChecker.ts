@@ -16,6 +16,7 @@ export function useInteractionChecker() {
   const [cytoscapeElements, setCytoscapeElements] = useState<CytoscapeElements>({ nodes: [], edges: [] });
   const [status, setStatus] = useState<CheckerStatus>("idle");
   const [selectedInteraction, setSelectedInteraction] = useState<DrugInteraction | null>(null);
+  const [unresolvedIds, setUnresolvedIds] = useState<string[]>([]);
 
   const addDrug = useCallback((drug: SelectedDrug) => {
     setSelectedDrugs((prev) => {
@@ -69,15 +70,26 @@ export function useInteractionChecker() {
     const ids = drugsParam.split(",").filter(Boolean).slice(0, 15);
     const { drugs } = await getDatabase();
     const drugMap = new Map(drugs.map((d: Drug) => [d.id, d]));
-    const loaded: SelectedDrug[] = ids
-      .map((id) => {
-        const drug = drugMap.get(id);
-        return drug ? { id: drug.id, name: drug.genericName } : null;
-      })
-      .filter(Boolean) as SelectedDrug[];
-    if (loaded.length >= 2) {
+    const loaded: SelectedDrug[] = [];
+    const missing: string[] = [];
+    for (const id of ids) {
+      const drug = drugMap.get(id);
+      if (drug) {
+        loaded.push({ id: drug.id, name: drug.genericName });
+      } else {
+        missing.push(id);
+      }
+    }
+    if (loaded.length > 0) {
       setSelectedDrugs(loaded);
     }
+    if (missing.length > 0) {
+      setUnresolvedIds(missing);
+    }
+  }, []);
+
+  const dismissUnresolved = useCallback(() => {
+    setUnresolvedIds([]);
   }, []);
 
   return {
@@ -87,6 +99,8 @@ export function useInteractionChecker() {
     status,
     selectedInteraction,
     setSelectedInteraction,
+    unresolvedIds,
+    dismissUnresolved,
     addDrug,
     removeDrug,
     checkInteractions,

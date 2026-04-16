@@ -26,14 +26,15 @@ const jsonLd = {
 
 export default function ContactPage() {
   return (
-    <article
-      className="max-w-2xl mx-auto px-4 py-16"
-      style={{ color: "var(--ink)" }}
-    >
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <article
+        className="max-w-2xl mx-auto px-4 py-16"
+        style={{ color: "var(--ink)" }}
+      >
       <h1 className="font-serif text-4xl mb-4">Contact</h1>
       <p
         className="mb-10 leading-relaxed"
@@ -104,6 +105,7 @@ export default function ContactPage() {
         </a>
       </section>
 
-    </article>
+      </article>
+    </>
   );
 }
