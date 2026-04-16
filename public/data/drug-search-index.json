@@ -8,6 +8,40 @@
     ]
   },
   {
+    "id": "acyclovir",
+    "name": "acyclovir",
+    "aliases": [
+      "Zovirax",
+      "Sitavig"
+    ]
+  },
+  {
+    "id": "albuterol",
+    "name": "albuterol",
+    "aliases": [
+      "ProAir HFA",
+      "Ventolin HFA",
+      "Proventil HFA",
+      "ProAir RespiClick"
+    ]
+  },
+  {
+    "id": "alendronate",
+    "name": "alendronate",
+    "aliases": [
+      "Fosamax",
+      "Binosto"
+    ]
+  },
+  {
+    "id": "allopurinol",
+    "name": "allopurinol",
+    "aliases": [
+      "Zyloprim",
+      "Aloprim"
+    ]
+  },
+  {
     "id": "alprazolam",
     "name": "alprazolam",
     "aliases": [
@@ -20,6 +54,13 @@
     "aliases": [
       "Cordarone",
       "Pacerone"
+    ]
+  },
+  {
+    "id": "amitriptyline",
+    "name": "amitriptyline",
+    "aliases": [
+      "Elavil"
     ]
   },
   {
@@ -38,10 +79,28 @@
     ]
   },
   {
+    "id": "amphetamine-salts",
+    "name": "amphetamine/dextroamphetamine",
+    "aliases": [
+      "Adderall",
+      "Adderall XR",
+      "Mydayis"
+    ]
+  },
+  {
     "id": "apixaban",
     "name": "apixaban",
     "aliases": [
       "Eliquis"
+    ]
+  },
+  {
+    "id": "aripiprazole",
+    "name": "aripiprazole",
+    "aliases": [
+      "Abilify",
+      "Abilify Maintena",
+      "Aristada"
     ]
   },
   {
@@ -50,6 +109,20 @@
     "aliases": [
       "Bayer",
       "Ecotrin"
+    ]
+  },
+  {
+    "id": "atenolol",
+    "name": "atenolol",
+    "aliases": [
+      "Tenormin"
+    ]
+  },
+  {
+    "id": "atomoxetine",
+    "name": "atomoxetine",
+    "aliases": [
+      "Strattera"
     ]
   },
   {
@@ -68,11 +141,41 @@
     ]
   },
   {
+    "id": "baclofen",
+    "name": "baclofen",
+    "aliases": [
+      "Lioresal",
+      "Gablofen",
+      "Ozobax"
+    ]
+  },
+  {
+    "id": "benazepril",
+    "name": "benazepril",
+    "aliases": [
+      "Lotensin"
+    ]
+  },
+  {
+    "id": "bisoprolol",
+    "name": "bisoprolol",
+    "aliases": [
+      "Zebeta"
+    ]
+  },
+  {
     "id": "bupropion",
     "name": "bupropion",
     "aliases": [
       "Wellbutrin",
       "Zyban"
+    ]
+  },
+  {
+    "id": "buspirone",
+    "name": "buspirone",
+    "aliases": [
+      "Buspar"
     ]
   },
   {
@@ -85,11 +188,56 @@
     ]
   },
   {
+    "id": "canagliflozin",
+    "name": "canagliflozin",
+    "aliases": [
+      "Invokana"
+    ]
+  },
+  {
+    "id": "candesartan",
+    "name": "candesartan",
+    "aliases": [
+      "Atacand"
+    ]
+  },
+  {
     "id": "carbamazepine",
     "name": "carbamazepine",
     "aliases": [
       "Tegretol",
       "Carbatrol"
+    ]
+  },
+  {
+    "id": "carvedilol",
+    "name": "carvedilol",
+    "aliases": [
+      "Coreg",
+      "Coreg CR"
+    ]
+  },
+  {
+    "id": "ceftriaxone",
+    "name": "ceftriaxone",
+    "aliases": [
+      "Rocephin"
+    ]
+  },
+  {
+    "id": "cephalexin",
+    "name": "cephalexin",
+    "aliases": [
+      "Keflex",
+      "Daxbia"
+    ]
+  },
+  {
+    "id": "cetirizine",
+    "name": "cetirizine",
+    "aliases": [
+      "Zyrtec",
+      "Zyrtec Allergy"
     ]
   },
   {
@@ -107,10 +255,26 @@
     ]
   },
   {
+    "id": "clonazepam",
+    "name": "clonazepam",
+    "aliases": [
+      "Klonopin"
+    ]
+  },
+  {
     "id": "clopidogrel",
     "name": "clopidogrel",
     "aliases": [
       "Plavix"
+    ]
+  },
+  {
+    "id": "clozapine",
+    "name": "clozapine",
+    "aliases": [
+      "Clozaril",
+      "FazaClo",
+      "Versacloz"
     ]
   },
   {
@@ -119,6 +283,15 @@
     "aliases": [
       "CoQ10",
       "Ubiquinol"
+    ]
+  },
+  {
+    "id": "colchicine",
+    "name": "colchicine",
+    "aliases": [
+      "Colcrys",
+      "Mitigare",
+      "Gloperba"
     ]
   },
   {
@@ -145,6 +318,20 @@
     ]
   },
   {
+    "id": "dapagliflozin",
+    "name": "dapagliflozin",
+    "aliases": [
+      "Farxiga"
+    ]
+  },
+  {
+    "id": "desipramine",
+    "name": "desipramine",
+    "aliases": [
+      "Norpramin"
+    ]
+  },
+  {
     "id": "diazepam",
     "name": "diazepam",
     "aliases": [
@@ -159,10 +346,33 @@
     ]
   },
   {
+    "id": "diltiazem",
+    "name": "diltiazem",
+    "aliases": [
+      "Cardizem",
+      "Tiazac",
+      "Cartia XT"
+    ]
+  },
+  {
     "id": "diphenhydramine",
     "name": "diphenhydramine",
     "aliases": [
       "Benadryl"
+    ]
+  },
+  {
+    "id": "dolutegravir",
+    "name": "dolutegravir",
+    "aliases": [
+      "Tivicay"
+    ]
+  },
+  {
+    "id": "donepezil",
+    "name": "donepezil",
+    "aliases": [
+      "Aricept"
     ]
   },
   {
@@ -171,6 +381,13 @@
     "aliases": [
       "Vibramycin",
       "Doryx"
+    ]
+  },
+  {
+    "id": "dronedarone",
+    "name": "dronedarone",
+    "aliases": [
+      "Multaq"
     ]
   },
   {
@@ -188,10 +405,25 @@
     ]
   },
   {
+    "id": "efavirenz",
+    "name": "efavirenz",
+    "aliases": [
+      "Sustiva"
+    ]
+  },
+  {
     "id": "empagliflozin",
     "name": "empagliflozin",
     "aliases": [
       "Jardiance"
+    ]
+  },
+  {
+    "id": "enalapril",
+    "name": "enalapril",
+    "aliases": [
+      "Vasotec",
+      "Epaned"
     ]
   },
   {
@@ -210,11 +442,91 @@
     ]
   },
   {
+    "id": "esomeprazole",
+    "name": "esomeprazole",
+    "aliases": [
+      "Nexium",
+      "Nexium 24HR"
+    ]
+  },
+  {
+    "id": "estradiol",
+    "name": "estradiol",
+    "aliases": [
+      "Estrace",
+      "Climara",
+      "Vivelle-Dot",
+      "Divigel"
+    ]
+  },
+  {
+    "id": "eszopiclone",
+    "name": "eszopiclone",
+    "aliases": [
+      "Lunesta"
+    ]
+  },
+  {
+    "id": "ethinyl-estradiol",
+    "name": "ethinyl estradiol",
+    "aliases": [
+      "Yaz",
+      "Loestrin",
+      "Ortho Tri-Cyclen"
+    ]
+  },
+  {
+    "id": "famotidine",
+    "name": "famotidine",
+    "aliases": [
+      "Pepcid",
+      "Pepcid AC",
+      "Zantac 360"
+    ]
+  },
+  {
+    "id": "febuxostat",
+    "name": "febuxostat",
+    "aliases": [
+      "Uloric"
+    ]
+  },
+  {
+    "id": "felodipine",
+    "name": "felodipine",
+    "aliases": [
+      "Plendil"
+    ]
+  },
+  {
+    "id": "fexofenadine",
+    "name": "fexofenadine",
+    "aliases": [
+      "Allegra",
+      "Mucinex Allergy"
+    ]
+  },
+  {
+    "id": "finasteride",
+    "name": "finasteride",
+    "aliases": [
+      "Propecia",
+      "Proscar"
+    ]
+  },
+  {
     "id": "fish-oil",
     "name": "fish oil (omega-3 fatty acids)",
     "aliases": [
       "Lovaza",
       "Vascepa"
+    ]
+  },
+  {
+    "id": "flecainide",
+    "name": "flecainide",
+    "aliases": [
+      "Tambocor"
     ]
   },
   {
@@ -276,6 +588,14 @@
     ]
   },
   {
+    "id": "glyburide",
+    "name": "glyburide",
+    "aliases": [
+      "Diabeta",
+      "Glynase"
+    ]
+  },
+  {
     "id": "haloperidol",
     "name": "haloperidol",
     "aliases": [
@@ -299,11 +619,26 @@
     ]
   },
   {
+    "id": "hydroxyzine",
+    "name": "hydroxyzine",
+    "aliases": [
+      "Vistaril",
+      "Atarax"
+    ]
+  },
+  {
     "id": "ibuprofen",
     "name": "ibuprofen",
     "aliases": [
       "Advil",
       "Motrin"
+    ]
+  },
+  {
+    "id": "imipramine",
+    "name": "imipramine",
+    "aliases": [
+      "Tofranil"
     ]
   },
   {
@@ -313,6 +648,40 @@
       "Humalog",
       "Novolog",
       "Lantus"
+    ]
+  },
+  {
+    "id": "insulin-aspart",
+    "name": "insulin aspart",
+    "aliases": [
+      "Novolog",
+      "Fiasp"
+    ]
+  },
+  {
+    "id": "insulin-glargine",
+    "name": "insulin glargine",
+    "aliases": [
+      "Lantus",
+      "Basaglar",
+      "Toujeo",
+      "Semglee"
+    ]
+  },
+  {
+    "id": "insulin-lispro",
+    "name": "insulin lispro",
+    "aliases": [
+      "Humalog",
+      "Admelog",
+      "Lyumjev"
+    ]
+  },
+  {
+    "id": "irbesartan",
+    "name": "irbesartan",
+    "aliases": [
+      "Avapro"
     ]
   },
   {
@@ -339,12 +708,81 @@
     ]
   },
   {
+    "id": "labetalol",
+    "name": "labetalol",
+    "aliases": [
+      "Trandate",
+      "Normodyne"
+    ]
+  },
+  {
+    "id": "lamotrigine",
+    "name": "lamotrigine",
+    "aliases": [
+      "Lamictal",
+      "Lamictal XR",
+      "Lamictal ODT"
+    ]
+  },
+  {
+    "id": "lansoprazole",
+    "name": "lansoprazole",
+    "aliases": [
+      "Prevacid",
+      "Prevacid 24HR"
+    ]
+  },
+  {
+    "id": "levetiracetam",
+    "name": "levetiracetam",
+    "aliases": [
+      "Keppra",
+      "Keppra XR",
+      "Spritam",
+      "Elepsia XR"
+    ]
+  },
+  {
+    "id": "levodopa-carbidopa",
+    "name": "levodopa/carbidopa",
+    "aliases": [
+      "Sinemet",
+      "Rytary",
+      "Duopa"
+    ]
+  },
+  {
+    "id": "levonorgestrel",
+    "name": "levonorgestrel",
+    "aliases": [
+      "Plan B One-Step",
+      "Mirena",
+      "Kyleena",
+      "Skyla"
+    ]
+  },
+  {
     "id": "levothyroxine",
     "name": "levothyroxine",
     "aliases": [
       "Synthroid",
       "Levoxyl",
       "Tirosint"
+    ]
+  },
+  {
+    "id": "linagliptin",
+    "name": "linagliptin",
+    "aliases": [
+      "Tradjenta"
+    ]
+  },
+  {
+    "id": "liraglutide",
+    "name": "liraglutide",
+    "aliases": [
+      "Victoza",
+      "Saxenda"
     ]
   },
   {
@@ -356,10 +794,49 @@
     ]
   },
   {
+    "id": "lithium",
+    "name": "lithium carbonate",
+    "aliases": [
+      "Lithobid",
+      "Eskalith"
+    ]
+  },
+  {
+    "id": "loratadine",
+    "name": "loratadine",
+    "aliases": [
+      "Claritin",
+      "Alavert"
+    ]
+  },
+  {
+    "id": "lorazepam",
+    "name": "lorazepam",
+    "aliases": [
+      "Ativan",
+      "Loreev XR"
+    ]
+  },
+  {
     "id": "losartan",
     "name": "losartan",
     "aliases": [
       "Cozaar"
+    ]
+  },
+  {
+    "id": "lovastatin",
+    "name": "lovastatin",
+    "aliases": [
+      "Mevacor",
+      "Altoprev"
+    ]
+  },
+  {
+    "id": "lurasidone",
+    "name": "lurasidone",
+    "aliases": [
+      "Latuda"
     ]
   },
   {
@@ -378,11 +855,54 @@
     ]
   },
   {
+    "id": "memantine",
+    "name": "memantine",
+    "aliases": [
+      "Namenda",
+      "Namenda XR"
+    ]
+  },
+  {
     "id": "metformin",
     "name": "metformin",
     "aliases": [
       "Glucophage",
       "Glumetza"
+    ]
+  },
+  {
+    "id": "methimazole",
+    "name": "methimazole",
+    "aliases": [
+      "Tapazole"
+    ]
+  },
+  {
+    "id": "methotrexate",
+    "name": "methotrexate",
+    "aliases": [
+      "Trexall",
+      "Otrexup",
+      "Rasuvo",
+      "Rheumatrex"
+    ]
+  },
+  {
+    "id": "methylphenidate",
+    "name": "methylphenidate",
+    "aliases": [
+      "Ritalin",
+      "Concerta",
+      "Daytrana",
+      "Quillivant XR"
+    ]
+  },
+  {
+    "id": "metoclopramide",
+    "name": "metoclopramide",
+    "aliases": [
+      "Reglan",
+      "Gimoti"
     ]
   },
   {
@@ -401,10 +921,26 @@
     ]
   },
   {
+    "id": "midazolam",
+    "name": "midazolam",
+    "aliases": [
+      "Versed",
+      "Nayzilam",
+      "Seizalam"
+    ]
+  },
+  {
     "id": "mirtazapine",
     "name": "mirtazapine",
     "aliases": [
       "Remeron"
+    ]
+  },
+  {
+    "id": "montelukast",
+    "name": "montelukast",
+    "aliases": [
+      "Singulair"
     ]
   },
   {
@@ -416,6 +952,29 @@
     ]
   },
   {
+    "id": "nebivolol",
+    "name": "nebivolol",
+    "aliases": [
+      "Bystolic"
+    ]
+  },
+  {
+    "id": "nicardipine",
+    "name": "nicardipine",
+    "aliases": [
+      "Cardene"
+    ]
+  },
+  {
+    "id": "nifedipine",
+    "name": "nifedipine",
+    "aliases": [
+      "Procardia",
+      "Adalat CC",
+      "Nifedical XL"
+    ]
+  },
+  {
     "id": "nitroglycerin",
     "name": "nitroglycerin",
     "aliases": [
@@ -424,10 +983,60 @@
     ]
   },
   {
+    "id": "norethindrone",
+    "name": "norethindrone",
+    "aliases": [
+      "Aygestin",
+      "Camila",
+      "Errin"
+    ]
+  },
+  {
+    "id": "nortriptyline",
+    "name": "nortriptyline",
+    "aliases": [
+      "Pamelor",
+      "Aventyl"
+    ]
+  },
+  {
+    "id": "olanzapine",
+    "name": "olanzapine",
+    "aliases": [
+      "Zyprexa",
+      "Zyprexa Zydis",
+      "Zyprexa Relprevv"
+    ]
+  },
+  {
+    "id": "olmesartan",
+    "name": "olmesartan",
+    "aliases": [
+      "Benicar"
+    ]
+  },
+  {
     "id": "omeprazole",
     "name": "omeprazole",
     "aliases": [
       "Prilosec"
+    ]
+  },
+  {
+    "id": "ondansetron",
+    "name": "ondansetron",
+    "aliases": [
+      "Zofran",
+      "Zuplenz"
+    ]
+  },
+  {
+    "id": "oxybutynin",
+    "name": "oxybutynin",
+    "aliases": [
+      "Ditropan XL",
+      "Oxytrol",
+      "Gelnique"
     ]
   },
   {
@@ -439,10 +1048,33 @@
     ]
   },
   {
+    "id": "paliperidone",
+    "name": "paliperidone",
+    "aliases": [
+      "Invega",
+      "Invega Sustenna",
+      "Invega Trinza"
+    ]
+  },
+  {
+    "id": "pantoprazole",
+    "name": "pantoprazole",
+    "aliases": [
+      "Protonix"
+    ]
+  },
+  {
     "id": "paroxetine",
     "name": "paroxetine",
     "aliases": [
       "Paxil"
+    ]
+  },
+  {
+    "id": "phenelzine",
+    "name": "phenelzine",
+    "aliases": [
+      "Nardil"
     ]
   },
   {
@@ -454,6 +1086,36 @@
     ]
   },
   {
+    "id": "pioglitazone",
+    "name": "pioglitazone",
+    "aliases": [
+      "Actos"
+    ]
+  },
+  {
+    "id": "pitavastatin",
+    "name": "pitavastatin",
+    "aliases": [
+      "Livalo",
+      "Zypitamag"
+    ]
+  },
+  {
+    "id": "pramipexole",
+    "name": "pramipexole",
+    "aliases": [
+      "Mirapex",
+      "Mirapex ER"
+    ]
+  },
+  {
+    "id": "pravastatin",
+    "name": "pravastatin",
+    "aliases": [
+      "Pravachol"
+    ]
+  },
+  {
     "id": "prednisone",
     "name": "prednisone",
     "aliases": [
@@ -462,10 +1124,77 @@
     ]
   },
   {
+    "id": "pregabalin",
+    "name": "pregabalin",
+    "aliases": [
+      "Lyrica",
+      "Lyrica CR"
+    ]
+  },
+  {
+    "id": "promethazine",
+    "name": "promethazine",
+    "aliases": [
+      "Phenergan",
+      "Promethegan"
+    ]
+  },
+  {
+    "id": "propafenone",
+    "name": "propafenone",
+    "aliases": [
+      "Rythmol"
+    ]
+  },
+  {
+    "id": "propranolol",
+    "name": "propranolol",
+    "aliases": [
+      "Inderal",
+      "InnoPran XL",
+      "Hemangeol"
+    ]
+  },
+  {
+    "id": "propylthiouracil",
+    "name": "propylthiouracil",
+    "aliases": [
+      "PTU"
+    ]
+  },
+  {
     "id": "quetiapine",
     "name": "quetiapine",
     "aliases": [
       "Seroquel"
+    ]
+  },
+  {
+    "id": "rabeprazole",
+    "name": "rabeprazole",
+    "aliases": [
+      "Aciphex"
+    ]
+  },
+  {
+    "id": "ramipril",
+    "name": "ramipril",
+    "aliases": [
+      "Altace"
+    ]
+  },
+  {
+    "id": "ranolazine",
+    "name": "ranolazine",
+    "aliases": [
+      "Ranexa"
+    ]
+  },
+  {
+    "id": "rasagiline",
+    "name": "rasagiline",
+    "aliases": [
+      "Azilect"
     ]
   },
   {
@@ -477,10 +1206,66 @@
     ]
   },
   {
+    "id": "risedronate",
+    "name": "risedronate",
+    "aliases": [
+      "Actonel",
+      "Atelvia"
+    ]
+  },
+  {
+    "id": "risperidone",
+    "name": "risperidone",
+    "aliases": [
+      "Risperdal",
+      "Risperdal Consta",
+      "Perseris"
+    ]
+  },
+  {
     "id": "rivaroxaban",
     "name": "rivaroxaban",
     "aliases": [
       "Xarelto"
+    ]
+  },
+  {
+    "id": "rizatriptan",
+    "name": "rizatriptan",
+    "aliases": [
+      "Maxalt",
+      "Maxalt-MLT"
+    ]
+  },
+  {
+    "id": "rosuvastatin",
+    "name": "rosuvastatin",
+    "aliases": [
+      "Crestor",
+      "Ezallor"
+    ]
+  },
+  {
+    "id": "salmeterol",
+    "name": "salmeterol",
+    "aliases": [
+      "Serevent Diskus"
+    ]
+  },
+  {
+    "id": "saxagliptin",
+    "name": "saxagliptin",
+    "aliases": [
+      "Onglyza"
+    ]
+  },
+  {
+    "id": "semaglutide",
+    "name": "semaglutide",
+    "aliases": [
+      "Ozempic",
+      "Rybelsus",
+      "Wegovy"
     ]
   },
   {
@@ -513,6 +1298,15 @@
     ]
   },
   {
+    "id": "sotalol",
+    "name": "sotalol",
+    "aliases": [
+      "Betapace",
+      "Sorine",
+      "Sotylize"
+    ]
+  },
+  {
     "id": "spironolactone",
     "name": "spironolactone",
     "aliases": [
@@ -524,6 +1318,15 @@
     "id": "st-johns-wort",
     "name": "St. John's Wort",
     "aliases": []
+  },
+  {
+    "id": "sumatriptan",
+    "name": "sumatriptan",
+    "aliases": [
+      "Imitrex",
+      "Tosymra",
+      "Zembrace SymTouch"
+    ]
   },
   {
     "id": "tacrolimus",
@@ -541,11 +1344,103 @@
     ]
   },
   {
+    "id": "tamsulosin",
+    "name": "tamsulosin",
+    "aliases": [
+      "Flomax"
+    ]
+  },
+  {
+    "id": "telmisartan",
+    "name": "telmisartan",
+    "aliases": [
+      "Micardis"
+    ]
+  },
+  {
+    "id": "temazepam",
+    "name": "temazepam",
+    "aliases": [
+      "Restoril"
+    ]
+  },
+  {
+    "id": "tenofovir",
+    "name": "tenofovir disoproxil fumarate",
+    "aliases": [
+      "Viread"
+    ]
+  },
+  {
+    "id": "theophylline",
+    "name": "theophylline",
+    "aliases": [
+      "Theo-24",
+      "Theochron",
+      "Elixophyllin"
+    ]
+  },
+  {
+    "id": "tiotropium",
+    "name": "tiotropium",
+    "aliases": [
+      "Spiriva",
+      "Spiriva Respimat"
+    ]
+  },
+  {
+    "id": "tirzepatide",
+    "name": "tirzepatide",
+    "aliases": [
+      "Mounjaro",
+      "Zepbound"
+    ]
+  },
+  {
+    "id": "tolterodine",
+    "name": "tolterodine",
+    "aliases": [
+      "Detrol",
+      "Detrol LA"
+    ]
+  },
+  {
+    "id": "topiramate",
+    "name": "topiramate",
+    "aliases": [
+      "Topamax",
+      "Trokendi XR",
+      "Qudexy XR"
+    ]
+  },
+  {
     "id": "tramadol",
     "name": "tramadol",
     "aliases": [
       "Ultram",
       "ConZip"
+    ]
+  },
+  {
+    "id": "trazodone",
+    "name": "trazodone",
+    "aliases": [
+      "Desyrel",
+      "Oleptro"
+    ]
+  },
+  {
+    "id": "triazolam",
+    "name": "triazolam",
+    "aliases": [
+      "Halcion"
+    ]
+  },
+  {
+    "id": "valacyclovir",
+    "name": "valacyclovir",
+    "aliases": [
+      "Valtrex"
     ]
   },
   {
@@ -557,10 +1452,41 @@
     ]
   },
   {
+    "id": "valsartan",
+    "name": "valsartan",
+    "aliases": [
+      "Diovan"
+    ]
+  },
+  {
+    "id": "vancomycin",
+    "name": "vancomycin",
+    "aliases": [
+      "Vancocin",
+      "Firvanq"
+    ]
+  },
+  {
     "id": "venlafaxine",
     "name": "venlafaxine",
     "aliases": [
       "Effexor"
+    ]
+  },
+  {
+    "id": "verapamil",
+    "name": "verapamil",
+    "aliases": [
+      "Calan",
+      "Verelan",
+      "Isoptin"
+    ]
+  },
+  {
+    "id": "vilazodone",
+    "name": "vilazodone",
+    "aliases": [
+      "Viibryd"
     ]
   },
   {
@@ -576,6 +1502,30 @@
     "aliases": [
       "Coumadin",
       "Jantoven"
+    ]
+  },
+  {
+    "id": "zaleplon",
+    "name": "zaleplon",
+    "aliases": [
+      "Sonata"
+    ]
+  },
+  {
+    "id": "ziprasidone",
+    "name": "ziprasidone",
+    "aliases": [
+      "Geodon"
+    ]
+  },
+  {
+    "id": "zolpidem",
+    "name": "zolpidem",
+    "aliases": [
+      "Ambien",
+      "Ambien CR",
+      "Edluar",
+      "Intermezzo"
     ]
   }
 ]

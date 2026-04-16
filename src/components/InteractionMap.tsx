@@ -11,6 +11,7 @@ interface Props {
 
 function getCategoryColor(category?: string): string {
   const map: Record<string, string> = {
+    // existing 14
     anticoagulant: "#C0392B",
     antiplatelet: "#E74C3C",
     antidepressant: "#8E44AD",
@@ -25,6 +26,36 @@ function getCategoryColor(category?: string): string {
     nsaid: "#D68910",
     supplement: "#52BE80",
     other: "#5D6D7E",
+
+    // new 28
+    benzodiazepine: "#5B2C6F",
+    antipsychotic: "#7D3C98",
+    ppi: "#239B56",
+    "h2-blocker": "#1E8449",
+    immunosuppressant: "#922B21",
+    antiarrhythmic: "#21618C",
+    "pde5-inhibitor": "#D35400",
+    antihistamine: "#AF601A",
+    thyroid: "#B9770E",
+    analgesic: "#E67E22",
+    bronchodilator: "#148F77",
+    corticosteroid: "#9A7D0A",
+    antiviral: "#117A65",
+    contraceptive: "#C39BD3",
+    bisphosphonate: "#85929E",
+    "alpha-blocker": "#2874A6",
+    diuretic: "#3498DB",
+    antiemetic: "#229954",
+    triptan: "#CB4335",
+    "gout-agent": "#873600",
+    "parkinson-agent": "#6D4C41",
+    "alzheimer-agent": "#78909C",
+    "adhd-stimulant": "#E74C3C",
+    "muscle-relaxant": "#5499C7",
+    "glp1-agonist": "#1ABC9C",
+    "sglt2-inhibitor": "#17A589",
+    "dpp4-inhibitor": "#45B39D",
+    "mood-stabilizer": "#7B241C",
   };
   return map[category ?? ""] ?? "#5D6D7E";
 }
