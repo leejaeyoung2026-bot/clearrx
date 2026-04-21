@@ -231,8 +231,8 @@ export default function Home() {
       <section className="px-4 py-10">
         <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
           {[
-            { value: "77+", label: "Drugs in database" },
-            { value: "320+", label: "Interactions mapped" },
+            { value: "197+", label: "Drugs in database" },
+            { value: "1,266+", label: "Interactions mapped" },
             { value: "RPh", label: "Pharmacist reviewed" },
             { value: "0", label: "Data collected" },
           ].map((badge) => (
