@@ -139,6 +139,14 @@ text in the modal — confirmed by running the app, not just by code inspection.
    - Explicit documented class rule (e.g. fibrate↔statin, nitrate↔PDE5) → `source:"bundle"`.
    - No basis → not created.
    - `lastReviewed` set to the work date; `evidenceLevel` chosen honestly.
+   - **Write path:** new drug records and curated interaction entries are written into
+     `drug-db.json` via a single-purpose expansion script (e.g.
+     `scripts/expand-db.cjs`) that reads `openfda-report.json` + a hand-authored
+     curation list, appends to `drugs[]`/`interactions[]`, re-sorts by id/pairKey, and
+     writes back — preserving the existing sorted-array layout. `merge-db.cjs` (with its
+     `temp/db_*.json` relic inputs) is **not** used. The planner finalizes whether this
+     is a new script or a documented manual edit, but the chosen path must be explicit
+     and repeatable.
 4. Bump `drug-db.json` `version`/`lastUpdated`.
 5. Run `scripts/rebuild-search-index.cjs` (now version-aware per WS-A) to regenerate
    `drug-search-index.json` and `version.json`.
@@ -154,11 +162,16 @@ traceable basis; `validate-db` exits 0; `npm run build` passes.
 
 ### WS-D — Framing + positioning honesty
 - **3a (framing, fabrication-risk 0):** in `src/components/ResultsPanel.tsx`, the
-  "all safe ✓" green panel must NOT show when any selected drug is low-coverage
-  (degree 0 in the loaded DB). Instead show: *"No known interactions found in our
-  database for [drug(s)] — this is different from 'no interactions exist.'"* naming the
-  low-coverage drug(s). The low-coverage set is computed from the loaded data at runtime,
-  not hard-coded.
+  "all safe ✓" green panel must NOT show when any selected drug is **degree 0**. Instead
+  show: *"No known interactions found in our database for [drug(s)] — this is different
+  from 'no interactions exist.'"* naming the degree-0 drug(s).
+  - **Exact predicate:** a drug is "degree 0" iff it has **zero interactions with
+    `severity ≠ "none"`** across the entire loaded DB (not merely within the current
+    selection). This set is computed from the loaded data at runtime, not hard-coded.
+  - **Note for the planner:** ResultsPanel's existing `allSafe` is derived from the
+    *selected pair set*, so this is a genuinely different computation (per-drug global
+    degree vs. per-selection pair severity). The new check gates the green panel; it
+    does not replace `allSafe`.
 - **source badge:** add a `source` badge to `InteractionModal` next to the existing
   `evidenceLevel` badge — `bundle→"Curated"`, `derived→"Class-based"`, `openfda→"FDA label"`.
 - **Pharmacist's note badge:** when an explanation exists (WS-B), show a
