@@ -95,12 +95,28 @@ niacin/hydralazine (lower frequency), 1st-gen antihistamines (class-generalizabl
 Final exact list is confirmed at implementation start; additions/removals are a
 pharmacist judgment call and do not change the architecture.
 
-## 5. Workstreams (dependency-ordered)
+## 5. Workstreams & Execution Order
 
-Order rationale: install the safety net first, then the low-risk wiring fix, then the
-risk-bearing expansion (protected by the net), then UI/positioning.
+The four workstreams are defined as labeled units below (WS-A…WS-D). They are **executed
+in a hybrid order** that puts the motivating expansion work first while still protecting
+the risk-bearing *integration* step with the safety net:
 
-### WS-A — Trust infrastructure (the expansion's safety net)
+**Execution sequence:**
+1. **WS-C steps 1–3 (authoring)** — add new drug records, run OpenFDA discovery, curate
+   source-tagged interaction pairs. Pure data authoring; needs no safety net yet.
+2. **WS-A (safety net)** — theoretical enum, version-aware scripts (E), validate-db gate (F).
+   Must be in place before anything is written back to the canonical DB.
+3. **WS-C steps 4–6 (integration)** — version bump, version-aware index rebuild, validate
+   gate. The hard dependency E→(step 5) and the gate F→(step 6) are now satisfied.
+4. **WS-B** — revive pharmacist content (independent of the data work).
+5. **WS-D** — framing + positioning (the "Pharmacist's note" badge depends on WS-B).
+
+Rationale: WS-C 1–3 is data authoring with no canonical-DB write, so it carries no
+integrity risk on its own. The risk lives at the **write-back** (steps 4–6), where E
+prevents a silent version downgrade and F enforces the §3 anti-fabrication rule — so the
+net is installed in the gap between authoring and integration, not before authoring.
+
+### WS-A — Trust infrastructure (the expansion's safety net) — *runs after WS-C steps 1–3, before steps 4–6*
 - **C**: add `"theoretical"` to the `EvidenceLevel` union in `src/types/drug.ts`
   (data already uses it; 7 interactions become type-valid).
 - **F**: convert `scripts/validate-db.cjs` into a true gate — exit code 1 when any of:
@@ -129,6 +145,9 @@ deliberately corrupted copy exits 1 with a clear message.
 text in the modal — confirmed by running the app, not just by code inspection.
 
 ### WS-C — Risk-first drug expansion (protected by WS-A gate)
+
+*Steps 1–3 (authoring) run before WS-A; steps 4–6 (integration) run after WS-A.*
+
 1. Add the ~24 new drug records to `drug-db.json` (full `Drug` shape: id, genericName,
    brandNames, categories, interactionRiskScore, otcRx, plus Tier-3 metadata where known;
    unknown optional fields omitted, not guessed).
