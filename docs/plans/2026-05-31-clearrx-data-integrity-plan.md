@@ -345,11 +345,17 @@ git commit -m "feat(scripts): make validate-db an exit-coded integrity gate (WS-
 - Create: `scripts/expand-db.cjs`
 - Modify: `public/data/drug-db.json` (via script)
 
-- [ ] **Step 1: Run OpenFDA discovery for new + low-coverage drugs**
+- [ ] **Step 1: Merge new drug records into drug-db.json, then run OpenFDA discovery**
 
-The new drug records must be in the DB before OpenFDA can target them, but we don't want to
-write unsourced data. Approach: temporarily build a candidate DB in memory for discovery only.
-Run the existing discovery script after a dry merge of just the drug records:
+`scripts/fetch-openfda.mjs` reads its drug list from `public/data/drug-db.json` at runtime
+(confirmed: it does `const db = JSON.parse(...drug-db.json); const drugs = db.drugs;`). So the
+new drug records must be written into the DB first for discovery to target them.
+
+⚠️ **This step mutates `drug-db.json` (drugs only, no interactions yet).** This is an
+intentional intermediate state. It is NOT committed on its own — the commit happens at Task 5
+Step 6 after interactions are added and the gate passes. If you abort between here and Step 6,
+recover with `git checkout public/data/drug-db.json` and restart Task 5.
+
 ```bash
 cd /Users/macmini/coding/clearrx
 node -e '
@@ -366,6 +372,12 @@ node scripts/fetch-openfda.mjs
 ```
 Expected: drug count rises by ~24; `scripts/openfda-report.json` regenerated with new
 `potentialNewPairs`. (Drug records are now in the DB; interactions are NOT yet — that is Step 3.)
+
+**If OpenFDA is unreachable or returns nothing** (network failure, rate limit, or
+`potentialNewPairs: []`): that is acceptable. The expansion proceeds with class-rule pairs only
+(Task 1's `classRulePairs`); skip the `openfdaConfirmedPairs` work in Step 3 and note in the
+Task 5 commit message that OpenFDA discovery yielded no confirmed pairs. The drug records and
+class-rule interactions alone still constitute a valid, fully-sourced expansion.
 
 - [ ] **Step 2: Write expand-db.cjs**
 
