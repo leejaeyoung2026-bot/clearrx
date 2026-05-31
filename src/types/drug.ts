@@ -40,6 +40,10 @@ export type DrugCategory =
   | "sglt2-inhibitor"
   | "dpp4-inhibitor"
   | "mood-stabilizer"
+  | "fibrate"
+  | "nitrate"
+  | "decongestant"
+  | "antitussive"
   | "other";
 
 export type SeverityLevel = "contraindicated" | "serious" | "moderate" | "minor" | "none";
