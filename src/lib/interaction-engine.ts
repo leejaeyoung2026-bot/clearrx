@@ -19,6 +19,16 @@ export async function getDatabase(): Promise<DrugDatabase> {
   return db!;
 }
 
+export async function getZeroCoverageIds(): Promise<Set<string>> {
+  const { drugs, interactions } = await getDatabase();
+  const covered = new Set<string>();
+  interactions.filter((i) => i.severity !== "none").forEach((i) => {
+    covered.add(i.drugA_id);
+    covered.add(i.drugB_id);
+  });
+  return new Set(drugs.filter((d) => !covered.has(d.id)).map((d) => d.id));
+}
+
 export async function getDrugById(id: string): Promise<Drug | undefined> {
   const { drugs } = await getDatabase();
   return drugs.find((d) => d.id === id);

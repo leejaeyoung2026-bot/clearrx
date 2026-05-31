@@ -5,6 +5,7 @@ import type { DrugInteraction, SeverityLevel } from "@/types/drug";
 interface Props {
   interactions: DrugInteraction[];
   onSelectInteraction?: (ix: DrugInteraction) => void;
+  lowCoverageDrugs?: string[];
 }
 
 const SEVERITY_CONFIG: Record<
@@ -262,9 +263,10 @@ function InteractionRow({
   );
 }
 
-export default function ResultsPanel({ interactions, onSelectInteraction }: Props) {
+export default function ResultsPanel({ interactions, onSelectInteraction, lowCoverageDrugs }: Props) {
   const significant = interactions.filter((ix) => ix.severity !== "none");
   const allSafe = significant.length === 0;
+  const hasLowCoverage = (lowCoverageDrugs?.length ?? 0) > 0;
 
   const countBySeverity = {
     contraindicated: interactions.filter((i) => i.severity === "contraindicated").length,
@@ -273,7 +275,7 @@ export default function ResultsPanel({ interactions, onSelectInteraction }: Prop
     minor: interactions.filter((i) => i.severity === "minor").length,
   };
 
-  if (allSafe) {
+  if (allSafe && !hasLowCoverage) {
     return (
       <div
         style={{
@@ -323,6 +325,63 @@ export default function ResultsPanel({ interactions, onSelectInteraction }: Prop
             No clinically significant interactions were identified between these
             medications. The absence of an interaction here does not guarantee
             safety — always consult your pharmacist.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (allSafe && hasLowCoverage) {
+    return (
+      <div
+        style={{
+          padding: "24px",
+          border: "1px solid var(--severity-moderate)",
+          background: "#FFFBF5",
+          display: "flex",
+          alignItems: "flex-start",
+          gap: "16px",
+        }}
+      >
+        <div
+          style={{
+            width: "36px",
+            height: "36px",
+            background: "var(--severity-moderate)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "18px",
+            flexShrink: 0,
+            borderRadius: "50%",
+            color: "white",
+          }}
+        >
+          ⚠
+        </div>
+        <div>
+          <p
+            style={{
+              fontFamily: "serif",
+              fontSize: "1rem",
+              color: "var(--severity-moderate)",
+              marginBottom: "6px",
+            }}
+          >
+            Limited data for some medications
+          </p>
+          <p
+            style={{
+              fontSize: "13px",
+              fontFamily: "sans-serif",
+              lineHeight: 1.6,
+              color: "var(--ink-muted)",
+            }}
+          >
+            No known interactions were found in our database for:{" "}
+            <strong>{lowCoverageDrugs!.join(", ")}</strong>. This is different
+            from &quot;no interactions exist&quot; — we may not yet have interaction data
+            for these medications. Always confirm with your pharmacist or doctor.
           </p>
         </div>
       </div>

@@ -8,7 +8,7 @@ import InteractionModal from "@/components/InteractionModal";
 import ShareModal from "@/components/ShareModal";
 import { useInteractionChecker } from "@/hooks/useInteractionChecker";
 import { generateDoctorReport } from "@/lib/generate-pdf";
-import { getExplanation } from "@/lib/interaction-engine";
+import { getExplanation, getZeroCoverageIds } from "@/lib/interaction-engine";
 import type { DrugInteraction } from "@/types/drug";
 
 export default function Home() {
@@ -31,6 +31,7 @@ export default function Home() {
   const [showShare, setShowShare] = useState(false);
   const [reportItems, setReportItems] = useState<DrugInteraction[]>([]);
   const [activeExplanation, setActiveExplanation] = useState<string | undefined>(undefined);
+  const [zeroCovSelected, setZeroCovSelected] = useState<string[]>([]);
 
   useEffect(() => {
     loadFromUrl();
@@ -49,6 +50,12 @@ export default function Home() {
       checkInteractions();
     }
   }, [selectedDrugs.length]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    getZeroCoverageIds().then((zc) => {
+      setZeroCovSelected(selectedDrugs.filter((d) => zc.has(d.id)).map((d) => d.name));
+    });
+  }, [selectedDrugs]);
 
   function handleEdgeClick(pairKey: string) {
     const ix = interactions.find((i) => i.pairKey === pairKey);
@@ -143,6 +150,7 @@ export default function Home() {
               <ResultsPanel
                 interactions={interactions}
                 onSelectInteraction={setSelectedInteraction}
+                lowCoverageDrugs={zeroCovSelected}
               />
               <InteractionMap
                 elements={cytoscapeElements}
@@ -156,6 +164,7 @@ export default function Home() {
               <ResultsPanel
                 interactions={interactions}
                 onSelectInteraction={setSelectedInteraction}
+                lowCoverageDrugs={zeroCovSelected}
               />
               {!showMap ? (
                 <button
