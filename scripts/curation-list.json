@@ -644,5 +644,18 @@
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus indirect sympathomimetic hypertensive-crisis class rule; sympathomimetic decongestants are contraindicated with selegiline (Emsam) per its labeling."
     }
+  ],
+  "openfdaConfirmedPairs": [
+    {
+      "pairKey": "gemfibrozil::repaglinide",
+      "drugA_id": "gemfibrozil",
+      "drugB_id": "repaglinide",
+      "severity": "contraindicated",
+      "mechanism": "Gemfibrozil strongly inhibits CYP2C8-mediated metabolism of repaglinide, markedly increasing repaglinide plasma concentrations and the risk of severe, prolonged hypoglycemia. The gemfibrozil label states this combination is contraindicated.",
+      "evidenceLevel": "established",
+      "managementStrategy": "avoid",
+      "monitoringParameters": ["blood glucose", "signs/symptoms of hypoglycemia"],
+      "lastReviewed": "2026-05-31"
+    }
   ]
 }

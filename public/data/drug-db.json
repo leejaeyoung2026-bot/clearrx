@@ -1,6 +1,6 @@
 {
-  "version": "3.0.0",
-  "lastUpdated": "2026-04-16",
+  "version": "3.1.0",
+  "lastUpdated": "2026-05-31",
   "drugs": [
     {
       "id": "acetaminophen",
@@ -457,6 +457,31 @@
       "mechanismClass": "beta-blocker-selective"
     },
     {
+      "id": "buprenorphine",
+      "genericName": "buprenorphine",
+      "brandNames": [
+        "Suboxone",
+        "Subutex",
+        "Belbuca",
+        "Butrans",
+        "Sublocade"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
+      "interactionRiskScore": 8,
+      "cypSubstrate": [
+        "CYP3A4"
+      ],
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "partial mu-opioid receptor agonist; kappa antagonist",
+      "deaSchedule": "III",
+      "qtProlongation": "possible",
+      "hepaticAdjust": true
+    },
+    {
       "id": "bupropion",
       "genericName": "bupropion",
       "brandNames": [
@@ -636,6 +661,30 @@
       "mechanismClass": "cephalosporin-3rd-gen"
     },
     {
+      "id": "celecoxib",
+      "genericName": "celecoxib",
+      "brandNames": [
+        "Celebrex",
+        "Elyxyb"
+      ],
+      "categories": [
+        "nsaid",
+        "analgesic"
+      ],
+      "interactionRiskScore": 6,
+      "cypSubstrate": [
+        "CYP2C9"
+      ],
+      "cypInhibitor": [
+        "CYP2D6"
+      ],
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "selective COX-2 inhibitor (NSAID)",
+      "renalAdjust": true,
+      "hepaticAdjust": true
+    },
+    {
       "id": "cephalexin",
       "genericName": "cephalexin",
       "brandNames": [
@@ -802,6 +851,27 @@
       "mechanismClass": "antipsychotic-atypical"
     },
     {
+      "id": "codeine",
+      "genericName": "codeine",
+      "brandNames": [
+        "Tylenol with Codeine",
+        "Codeine Contin"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
+      "interactionRiskScore": 8,
+      "cypSubstrate": [
+        "CYP2D6",
+        "CYP3A4"
+      ],
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "mu-opioid receptor agonist (CYP2D6 prodrug)",
+      "deaSchedule": "II"
+    },
+    {
       "id": "coenzyme-q10",
       "genericName": "coenzyme-q10",
       "brandNames": [
@@ -952,6 +1022,48 @@
       "mechanismClass": "tca-secondary"
     },
     {
+      "id": "dexamethasone",
+      "genericName": "dexamethasone",
+      "brandNames": [
+        "Decadron",
+        "DexPak",
+        "Hemady"
+      ],
+      "categories": [
+        "corticosteroid"
+      ],
+      "interactionRiskScore": 7,
+      "cypSubstrate": [
+        "CYP3A4"
+      ],
+      "cypInducer": [
+        "CYP3A4"
+      ],
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "long-acting glucocorticoid"
+    },
+    {
+      "id": "dextromethorphan",
+      "genericName": "dextromethorphan",
+      "brandNames": [
+        "Delsym",
+        "Robitussin DM",
+        "Mucinex DM"
+      ],
+      "categories": [
+        "antitussive"
+      ],
+      "interactionRiskScore": 6,
+      "cypSubstrate": [
+        "CYP2D6"
+      ],
+      "inBundle": true,
+      "otcRx": "otc",
+      "mechanismClass": "NMDA antagonist antitussive; serotonin reuptake inhibitor",
+      "serotonergic": true
+    },
+    {
       "id": "diazepam",
       "genericName": "diazepam",
       "brandNames": [
@@ -970,6 +1082,29 @@
       "deaSchedule": "IV",
       "otcRx": "rx",
       "mechanismClass": "benzodiazepine"
+    },
+    {
+      "id": "diclofenac",
+      "genericName": "diclofenac",
+      "brandNames": [
+        "Voltaren",
+        "Cataflam",
+        "Cambia",
+        "Zorvolex"
+      ],
+      "categories": [
+        "nsaid",
+        "analgesic"
+      ],
+      "interactionRiskScore": 6,
+      "cypSubstrate": [
+        "CYP2C9"
+      ],
+      "inBundle": true,
+      "otcRx": "both",
+      "mechanismClass": "nonselective COX inhibitor (NSAID)",
+      "renalAdjust": true,
+      "hepaticAdjust": true
     },
     {
       "id": "digoxin",
@@ -1431,6 +1566,21 @@
       "mechanismClass": "estrogen-synthetic"
     },
     {
+      "id": "ezetimibe",
+      "genericName": "ezetimibe",
+      "brandNames": [
+        "Zetia",
+        "Nexlizet (with bempedoic acid)"
+      ],
+      "categories": [
+        "antilipid"
+      ],
+      "interactionRiskScore": 2,
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "intestinal cholesterol absorption inhibitor (NPC1L1)"
+    },
+    {
       "id": "famotidine",
       "genericName": "famotidine",
       "brandNames": [
@@ -1495,6 +1645,51 @@
       "hepaticAdjust": true,
       "otcRx": "rx",
       "mechanismClass": "ccb-dihydropyridine"
+    },
+    {
+      "id": "fenofibrate",
+      "genericName": "fenofibrate",
+      "brandNames": [
+        "Tricor",
+        "Lipofen",
+        "Antara",
+        "Fenoglide",
+        "Triglide"
+      ],
+      "categories": [
+        "fibrate",
+        "antilipid"
+      ],
+      "interactionRiskScore": 5,
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "fibric acid derivative (PPAR-alpha agonist)",
+      "renalAdjust": true,
+      "hepaticAdjust": true
+    },
+    {
+      "id": "fentanyl",
+      "genericName": "fentanyl",
+      "brandNames": [
+        "Duragesic",
+        "Actiq",
+        "Sublimaze",
+        "Subsys",
+        "Abstral"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
+      "interactionRiskScore": 9,
+      "cypSubstrate": [
+        "CYP3A4"
+      ],
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "mu-opioid receptor agonist",
+      "deaSchedule": "II",
+      "hepaticAdjust": true
     },
     {
       "id": "fexofenadine",
@@ -1685,6 +1880,25 @@
       "interactionRiskScore": 5,
       "inBundle": true,
       "otcRx": "otc"
+    },
+    {
+      "id": "gemfibrozil",
+      "genericName": "gemfibrozil",
+      "brandNames": [
+        "Lopid"
+      ],
+      "categories": [
+        "fibrate",
+        "antilipid"
+      ],
+      "interactionRiskScore": 7,
+      "cypInhibitor": [
+        "CYP2C8"
+      ],
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "fibric acid derivative (PPAR-alpha agonist); OATP1B1 and CYP2C8 inhibitor",
+      "hepaticAdjust": true
     },
     {
       "id": "ginkgo",
@@ -1984,6 +2198,23 @@
       "otcRx": "otc"
     },
     {
+      "id": "isosorbide",
+      "genericName": "isosorbide",
+      "brandNames": [
+        "Imdur",
+        "Monoket (mononitrate)",
+        "Isordil",
+        "Dilatrate-SR (dinitrate)"
+      ],
+      "categories": [
+        "nitrate"
+      ],
+      "interactionRiskScore": 6,
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "organic nitrate vasodilator (nitric oxide donor)"
+    },
+    {
       "id": "itraconazole",
       "genericName": "itraconazole",
       "brandNames": [
@@ -2021,6 +2252,23 @@
       "mechanismClass": "azole-antifungal",
       "qtProlongation": "known",
       "otcRx": "rx"
+    },
+    {
+      "id": "ketorolac",
+      "genericName": "ketorolac",
+      "brandNames": [
+        "Toradol",
+        "Sprix"
+      ],
+      "categories": [
+        "nsaid",
+        "analgesic"
+      ],
+      "interactionRiskScore": 8,
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "nonselective COX inhibitor (NSAID)",
+      "renalAdjust": true
     },
     {
       "id": "labetalol",
@@ -2397,6 +2645,23 @@
       "otcRx": "otc"
     },
     {
+      "id": "meloxicam",
+      "genericName": "meloxicam",
+      "brandNames": [
+        "Mobic",
+        "Vivlodex"
+      ],
+      "categories": [
+        "nsaid",
+        "analgesic"
+      ],
+      "interactionRiskScore": 6,
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "preferential COX-2 inhibitor (NSAID)",
+      "renalAdjust": true
+    },
+    {
       "id": "memantine",
       "genericName": "memantine",
       "brandNames": [
@@ -2431,6 +2696,29 @@
       "otcRx": "rx",
       "renalAdjust": true,
       "mechanismClass": "biguanide"
+    },
+    {
+      "id": "methadone",
+      "genericName": "methadone",
+      "brandNames": [
+        "Dolophine",
+        "Methadose"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
+      "interactionRiskScore": 9,
+      "cypSubstrate": [
+        "CYP3A4",
+        "CYP2B6"
+      ],
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "mu-opioid receptor agonist; NMDA antagonist",
+      "deaSchedule": "II",
+      "qtProlongation": "known",
+      "hepaticAdjust": true
     },
     {
       "id": "methimazole",
@@ -2492,6 +2780,25 @@
       "pregnancyRisk": "C",
       "otcRx": "rx",
       "mechanismClass": "stimulant-ndri"
+    },
+    {
+      "id": "methylprednisolone",
+      "genericName": "methylprednisolone",
+      "brandNames": [
+        "Medrol",
+        "Depo-Medrol",
+        "Solu-Medrol"
+      ],
+      "categories": [
+        "corticosteroid"
+      ],
+      "interactionRiskScore": 6,
+      "cypSubstrate": [
+        "CYP3A4"
+      ],
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "intermediate-acting glucocorticoid"
     },
     {
       "id": "metoclopramide",
@@ -2632,6 +2939,28 @@
       "pregnancyRisk": "B",
       "otcRx": "rx",
       "mechanismClass": "leukotriene-antagonist"
+    },
+    {
+      "id": "morphine",
+      "genericName": "morphine",
+      "brandNames": [
+        "MS Contin",
+        "Kadian",
+        "Roxanol",
+        "Morphabond",
+        "Arymo ER"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
+      "interactionRiskScore": 8,
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "mu-opioid receptor agonist",
+      "deaSchedule": "II",
+      "renalAdjust": true,
+      "hepaticAdjust": true
     },
     {
       "id": "naproxen",
@@ -3157,6 +3486,23 @@
       "mechanismClass": "statin-hydrophilic"
     },
     {
+      "id": "prednisolone",
+      "genericName": "prednisolone",
+      "brandNames": [
+        "Prelone",
+        "Orapred",
+        "Millipred",
+        "Pediapred"
+      ],
+      "categories": [
+        "corticosteroid"
+      ],
+      "interactionRiskScore": 6,
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "intermediate-acting glucocorticoid"
+    },
+    {
       "id": "prednisone",
       "genericName": "prednisone",
       "brandNames": [
@@ -3308,6 +3654,21 @@
       "hepaticAdjust": true,
       "otcRx": "rx",
       "mechanismClass": "antithyroid-thioamide"
+    },
+    {
+      "id": "pseudoephedrine",
+      "genericName": "pseudoephedrine",
+      "brandNames": [
+        "Sudafed",
+        "Sudafed 12 Hour"
+      ],
+      "categories": [
+        "decongestant"
+      ],
+      "interactionRiskScore": 5,
+      "inBundle": true,
+      "otcRx": "both",
+      "mechanismClass": "sympathomimetic decongestant (alpha/beta adrenergic agonist)"
     },
     {
       "id": "quetiapine",
@@ -3606,6 +3967,25 @@
       "renalAdjust": true,
       "otcRx": "rx",
       "mechanismClass": "dpp4-inhibitor"
+    },
+    {
+      "id": "selegiline",
+      "genericName": "selegiline",
+      "brandNames": [
+        "Eldepryl",
+        "Zelapar",
+        "Emsam"
+      ],
+      "categories": [
+        "parkinson-agent",
+        "antidepressant"
+      ],
+      "interactionRiskScore": 9,
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "monoamine oxidase B inhibitor (nonselective at higher/transdermal doses)",
+      "serotonergic": true,
+      "hepaticAdjust": true
     },
     {
       "id": "semaglutide",
@@ -8023,6 +8403,22 @@
       "lastReviewed": "2026-03-08"
     },
     {
+      "pairKey": "atorvastatin::fenofibrate",
+      "drugA_id": "fenofibrate",
+      "drugB_id": "atorvastatin",
+      "severity": "moderate",
+      "mechanism": "Fenofibrate combined with a statin has additive potential to cause myopathy, though fenofibrate does not inhibit statin glucuronidation/transport and carries substantially lower risk than gemfibrozil.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
       "pairKey": "atorvastatin::fluconazole",
       "drugA_id": "atorvastatin",
       "drugB_id": "fluconazole",
@@ -8036,6 +8432,22 @@
         "weakness"
       ],
       "lastReviewed": "2026-03-08"
+    },
+    {
+      "pairKey": "atorvastatin::gemfibrozil",
+      "drugA_id": "gemfibrozil",
+      "drugB_id": "atorvastatin",
+      "severity": "serious",
+      "mechanism": "Gemfibrozil inhibits OATP1B1-mediated hepatic uptake and glucuronidation of statins, raising statin plasma concentrations and the risk of myopathy and rhabdomyolysis.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
     },
     {
       "pairKey": "atorvastatin::itraconazole",
@@ -12797,6 +13209,38 @@
       "managementStrategy": "monitor"
     },
     {
+      "pairKey": "dextromethorphan::phenelzine",
+      "drugA_id": "phenelzine",
+      "drugB_id": "dextromethorphan",
+      "severity": "contraindicated",
+      "mechanism": "Dextromethorphan inhibits serotonin reuptake; combined with a nonselective MAO inhibitor it can precipitate serotonin syndrome and a psychotic/behavioral reaction.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "dextromethorphan::selegiline",
+      "drugA_id": "selegiline",
+      "drugB_id": "dextromethorphan",
+      "severity": "contraindicated",
+      "mechanism": "Dextromethorphan inhibits serotonin reuptake; combined with an MAO inhibitor it can precipitate serotonin syndrome and a psychotic/behavioral reaction.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
       "pairKey": "diazepam::diphenhydramine",
       "drugA_id": "diazepam",
       "drugB_id": "diphenhydramine",
@@ -14387,6 +14831,22 @@
       "clinicalExample": "serotonin-syndrome"
     },
     {
+      "pairKey": "duloxetine::selegiline",
+      "drugA_id": "selegiline",
+      "drugB_id": "duloxetine",
+      "severity": "contraindicated",
+      "mechanism": "Combining an MAO inhibitor with an SNRI causes excessive synaptic serotonin, precipitating serotonin syndrome.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
       "pairKey": "duloxetine::sertraline",
       "drugA_id": "duloxetine",
       "drugB_id": "sertraline",
@@ -15825,6 +16285,22 @@
       "clinicalExample": "serotonin-syndrome"
     },
     {
+      "pairKey": "escitalopram::selegiline",
+      "drugA_id": "selegiline",
+      "drugB_id": "escitalopram",
+      "severity": "contraindicated",
+      "mechanism": "Combining an MAO inhibitor with an SSRI causes excessive synaptic serotonin, precipitating serotonin syndrome.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
       "pairKey": "escitalopram::sertraline",
       "drugA_id": "escitalopram",
       "drugB_id": "sertraline",
@@ -16293,6 +16769,86 @@
       "lastReviewed": "2026-04-16",
       "effectDirection": "A-increases-B",
       "managementStrategy": "dose-reduce"
+    },
+    {
+      "pairKey": "fenofibrate::lovastatin",
+      "drugA_id": "fenofibrate",
+      "drugB_id": "lovastatin",
+      "severity": "moderate",
+      "mechanism": "Fenofibrate combined with a statin has additive potential to cause myopathy; fenofibrate is the preferred fibrate and carries substantially lower risk than gemfibrozil.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "fenofibrate::pitavastatin",
+      "drugA_id": "fenofibrate",
+      "drugB_id": "pitavastatin",
+      "severity": "moderate",
+      "mechanism": "Fenofibrate combined with a statin has additive potential to cause myopathy; fenofibrate is the preferred fibrate and carries substantially lower risk than gemfibrozil.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "fenofibrate::pravastatin",
+      "drugA_id": "fenofibrate",
+      "drugB_id": "pravastatin",
+      "severity": "moderate",
+      "mechanism": "Fenofibrate combined with a statin has additive potential to cause myopathy; fenofibrate is the preferred fibrate and carries substantially lower risk than gemfibrozil.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "fenofibrate::rosuvastatin",
+      "drugA_id": "fenofibrate",
+      "drugB_id": "rosuvastatin",
+      "severity": "moderate",
+      "mechanism": "Fenofibrate combined with a statin has additive potential to cause myopathy; fenofibrate is the preferred fibrate and carries substantially lower risk than gemfibrozil.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "fenofibrate::simvastatin",
+      "drugA_id": "fenofibrate",
+      "drugB_id": "simvastatin",
+      "severity": "moderate",
+      "mechanism": "Fenofibrate combined with a statin has additive potential to cause myopathy; fenofibrate is the preferred fibrate and carries substantially lower risk than gemfibrozil.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
     },
     {
       "pairKey": "finasteride::tamsulosin",
@@ -17173,6 +17729,22 @@
       "clinicalExample": "serotonin-syndrome"
     },
     {
+      "pairKey": "fluoxetine::selegiline",
+      "drugA_id": "selegiline",
+      "drugB_id": "fluoxetine",
+      "severity": "contraindicated",
+      "mechanism": "Combining an MAO inhibitor with a serotonin reuptake inhibitor causes excessive synaptic serotonin, precipitating serotonin syndrome.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
       "pairKey": "fluoxetine::sertraline",
       "drugA_id": "fluoxetine",
       "drugB_id": "sertraline",
@@ -17603,6 +18175,86 @@
         "signs of bleeding"
       ],
       "lastReviewed": "2026-03-08"
+    },
+    {
+      "pairKey": "gemfibrozil::lovastatin",
+      "drugA_id": "gemfibrozil",
+      "drugB_id": "lovastatin",
+      "severity": "contraindicated",
+      "mechanism": "Gemfibrozil inhibits OATP1B1 uptake and glucuronidation of lovastatin, sharply increasing statin exposure and the risk of severe myopathy and rhabdomyolysis.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "gemfibrozil::pitavastatin",
+      "drugA_id": "gemfibrozil",
+      "drugB_id": "pitavastatin",
+      "severity": "serious",
+      "mechanism": "Gemfibrozil inhibits OATP1B1-mediated hepatic uptake of pitavastatin, increasing statin exposure and the risk of myopathy and rhabdomyolysis.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "gemfibrozil::pravastatin",
+      "drugA_id": "gemfibrozil",
+      "drugB_id": "pravastatin",
+      "severity": "serious",
+      "mechanism": "Gemfibrozil inhibits OATP1B1-mediated hepatic uptake of pravastatin, increasing statin plasma concentrations and the risk of myopathy and rhabdomyolysis.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "gemfibrozil::rosuvastatin",
+      "drugA_id": "gemfibrozil",
+      "drugB_id": "rosuvastatin",
+      "severity": "serious",
+      "mechanism": "Gemfibrozil inhibits OATP1B1-mediated hepatic uptake of rosuvastatin, increasing statin exposure and the risk of myopathy and rhabdomyolysis.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "gemfibrozil::simvastatin",
+      "drugA_id": "gemfibrozil",
+      "drugB_id": "simvastatin",
+      "severity": "contraindicated",
+      "mechanism": "Gemfibrozil inhibits OATP1B1 uptake and glucuronidation of simvastatin acid, producing large increases in statin exposure and a high risk of severe myopathy and rhabdomyolysis.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
+      "lastReviewed": "2026-05-31"
     },
     {
       "pairKey": "ginkgo::ibuprofen",
@@ -19590,6 +20242,36 @@
       "lastReviewed": "2026-04-16",
       "effectDirection": "A-decreases-B",
       "managementStrategy": "separate-dosing"
+    },
+    {
+      "pairKey": "isosorbide::sildenafil",
+      "drugA_id": "isosorbide",
+      "drugB_id": "sildenafil",
+      "severity": "contraindicated",
+      "mechanism": "PDE5 inhibitors potentiate the cGMP-mediated vasodilation of organic nitrates, causing profound, potentially fatal hypotension.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "blood pressure",
+        "symptoms of hypotension (dizziness, syncope)"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "isosorbide::tadalafil",
+      "drugA_id": "isosorbide",
+      "drugB_id": "tadalafil",
+      "severity": "contraindicated",
+      "mechanism": "PDE5 inhibitors potentiate the cGMP-mediated vasodilation of organic nitrates; tadalafil's long half-life prolongs the window of profound, potentially fatal hypotension.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "blood pressure",
+        "symptoms of hypotension (dizziness, syncope)"
+      ],
+      "lastReviewed": "2026-05-31"
     },
     {
       "pairKey": "itraconazole::ketoconazole",
@@ -23204,6 +23886,22 @@
       "clinicalExample": "serotonin-syndrome"
     },
     {
+      "pairKey": "paroxetine::selegiline",
+      "drugA_id": "selegiline",
+      "drugB_id": "paroxetine",
+      "severity": "contraindicated",
+      "mechanism": "Combining an MAO inhibitor with an SSRI causes excessive synaptic serotonin, precipitating serotonin syndrome.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
       "pairKey": "paroxetine::sertraline",
       "drugA_id": "paroxetine",
       "drugB_id": "sertraline",
@@ -23330,6 +24028,22 @@
         "bruising"
       ],
       "lastReviewed": "2026-03-08"
+    },
+    {
+      "pairKey": "phenelzine::pseudoephedrine",
+      "drugA_id": "pseudoephedrine",
+      "drugB_id": "phenelzine",
+      "severity": "contraindicated",
+      "mechanism": "MAO inhibitors potentiate the pressor effects of indirect-acting sympathomimetics such as pseudoephedrine, which can precipitate a hypertensive crisis.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "blood pressure",
+        "headache",
+        "signs of hypertensive crisis"
+      ],
+      "lastReviewed": "2026-05-31"
     },
     {
       "pairKey": "phenelzine::rizatriptan",
@@ -23967,6 +24681,22 @@
       "lastReviewed": "2026-04-16",
       "effectDirection": "A-decreases-B",
       "managementStrategy": "monitor"
+    },
+    {
+      "pairKey": "pseudoephedrine::selegiline",
+      "drugA_id": "pseudoephedrine",
+      "drugB_id": "selegiline",
+      "severity": "contraindicated",
+      "mechanism": "MAO inhibitors potentiate the pressor effects of indirect-acting sympathomimetics such as pseudoephedrine, which can precipitate a hypertensive crisis.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "blood pressure",
+        "headache",
+        "signs of hypertensive crisis"
+      ],
+      "lastReviewed": "2026-05-31"
     },
     {
       "pairKey": "quetiapine::ranolazine",
@@ -24637,6 +25367,55 @@
       "lastReviewed": "2026-04-16",
       "effectDirection": "A-increases-B",
       "managementStrategy": "monitor"
+    },
+    {
+      "pairKey": "selegiline::sertraline",
+      "drugA_id": "selegiline",
+      "drugB_id": "sertraline",
+      "severity": "contraindicated",
+      "mechanism": "Combining an MAO inhibitor with an SSRI causes excessive synaptic serotonin, precipitating serotonin syndrome.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "selegiline::tramadol",
+      "drugA_id": "selegiline",
+      "drugB_id": "tramadol",
+      "severity": "contraindicated",
+      "mechanism": "Tramadol inhibits serotonin reuptake; combined with an MAO inhibitor it can precipitate serotonin syndrome and also lowers the seizure threshold.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)",
+        "seizure activity"
+      ],
+      "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "selegiline::venlafaxine",
+      "drugA_id": "selegiline",
+      "drugB_id": "venlafaxine",
+      "severity": "contraindicated",
+      "mechanism": "Combining an MAO inhibitor with an SNRI causes excessive synaptic serotonin, precipitating serotonin syndrome.",
+      "evidenceLevel": "established",
+      "source": "bundle",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
+      "lastReviewed": "2026-05-31"
     },
     {
       "pairKey": "sertraline::st-johns-wort",
