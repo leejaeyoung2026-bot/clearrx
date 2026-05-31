@@ -254,9 +254,15 @@ export default function Home() {
       <section className="px-4 py-10">
         <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
           {[
+<<<<<<< HEAD
             { value: "197+", label: "Drugs in database" },
             { value: "1,266+", label: "Interactions mapped" },
             { value: "RPh", label: "Pharmacist reviewed" },
+=======
+            { value: "200+", label: "Drugs in database" },
+            { value: "1,200+", label: "Interactions mapped" },
+            { value: "RPh", label: "Pharmacist notes" },
+>>>>>>> 377b5d1 (fix(copy): update stale homepage stats (77/320 -> 200+/1,200+) and honest pharmacist-notes label)
             { value: "0", label: "Data collected" },
           ].map((badge) => (
             <div key={badge.label}>
