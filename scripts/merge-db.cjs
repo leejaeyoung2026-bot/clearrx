@@ -239,8 +239,8 @@ extraInteractions.forEach(i => {
 });
 
 const finalDB = {
-  version: '2.0.0',
-  lastUpdated: '2026-03-08',
+  version: orig.version,
+  lastUpdated: orig.lastUpdated,
   drugs: Object.values(allDrugs).sort((a, b) => a.id.localeCompare(b.id)),
   interactions: Object.values(allInteractions).sort((a, b) => a.pairKey.localeCompare(b.pairKey))
 };

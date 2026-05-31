@@ -19,10 +19,10 @@ fs.writeFileSync(
   JSON.stringify(index, null, 2)
 );
 
-// Update version.json
+// version.json now mirrors drug-db.json (no hard-coded version)
 const version = {
-  version: '2.0.0',
-  updated: '2026-03-08'
+  version: db.version,
+  updated: db.lastUpdated,
 };
 fs.writeFileSync(
   path.join(root, 'public/data/version.json'),
@@ -30,4 +30,4 @@ fs.writeFileSync(
 );
 
 console.log('Search index rebuilt:', index.length, 'entries');
-console.log('Version updated to 2.0.0');
+console.log('Version updated to', db.version);
