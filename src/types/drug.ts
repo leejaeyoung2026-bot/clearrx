@@ -104,6 +104,13 @@ export interface DrugInteraction {
   clinicalExample?: string;        // e.g., "Torsades de pointes"
 }
 
+export interface Explanation {
+  pairKey: string;
+  plainEnglish: string;
+  lastReviewed: string;
+  reviewedBy: string;
+}
+
 export interface DrugDatabase {
   version: string;
   lastUpdated: string;

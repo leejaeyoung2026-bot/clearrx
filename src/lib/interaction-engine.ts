@@ -1,7 +1,16 @@
-import type { Drug, DrugInteraction, DrugDatabase, CytoscapeElements, SeverityLevel } from "@/types/drug";
+import type { Drug, DrugInteraction, DrugDatabase, CytoscapeElements, SeverityLevel, Explanation } from "@/types/drug";
 import { makePairKey } from "./search-engine";
 
 let db: DrugDatabase | null = null;
+let explanations: Record<string, Explanation> | null = null;
+
+export async function getExplanation(pairKey: string): Promise<Explanation | undefined> {
+  if (!explanations) {
+    const res = await fetch("/data/explanations.json");
+    explanations = await res.json();
+  }
+  return explanations![pairKey];
+}
 
 export async function getDatabase(): Promise<DrugDatabase> {
   if (db) return db;

@@ -8,6 +8,7 @@ import InteractionModal from "@/components/InteractionModal";
 import ShareModal from "@/components/ShareModal";
 import { useInteractionChecker } from "@/hooks/useInteractionChecker";
 import { generateDoctorReport } from "@/lib/generate-pdf";
+import { getExplanation } from "@/lib/interaction-engine";
 import type { DrugInteraction } from "@/types/drug";
 
 export default function Home() {
@@ -29,10 +30,19 @@ export default function Home() {
   const [showMap, setShowMap] = useState(false);
   const [showShare, setShowShare] = useState(false);
   const [reportItems, setReportItems] = useState<DrugInteraction[]>([]);
+  const [activeExplanation, setActiveExplanation] = useState<string | undefined>(undefined);
 
   useEffect(() => {
     loadFromUrl();
   }, [loadFromUrl]);
+
+  useEffect(() => {
+    if (selectedInteraction) {
+      getExplanation(selectedInteraction.pairKey).then((e) => setActiveExplanation(e?.plainEnglish));
+    } else {
+      setActiveExplanation(undefined);
+    }
+  }, [selectedInteraction]);
 
   useEffect(() => {
     if (selectedDrugs.length >= 2 && status === "idle") {
@@ -188,6 +198,7 @@ export default function Home() {
       {/* Modals */}
       <InteractionModal
         interaction={selectedInteraction}
+        plainEnglish={activeExplanation}
         onClose={() => setSelectedInteraction(null)}
         onAddToReport={handleAddToReport}
       />
