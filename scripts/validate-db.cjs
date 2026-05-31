@@ -3,32 +3,49 @@
 const fs = require('fs');
 const path = require('path');
 
-const db = JSON.parse(fs.readFileSync(path.join(__dirname, '../public/data/drug-db.json'), 'utf8'));
-console.log('=== FINAL VALIDATION ===');
-console.log('Version:', db.version);
-console.log('Drugs:', db.drugs.length);
-console.log('Interactions:', db.interactions.length);
+const dbPath = process.argv[2]
+  ? path.resolve(process.argv[2])
+  : path.join(__dirname, '../public/data/drug-db.json');
+const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
 
-const inducers = db.drugs.filter(d => d.cypInducer && d.cypInducer.length > 0);
-console.log('\nCYP Inducer drugs:', inducers.map(d => d.id + ' (' + d.cypInducer.join(',') + ')'));
+const VALID_SEVERITY = new Set(['contraindicated', 'serious', 'moderate', 'minor', 'none']);
+const VALID_EVIDENCE = new Set(['established', 'probable', 'suspected', 'theoretical']);
+const VALID_SOURCE = new Set(['bundle', 'openfda', 'derived']);
 
-const coverage = {};
-db.interactions.forEach(i => {
-  coverage[i.drugA_id] = (coverage[i.drugA_id] || 0) + 1;
-  coverage[i.drugB_id] = (coverage[i.drugB_id] || 0) + 1;
+const errors = [];
+const ids = new Set();
+db.drugs.forEach((d) => {
+  if (ids.has(d.id)) errors.push(`duplicate drug id: ${d.id}`);
+  ids.add(d.id);
+  if (typeof d.interactionRiskScore !== 'number' || d.interactionRiskScore < 0 || d.interactionRiskScore > 10)
+    errors.push(`riskScore out of 0-10: ${d.id} (${d.interactionRiskScore})`);
 });
-const top10 = Object.entries(coverage).sort((a, b) => b[1] - a[1]).slice(0, 10);
-console.log('\nTop 10 most interactive drugs:');
-top10.forEach(function(pair) { console.log('  ' + pair[0] + ': ' + pair[1] + ' interactions'); });
 
-const covered = new Set(db.interactions.flatMap(i => [i.drugA_id, i.drugB_id]));
-const zero = db.drugs.filter(d => covered.has(d.id) === false);
-console.log('\nDrugs with zero interactions:', zero.map(d => d.id));
+const pairKeys = new Set();
+db.interactions.forEach((i) => {
+  if (!ids.has(i.drugA_id)) errors.push(`dangling drugA_id: ${i.drugA_id} (${i.pairKey})`);
+  if (!ids.has(i.drugB_id)) errors.push(`dangling drugB_id: ${i.drugB_id} (${i.pairKey})`);
+  const expect = [i.drugA_id, i.drugB_id].sort().join('::');
+  if (i.pairKey !== expect) errors.push(`pairKey != sorted(A,B): ${i.pairKey} expected ${expect}`);
+  if (i.drugA_id === i.drugB_id) errors.push(`self-pair: ${i.pairKey}`);
+  if (pairKeys.has(i.pairKey)) errors.push(`duplicate pairKey: ${i.pairKey}`);
+  pairKeys.add(i.pairKey);
+  if (!VALID_SEVERITY.has(i.severity)) errors.push(`invalid severity: ${i.severity} (${i.pairKey})`);
+  if (!VALID_EVIDENCE.has(i.evidenceLevel)) errors.push(`invalid evidenceLevel: ${i.evidenceLevel} (${i.pairKey})`);
+  if (!VALID_SOURCE.has(i.source)) errors.push(`invalid source: ${i.source} (${i.pairKey})`);
+});
 
-const sevCount = {};
-db.interactions.forEach(i => { sevCount[i.severity] = (sevCount[i.severity] || 0) + 1; });
-console.log('\nBy severity:', JSON.stringify(sevCount, null, 2));
+console.log('=== VALIDATION ===');
+console.log('File:', dbPath);
+console.log('Drugs:', db.drugs.length, '| Interactions:', db.interactions.length);
+const sev = {};
+db.interactions.forEach((i) => { sev[i.severity] = (sev[i.severity] || 0) + 1; });
+console.log('By severity:', JSON.stringify(sev));
 
-const catCount = {};
-db.drugs.forEach(d => d.categories.forEach(c => { catCount[c] = (catCount[c] || 0) + 1; }));
-console.log('\nDrugs by category:', JSON.stringify(catCount, null, 2));
+if (errors.length) {
+  console.error(`\n❌ ${errors.length} ERROR(S):`);
+  errors.slice(0, 50).forEach((e) => console.error('  -', e));
+  process.exit(1);
+}
+console.log('\n✅ All integrity checks passed.');
+process.exit(0);
