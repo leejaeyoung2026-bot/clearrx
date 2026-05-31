@@ -47,7 +47,7 @@ export type DrugCategory =
   | "other";
 
 export type SeverityLevel = "contraindicated" | "serious" | "moderate" | "minor" | "none";
-export type EvidenceLevel = "established" | "probable" | "suspected";
+export type EvidenceLevel = "established" | "probable" | "suspected" | "theoretical";
 export type DataSource = "bundle" | "openfda" | "derived";
 
 export type CypRole = "substrate" | "inhibitor" | "inducer";
