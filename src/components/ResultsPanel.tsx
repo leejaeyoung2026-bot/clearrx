@@ -379,7 +379,7 @@ export default function ResultsPanel({ interactions, onSelectInteraction, lowCov
             }}
           >
             No known interactions were found in our database for:{" "}
-            <strong>{lowCoverageDrugs!.join(", ")}</strong>. This is different
+            <strong>{(lowCoverageDrugs ?? []).join(", ")}</strong>. This is different
             from &quot;no interactions exist&quot; — we may not yet have interaction data
             for these medications. Always confirm with your pharmacist or doctor.
           </p>

@@ -52,9 +52,11 @@ export default function Home() {
   }, [selectedDrugs.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
+    let cancelled = false;
     getZeroCoverageIds().then((zc) => {
-      setZeroCovSelected(selectedDrugs.filter((d) => zc.has(d.id)).map((d) => d.name));
+      if (!cancelled) setZeroCovSelected(selectedDrugs.filter((d) => zc.has(d.id)).map((d) => d.name));
     });
+    return () => { cancelled = true; };
   }, [selectedDrugs]);
 
   function handleEdgeClick(pairKey: string) {

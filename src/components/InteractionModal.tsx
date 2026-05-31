@@ -19,7 +19,7 @@ const SEVERITY_COLORS: Record<SeverityLevel, string> = {
 
 const SOURCE_LABEL: Record<string, string> = {
   bundle: "Curated",
-  derived: "Class-based",
+  derived: "Class rule",
   openfda: "FDA label",
 };
 

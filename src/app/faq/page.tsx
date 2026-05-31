@@ -10,7 +10,7 @@ const FAQS = [
   {
     question: "What is ClearRx?",
     answer:
-      "ClearRx is a free, browser-based drug interaction checker built and reviewed by a licensed pharmacist. It lets you look up potential interactions between medications and understand them in plain English, without clinical jargon or information overload.",
+      "ClearRx is a free, browser-based drug interaction checker built by a licensed pharmacist. It lets you look up potential interactions between medications and understand them in plain English, without clinical jargon or information overload.",
   },
   {
     question: "How does the drug interaction checker work?",
@@ -70,7 +70,7 @@ const FAQS = [
   {
     question: "How often is the drug database updated?",
     answer:
-      "The database is reviewed and updated on a regular basis as new FDA safety communications, drug approvals, and peer-reviewed studies are published. Major interaction alerts from the FDA are incorporated as soon as they are verified. Each entry includes a reference date so you can see when it was last reviewed.",
+      "ClearRx is updated regularly as new drug interactions are identified, new medications are added, and existing entries are refined. The database currently contains more than 200 medications and over 1,200 interaction pairs, compiled from FDA drug labels and published clinical literature. Clinically critical pairs also include a plain-language note written by a licensed pharmacist.",
   },
   {
     question: "Can I share my results with my doctor?",
