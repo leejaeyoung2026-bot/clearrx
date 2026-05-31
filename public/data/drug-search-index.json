@@ -164,6 +164,17 @@
     ]
   },
   {
+    "id": "buprenorphine",
+    "name": "buprenorphine",
+    "aliases": [
+      "Suboxone",
+      "Subutex",
+      "Belbuca",
+      "Butrans",
+      "Sublocade"
+    ]
+  },
+  {
     "id": "bupropion",
     "name": "bupropion",
     "aliases": [
@@ -225,6 +236,14 @@
     ]
   },
   {
+    "id": "celecoxib",
+    "name": "celecoxib",
+    "aliases": [
+      "Celebrex",
+      "Elyxyb"
+    ]
+  },
+  {
     "id": "cephalexin",
     "name": "cephalexin",
     "aliases": [
@@ -275,6 +294,14 @@
       "Clozaril",
       "FazaClo",
       "Versacloz"
+    ]
+  },
+  {
+    "id": "codeine",
+    "name": "codeine",
+    "aliases": [
+      "Tylenol with Codeine",
+      "Codeine Contin"
     ]
   },
   {
@@ -332,10 +359,38 @@
     ]
   },
   {
+    "id": "dexamethasone",
+    "name": "dexamethasone",
+    "aliases": [
+      "Decadron",
+      "DexPak",
+      "Hemady"
+    ]
+  },
+  {
+    "id": "dextromethorphan",
+    "name": "dextromethorphan",
+    "aliases": [
+      "Delsym",
+      "Robitussin DM",
+      "Mucinex DM"
+    ]
+  },
+  {
     "id": "diazepam",
     "name": "diazepam",
     "aliases": [
       "Valium"
+    ]
+  },
+  {
+    "id": "diclofenac",
+    "name": "diclofenac",
+    "aliases": [
+      "Voltaren",
+      "Cataflam",
+      "Cambia",
+      "Zorvolex"
     ]
   },
   {
@@ -476,6 +531,14 @@
     ]
   },
   {
+    "id": "ezetimibe",
+    "name": "ezetimibe",
+    "aliases": [
+      "Zetia",
+      "Nexlizet (with bempedoic acid)"
+    ]
+  },
+  {
     "id": "famotidine",
     "name": "famotidine",
     "aliases": [
@@ -496,6 +559,28 @@
     "name": "felodipine",
     "aliases": [
       "Plendil"
+    ]
+  },
+  {
+    "id": "fenofibrate",
+    "name": "fenofibrate",
+    "aliases": [
+      "Tricor",
+      "Lipofen",
+      "Antara",
+      "Fenoglide",
+      "Triglide"
+    ]
+  },
+  {
+    "id": "fentanyl",
+    "name": "fentanyl",
+    "aliases": [
+      "Duragesic",
+      "Actiq",
+      "Sublimaze",
+      "Subsys",
+      "Abstral"
     ]
   },
   {
@@ -571,6 +656,13 @@
     "name": "garlic",
     "aliases": [
       "Garlic supplement"
+    ]
+  },
+  {
+    "id": "gemfibrozil",
+    "name": "gemfibrozil",
+    "aliases": [
+      "Lopid"
     ]
   },
   {
@@ -693,6 +785,16 @@
     ]
   },
   {
+    "id": "isosorbide",
+    "name": "isosorbide",
+    "aliases": [
+      "Imdur",
+      "Monoket (mononitrate)",
+      "Isordil",
+      "Dilatrate-SR (dinitrate)"
+    ]
+  },
+  {
     "id": "itraconazole",
     "name": "itraconazole",
     "aliases": [
@@ -705,6 +807,14 @@
     "name": "ketoconazole",
     "aliases": [
       "Nizoral"
+    ]
+  },
+  {
+    "id": "ketorolac",
+    "name": "ketorolac",
+    "aliases": [
+      "Toradol",
+      "Sprix"
     ]
   },
   {
@@ -855,6 +965,14 @@
     ]
   },
   {
+    "id": "meloxicam",
+    "name": "meloxicam",
+    "aliases": [
+      "Mobic",
+      "Vivlodex"
+    ]
+  },
+  {
     "id": "memantine",
     "name": "memantine",
     "aliases": [
@@ -868,6 +986,14 @@
     "aliases": [
       "Glucophage",
       "Glumetza"
+    ]
+  },
+  {
+    "id": "methadone",
+    "name": "methadone",
+    "aliases": [
+      "Dolophine",
+      "Methadose"
     ]
   },
   {
@@ -895,6 +1021,15 @@
       "Concerta",
       "Daytrana",
       "Quillivant XR"
+    ]
+  },
+  {
+    "id": "methylprednisolone",
+    "name": "methylprednisolone",
+    "aliases": [
+      "Medrol",
+      "Depo-Medrol",
+      "Solu-Medrol"
     ]
   },
   {
@@ -941,6 +1076,17 @@
     "name": "montelukast",
     "aliases": [
       "Singulair"
+    ]
+  },
+  {
+    "id": "morphine",
+    "name": "morphine",
+    "aliases": [
+      "MS Contin",
+      "Kadian",
+      "Roxanol",
+      "Morphabond",
+      "Arymo ER"
     ]
   },
   {
@@ -1116,6 +1262,16 @@
     ]
   },
   {
+    "id": "prednisolone",
+    "name": "prednisolone",
+    "aliases": [
+      "Prelone",
+      "Orapred",
+      "Millipred",
+      "Pediapred"
+    ]
+  },
+  {
     "id": "prednisone",
     "name": "prednisone",
     "aliases": [
@@ -1160,6 +1316,14 @@
     "name": "propylthiouracil",
     "aliases": [
       "PTU"
+    ]
+  },
+  {
+    "id": "pseudoephedrine",
+    "name": "pseudoephedrine",
+    "aliases": [
+      "Sudafed",
+      "Sudafed 12 Hour"
     ]
   },
   {
@@ -1257,6 +1421,15 @@
     "name": "saxagliptin",
     "aliases": [
       "Onglyza"
+    ]
+  },
+  {
+    "id": "selegiline",
+    "name": "selegiline",
+    "aliases": [
+      "Eldepryl",
+      "Zelapar",
+      "Emsam"
     ]
   },
   {
