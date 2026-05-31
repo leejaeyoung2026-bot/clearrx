@@ -17,6 +17,12 @@ const SEVERITY_COLORS: Record<SeverityLevel, string> = {
   none: "#9A9490",
 };
 
+const SOURCE_LABEL: Record<string, string> = {
+  bundle: "Curated",
+  derived: "Class-based",
+  openfda: "FDA label",
+};
+
 const SEVERITY_LABELS: Record<SeverityLevel, string> = {
   contraindicated: "CONTRAINDICATED",
   serious: "SERIOUS",
@@ -134,6 +140,18 @@ export default function InteractionModal({ interaction, plainEnglish, onClose, o
             <span style={{ fontSize: "10px", fontFamily: "monospace", color: "var(--ink-muted)" }}>
               Evidence: {interaction.evidenceLevel}
             </span>
+            <span
+              style={{
+                fontSize: "10px",
+                fontFamily: "monospace",
+                color: "var(--ink-muted)",
+                background: "rgba(0,0,0,0.06)",
+                padding: "2px 6px",
+                border: "1px solid rgba(0,0,0,0.1)",
+              }}
+            >
+              {SOURCE_LABEL[interaction.source] ?? interaction.source}
+            </span>
           </div>
           <h2 style={{ fontFamily: "serif", fontSize: "1.25rem", textTransform: "capitalize", margin: 0 }}>
             {interaction.drugA_id}
@@ -144,11 +162,30 @@ export default function InteractionModal({ interaction, plainEnglish, onClose, o
 
         {/* Plain English summary */}
         {plainEnglish && (
-          <div
-            className="mx-6 my-4 pl-4 text-sm font-sans leading-relaxed italic"
-            style={{ borderLeft: `3px solid ${color}`, color: "var(--ink-muted)" }}
-          >
-            {plainEnglish}
+          <div className="mx-6 my-4">
+            <span
+              style={{
+                display: "inline-block",
+                fontSize: "9px",
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                color: "var(--rx-accent)",
+                background: "var(--rx-accent-light)",
+                padding: "2px 8px",
+                border: "1px solid var(--rx-accent-mid)",
+                marginBottom: "6px",
+              }}
+            >
+              Pharmacist&apos;s note
+            </span>
+            <div
+              className="pl-4 text-sm font-sans leading-relaxed italic"
+              style={{ borderLeft: `3px solid ${color}`, color: "var(--ink-muted)" }}
+            >
+              {plainEnglish}
+            </div>
           </div>
         )}
 

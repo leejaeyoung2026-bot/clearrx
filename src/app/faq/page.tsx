@@ -30,7 +30,7 @@ const FAQS = [
   {
     question: "Who reviews the interaction information?",
     answer:
-      "Every interaction explanation on ClearRx is written or reviewed by Jay, a licensed pharmacist and senior pharmaceutical researcher specializing in CYP450-mediated drug interactions. The information is cross-checked against peer-reviewed clinical references and prescribing labels.",
+      "ClearRx's interaction database is compiled from FDA drug labels and peer-reviewed clinical references by Jay, a licensed pharmacist and senior pharmaceutical researcher specializing in CYP450-mediated drug interactions. Key drug pairs include a pharmacist-written plain-language note; these are marked in the result so you know when you're reading pharmacist-reviewed content.",
   },
   {
     question: "What do the severity levels mean?",

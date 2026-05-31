@@ -87,7 +87,8 @@ export default function Home() {
         </h1>
         <p className="mt-4 text-base font-sans max-w-xl mx-auto" style={{ color: "var(--ink-muted)" }}>
           Enter your medications and instantly see how they interact — visualized as a network,
-          explained in plain English. Written by a licensed pharmacist.
+          explained in plain English. Compiled from FDA labels &amp; clinical literature, with
+          pharmacist plain-language notes on key pairs.
         </p>
       </section>
 
