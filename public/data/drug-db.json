@@ -3784,6 +3784,24 @@
       "mechanismClass": "maoi-b-selective"
     },
     {
+      "id": "repaglinide",
+      "genericName": "repaglinide",
+      "brandNames": [
+        "Prandin"
+      ],
+      "categories": [
+        "antidiabetic"
+      ],
+      "interactionRiskScore": null,
+      "cypSubstrate": [
+        "CYP2C8",
+        "CYP3A4"
+      ],
+      "inBundle": true,
+      "otcRx": "rx",
+      "mechanismClass": "meglitinide (short-acting insulin secretagogue)"
+    },
+    {
       "id": "rifampin",
       "genericName": "rifampin",
       "brandNames": [
@@ -18223,6 +18241,21 @@
         "renal function"
       ],
       "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "gemfibrozil::repaglinide",
+      "drugA_id": "gemfibrozil",
+      "drugB_id": "repaglinide",
+      "severity": "contraindicated",
+      "mechanism": "Gemfibrozil strongly inhibits CYP2C8-mediated metabolism of repaglinide, markedly increasing repaglinide plasma concentrations and the risk of severe, prolonged hypoglycemia. The gemfibrozil label states this combination is contraindicated.",
+      "evidenceLevel": "established",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-05-31",
+      "source": "openfda"
     },
     {
       "pairKey": "gemfibrozil::rosuvastatin",
