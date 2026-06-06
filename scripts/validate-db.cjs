@@ -35,6 +35,27 @@ db.interactions.forEach((i) => {
   if (!VALID_SOURCE.has(i.source)) errors.push(`invalid source: ${i.source} (${i.pairKey})`);
 });
 
+// Curation reconciliation: a pair the operator curated must not be silently absent from the
+// shipped DB. Catches the silent-drop where a curated pair references a drug id missing from
+// drug-db.json (the gate previously only checked the shape of what shipped).
+const curationPath = path.join(__dirname, 'curation-list.json');
+if (fs.existsSync(curationPath)) {
+  const curation = JSON.parse(fs.readFileSync(curationPath, 'utf8'));
+  const curated = [
+    ...(curation.classRulePairs || []).map((p) => ({ ...p, list: 'classRulePairs' })),
+    ...(curation.openfdaConfirmedPairs || []).map((p) => ({ ...p, list: 'openfdaConfirmedPairs' })),
+  ];
+  curated.forEach((p) => {
+    if (pairKeys.has(p.pairKey)) return; // shipped — OK
+    const missing = [!ids.has(p.drugA_id) && p.drugA_id, !ids.has(p.drugB_id) && p.drugB_id]
+      .filter(Boolean).join(', ');
+    if (missing)
+      errors.push(`curated ${p.list} pair dropped — drug id absent (${missing}): ${p.pairKey}${p.severity ? ` [${p.severity}]` : ''}`);
+    else
+      errors.push(`curated ${p.list} pair missing from db despite both drugs present: ${p.pairKey}`);
+  });
+}
+
 console.log('=== VALIDATION ===');
 console.log('File:', dbPath);
 console.log('Drugs:', db.drugs.length, '| Interactions:', db.interactions.length);

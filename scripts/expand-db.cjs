@@ -11,11 +11,17 @@ const ids = new Set(db.drugs.map((d) => d.id));
 const existingPairs = new Set(db.interactions.map((i) => i.pairKey));
 
 let added = 0;
+const skipped = [];
+const missingIds = (p) =>
+  [!ids.has(p.drugA_id) && p.drugA_id, !ids.has(p.drugB_id) && p.drugB_id].filter(Boolean).join(', ');
 
 // 1) class-rule pairs (strip the justification field before storing)
 curation.classRulePairs.forEach((p) => {
   if (existingPairs.has(p.pairKey)) return;
-  if (!ids.has(p.drugA_id) || !ids.has(p.drugB_id)) return;
+  if (!ids.has(p.drugA_id) || !ids.has(p.drugB_id)) {
+    skipped.push(`classRulePairs ${p.pairKey} (missing drug id: ${missingIds(p)})`);
+    return;
+  }
   const { classRuleBasis, ...entry } = p; // eslint-disable-line no-unused-vars
   db.interactions.push(entry);
   existingPairs.add(p.pairKey);
@@ -26,7 +32,10 @@ curation.classRulePairs.forEach((p) => {
 //    in curation-list.openfdaConfirmedPairs[] (a curated allowlist, NOT the raw report).
 (curation.openfdaConfirmedPairs || []).forEach((p) => {
   if (existingPairs.has(p.pairKey)) return;
-  if (!ids.has(p.drugA_id) || !ids.has(p.drugB_id)) return;
+  if (!ids.has(p.drugA_id) || !ids.has(p.drugB_id)) {
+    skipped.push(`openfdaConfirmedPairs ${p.pairKey} (missing drug id: ${missingIds(p)}${p.severity ? `, severity: ${p.severity}` : ''})`);
+    return;
+  }
   db.interactions.push({ ...p, source: 'openfda' });
   existingPairs.add(p.pairKey);
   added++;
@@ -39,3 +48,11 @@ db.lastUpdated = '2026-05-31';
 
 fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
 console.log(`expand-db: added ${added} interactions | total ${db.interactions.length} | version ${db.version}`);
+
+// A curated pair must never be silently dropped. Fail loud if any was skipped for a missing drug id.
+if (skipped.length) {
+  console.error(`\n❌ expand-db: ${skipped.length} curated pair(s) SKIPPED (drug id absent from drug-db.json):`);
+  skipped.forEach((s) => console.error('  -', s));
+  console.error('Resolve by adding the missing drug record, or removing/rescoping the curation entry, then re-run.');
+  process.exit(1);
+}
