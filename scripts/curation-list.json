@@ -3,8 +3,17 @@
     {
       "id": "morphine",
       "genericName": "morphine",
-      "brandNames": ["MS Contin", "Kadian", "Roxanol", "Morphabond", "Arymo ER"],
-      "categories": ["opioid", "analgesic"],
+      "brandNames": [
+        "MS Contin",
+        "Kadian",
+        "Roxanol",
+        "Morphabond",
+        "Arymo ER"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
       "interactionRiskScore": 8,
       "inBundle": true,
       "otcRx": "rx",
@@ -16,10 +25,21 @@
     {
       "id": "fentanyl",
       "genericName": "fentanyl",
-      "brandNames": ["Duragesic", "Actiq", "Sublimaze", "Subsys", "Abstral"],
-      "categories": ["opioid", "analgesic"],
+      "brandNames": [
+        "Duragesic",
+        "Actiq",
+        "Sublimaze",
+        "Subsys",
+        "Abstral"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
       "interactionRiskScore": 9,
-      "cypSubstrate": ["CYP3A4"],
+      "cypSubstrate": [
+        "CYP3A4"
+      ],
       "inBundle": true,
       "otcRx": "rx",
       "mechanismClass": "mu-opioid receptor agonist",
@@ -29,10 +49,19 @@
     {
       "id": "codeine",
       "genericName": "codeine",
-      "brandNames": ["Tylenol with Codeine", "Codeine Contin"],
-      "categories": ["opioid", "analgesic"],
+      "brandNames": [
+        "Tylenol with Codeine",
+        "Codeine Contin"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
       "interactionRiskScore": 8,
-      "cypSubstrate": ["CYP2D6", "CYP3A4"],
+      "cypSubstrate": [
+        "CYP2D6",
+        "CYP3A4"
+      ],
       "inBundle": true,
       "otcRx": "rx",
       "mechanismClass": "mu-opioid receptor agonist (CYP2D6 prodrug)",
@@ -41,10 +70,19 @@
     {
       "id": "methadone",
       "genericName": "methadone",
-      "brandNames": ["Dolophine", "Methadose"],
-      "categories": ["opioid", "analgesic"],
+      "brandNames": [
+        "Dolophine",
+        "Methadose"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
       "interactionRiskScore": 9,
-      "cypSubstrate": ["CYP3A4", "CYP2B6"],
+      "cypSubstrate": [
+        "CYP3A4",
+        "CYP2B6"
+      ],
       "inBundle": true,
       "otcRx": "rx",
       "mechanismClass": "mu-opioid receptor agonist; NMDA antagonist",
@@ -55,10 +93,21 @@
     {
       "id": "buprenorphine",
       "genericName": "buprenorphine",
-      "brandNames": ["Suboxone", "Subutex", "Belbuca", "Butrans", "Sublocade"],
-      "categories": ["opioid", "analgesic"],
+      "brandNames": [
+        "Suboxone",
+        "Subutex",
+        "Belbuca",
+        "Butrans",
+        "Sublocade"
+      ],
+      "categories": [
+        "opioid",
+        "analgesic"
+      ],
       "interactionRiskScore": 8,
-      "cypSubstrate": ["CYP3A4"],
+      "cypSubstrate": [
+        "CYP3A4"
+      ],
       "inBundle": true,
       "otcRx": "rx",
       "mechanismClass": "partial mu-opioid receptor agonist; kappa antagonist",
@@ -69,8 +118,14 @@
     {
       "id": "meloxicam",
       "genericName": "meloxicam",
-      "brandNames": ["Mobic", "Vivlodex"],
-      "categories": ["nsaid", "analgesic"],
+      "brandNames": [
+        "Mobic",
+        "Vivlodex"
+      ],
+      "categories": [
+        "nsaid",
+        "analgesic"
+      ],
       "interactionRiskScore": 6,
       "inBundle": true,
       "otcRx": "rx",
@@ -80,11 +135,21 @@
     {
       "id": "celecoxib",
       "genericName": "celecoxib",
-      "brandNames": ["Celebrex", "Elyxyb"],
-      "categories": ["nsaid", "analgesic"],
+      "brandNames": [
+        "Celebrex",
+        "Elyxyb"
+      ],
+      "categories": [
+        "nsaid",
+        "analgesic"
+      ],
       "interactionRiskScore": 6,
-      "cypSubstrate": ["CYP2C9"],
-      "cypInhibitor": ["CYP2D6"],
+      "cypSubstrate": [
+        "CYP2C9"
+      ],
+      "cypInhibitor": [
+        "CYP2D6"
+      ],
       "inBundle": true,
       "otcRx": "rx",
       "mechanismClass": "selective COX-2 inhibitor (NSAID)",
@@ -94,8 +159,14 @@
     {
       "id": "ketorolac",
       "genericName": "ketorolac",
-      "brandNames": ["Toradol", "Sprix"],
-      "categories": ["nsaid", "analgesic"],
+      "brandNames": [
+        "Toradol",
+        "Sprix"
+      ],
+      "categories": [
+        "nsaid",
+        "analgesic"
+      ],
       "interactionRiskScore": 8,
       "inBundle": true,
       "otcRx": "rx",
@@ -105,10 +176,20 @@
     {
       "id": "diclofenac",
       "genericName": "diclofenac",
-      "brandNames": ["Voltaren", "Cataflam", "Cambia", "Zorvolex"],
-      "categories": ["nsaid", "analgesic"],
+      "brandNames": [
+        "Voltaren",
+        "Cataflam",
+        "Cambia",
+        "Zorvolex"
+      ],
+      "categories": [
+        "nsaid",
+        "analgesic"
+      ],
       "interactionRiskScore": 6,
-      "cypSubstrate": ["CYP2C9"],
+      "cypSubstrate": [
+        "CYP2C9"
+      ],
       "inBundle": true,
       "otcRx": "both",
       "mechanismClass": "nonselective COX inhibitor (NSAID)",
@@ -118,11 +199,21 @@
     {
       "id": "dexamethasone",
       "genericName": "dexamethasone",
-      "brandNames": ["Decadron", "DexPak", "Hemady"],
-      "categories": ["corticosteroid"],
+      "brandNames": [
+        "Decadron",
+        "DexPak",
+        "Hemady"
+      ],
+      "categories": [
+        "corticosteroid"
+      ],
       "interactionRiskScore": 7,
-      "cypSubstrate": ["CYP3A4"],
-      "cypInducer": ["CYP3A4"],
+      "cypSubstrate": [
+        "CYP3A4"
+      ],
+      "cypInducer": [
+        "CYP3A4"
+      ],
       "inBundle": true,
       "otcRx": "rx",
       "mechanismClass": "long-acting glucocorticoid"
@@ -130,10 +221,18 @@
     {
       "id": "methylprednisolone",
       "genericName": "methylprednisolone",
-      "brandNames": ["Medrol", "Depo-Medrol", "Solu-Medrol"],
-      "categories": ["corticosteroid"],
+      "brandNames": [
+        "Medrol",
+        "Depo-Medrol",
+        "Solu-Medrol"
+      ],
+      "categories": [
+        "corticosteroid"
+      ],
       "interactionRiskScore": 6,
-      "cypSubstrate": ["CYP3A4"],
+      "cypSubstrate": [
+        "CYP3A4"
+      ],
       "inBundle": true,
       "otcRx": "rx",
       "mechanismClass": "intermediate-acting glucocorticoid"
@@ -141,8 +240,15 @@
     {
       "id": "prednisolone",
       "genericName": "prednisolone",
-      "brandNames": ["Prelone", "Orapred", "Millipred", "Pediapred"],
-      "categories": ["corticosteroid"],
+      "brandNames": [
+        "Prelone",
+        "Orapred",
+        "Millipred",
+        "Pediapred"
+      ],
+      "categories": [
+        "corticosteroid"
+      ],
       "interactionRiskScore": 6,
       "inBundle": true,
       "otcRx": "rx",
@@ -151,10 +257,17 @@
     {
       "id": "gemfibrozil",
       "genericName": "gemfibrozil",
-      "brandNames": ["Lopid"],
-      "categories": ["fibrate", "antilipid"],
+      "brandNames": [
+        "Lopid"
+      ],
+      "categories": [
+        "fibrate",
+        "antilipid"
+      ],
       "interactionRiskScore": 7,
-      "cypInhibitor": ["CYP2C8"],
+      "cypInhibitor": [
+        "CYP2C8"
+      ],
       "inBundle": true,
       "otcRx": "rx",
       "mechanismClass": "fibric acid derivative (PPAR-alpha agonist); OATP1B1 and CYP2C8 inhibitor",
@@ -163,8 +276,17 @@
     {
       "id": "fenofibrate",
       "genericName": "fenofibrate",
-      "brandNames": ["Tricor", "Lipofen", "Antara", "Fenoglide", "Triglide"],
-      "categories": ["fibrate", "antilipid"],
+      "brandNames": [
+        "Tricor",
+        "Lipofen",
+        "Antara",
+        "Fenoglide",
+        "Triglide"
+      ],
+      "categories": [
+        "fibrate",
+        "antilipid"
+      ],
       "interactionRiskScore": 5,
       "inBundle": true,
       "otcRx": "rx",
@@ -175,8 +297,15 @@
     {
       "id": "isosorbide",
       "genericName": "isosorbide",
-      "brandNames": ["Imdur", "Monoket (mononitrate)", "Isordil", "Dilatrate-SR (dinitrate)"],
-      "categories": ["nitrate"],
+      "brandNames": [
+        "Imdur",
+        "Monoket (mononitrate)",
+        "Isordil",
+        "Dilatrate-SR (dinitrate)"
+      ],
+      "categories": [
+        "nitrate"
+      ],
       "interactionRiskScore": 6,
       "inBundle": true,
       "otcRx": "rx",
@@ -185,8 +314,15 @@
     {
       "id": "selegiline",
       "genericName": "selegiline",
-      "brandNames": ["Eldepryl", "Zelapar", "Emsam"],
-      "categories": ["parkinson-agent", "antidepressant"],
+      "brandNames": [
+        "Eldepryl",
+        "Zelapar",
+        "Emsam"
+      ],
+      "categories": [
+        "parkinson-agent",
+        "antidepressant"
+      ],
       "interactionRiskScore": 9,
       "inBundle": true,
       "otcRx": "rx",
@@ -197,8 +333,13 @@
     {
       "id": "pseudoephedrine",
       "genericName": "pseudoephedrine",
-      "brandNames": ["Sudafed", "Sudafed 12 Hour"],
-      "categories": ["decongestant"],
+      "brandNames": [
+        "Sudafed",
+        "Sudafed 12 Hour"
+      ],
+      "categories": [
+        "decongestant"
+      ],
       "interactionRiskScore": 5,
       "inBundle": true,
       "otcRx": "both",
@@ -207,10 +348,18 @@
     {
       "id": "dextromethorphan",
       "genericName": "dextromethorphan",
-      "brandNames": ["Delsym", "Robitussin DM", "Mucinex DM"],
-      "categories": ["antitussive"],
+      "brandNames": [
+        "Delsym",
+        "Robitussin DM",
+        "Mucinex DM"
+      ],
+      "categories": [
+        "antitussive"
+      ],
       "interactionRiskScore": 6,
-      "cypSubstrate": ["CYP2D6"],
+      "cypSubstrate": [
+        "CYP2D6"
+      ],
       "inBundle": true,
       "otcRx": "otc",
       "mechanismClass": "NMDA antagonist antitussive; serotonin reuptake inhibitor",
@@ -219,8 +368,13 @@
     {
       "id": "ezetimibe",
       "genericName": "ezetimibe",
-      "brandNames": ["Zetia", "Nexlizet (with bempedoic acid)"],
-      "categories": ["antilipid"],
+      "brandNames": [
+        "Zetia",
+        "Nexlizet (with bempedoic acid)"
+      ],
+      "categories": [
+        "antilipid"
+      ],
       "interactionRiskScore": 2,
       "inBundle": true,
       "otcRx": "rx",
@@ -237,7 +391,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Fibrate-statin myopathy class rule; gemfibrozil markedly increases statin exposure via OATP1B1/glucuronidation inhibition. Combination should be avoided per FDA statin labeling and ACC/AHA guidance."
     },
@@ -250,7 +408,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "FDA simvastatin labeling explicitly contraindicates concomitant gemfibrozil due to documented rhabdomyolysis risk."
     },
@@ -263,7 +425,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "FDA lovastatin labeling explicitly contraindicates concomitant gemfibrozil due to documented rhabdomyolysis risk."
     },
@@ -276,7 +442,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Fibrate-statin myopathy class rule; gemfibrozil is the highest-risk fibrate and should be avoided with statins per FDA statin labeling and ACC/AHA guidance."
     },
@@ -289,7 +459,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "FDA rosuvastatin labeling directs avoidance of gemfibrozil and a dose cap if unavoidable, reflecting the fibrate-statin myopathy class rule."
     },
@@ -302,7 +476,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "FDA pitavastatin labeling contraindicates/avoids concomitant gemfibrozil, reflecting the fibrate-statin myopathy class rule."
     },
@@ -315,7 +493,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "monitor",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Fibrate-statin myopathy class rule; fenofibrate is the preferred fibrate for statin combination and may be used with monitoring per FDA labeling and ACC/AHA guidance."
     },
@@ -328,7 +510,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "monitor",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Fibrate-statin myopathy class rule; fenofibrate is the preferred fibrate for statin combination and may be used with monitoring per FDA labeling and ACC/AHA guidance."
     },
@@ -341,7 +527,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "monitor",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Fibrate-statin myopathy class rule; fenofibrate is the preferred fibrate for statin combination and may be used with monitoring per FDA labeling and ACC/AHA guidance."
     },
@@ -354,7 +544,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "monitor",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Fibrate-statin myopathy class rule; fenofibrate is the preferred fibrate for statin combination and may be used with monitoring per FDA labeling and ACC/AHA guidance."
     },
@@ -367,7 +561,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "monitor",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Fibrate-statin myopathy class rule; fenofibrate is the preferred fibrate for statin combination and may be used with monitoring per FDA labeling and ACC/AHA guidance."
     },
@@ -380,7 +578,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "monitor",
-      "monitoringParameters": ["creatine kinase (CK)", "muscle pain/weakness", "renal function"],
+      "monitoringParameters": [
+        "creatine kinase (CK)",
+        "muscle pain/weakness",
+        "renal function"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Fibrate-statin myopathy class rule; fenofibrate is the preferred fibrate for statin combination and may be used with monitoring per FDA labeling and ACC/AHA guidance."
     },
@@ -393,7 +595,10 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["blood pressure", "symptoms of hypotension (dizziness, syncope)"],
+      "monitoringParameters": [
+        "blood pressure",
+        "symptoms of hypotension (dizziness, syncope)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Nitrate plus PDE5-inhibitor contraindication; co-administration is contraindicated in all PDE5-inhibitor and nitrate labeling due to risk of life-threatening hypotension."
     },
@@ -406,7 +611,10 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["blood pressure", "symptoms of hypotension (dizziness, syncope)"],
+      "monitoringParameters": [
+        "blood pressure",
+        "symptoms of hypotension (dizziness, syncope)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "Nitrate plus PDE5-inhibitor contraindication; co-administration is contraindicated in all PDE5-inhibitor and nitrate labeling due to risk of life-threatening hypotension."
     },
@@ -419,7 +627,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; concomitant use and a 5-week fluoxetine washout are required per selegiline (Emsam) and fluoxetine labeling."
     },
@@ -432,7 +644,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SSRI co-administration with selegiline is contraindicated per selegiline (Emsam) and SSRI labeling."
     },
@@ -445,7 +661,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SSRI co-administration with selegiline is contraindicated per selegiline (Emsam) and SSRI labeling."
     },
@@ -458,7 +678,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SSRI co-administration with selegiline is contraindicated per selegiline (Emsam) and SSRI labeling."
     },
@@ -471,7 +695,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SNRI co-administration with selegiline is contraindicated per selegiline (Emsam) and SNRI labeling."
     },
@@ -484,7 +712,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SNRI co-administration with selegiline is contraindicated per selegiline (Emsam) and SNRI labeling."
     },
@@ -497,7 +729,12 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)", "seizure activity"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)",
+        "seizure activity"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; tramadol is contraindicated with MAO inhibitors per tramadol and selegiline labeling."
     },
@@ -510,7 +747,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; dextromethorphan is contraindicated with MAO inhibitors per selegiline (Emsam) and OTC dextromethorphan labeling."
     },
@@ -523,7 +764,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; concomitant use and a 5-week fluoxetine washout are required per phenelzine and fluoxetine labeling."
     },
@@ -536,7 +781,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SSRI co-administration with phenelzine is contraindicated per phenelzine and SSRI labeling."
     },
@@ -549,7 +798,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SSRI co-administration with phenelzine is contraindicated per phenelzine and SSRI labeling."
     },
@@ -562,7 +815,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SSRI co-administration with phenelzine is contraindicated per phenelzine and SSRI labeling."
     },
@@ -575,7 +832,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SNRI co-administration with phenelzine is contraindicated per phenelzine and SNRI labeling."
     },
@@ -588,7 +849,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; SNRI co-administration with phenelzine is contraindicated per phenelzine and SNRI labeling."
     },
@@ -601,7 +866,12 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)", "seizure activity"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)",
+        "seizure activity"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; tramadol is contraindicated with MAO inhibitors per tramadol and phenelzine labeling."
     },
@@ -614,7 +884,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["mental status", "neuromuscular signs (clonus, rigidity)", "autonomic signs (hyperthermia, tachycardia)"],
+      "monitoringParameters": [
+        "mental status",
+        "neuromuscular signs (clonus, rigidity)",
+        "autonomic signs (hyperthermia, tachycardia)"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus serotonergic agent serotonin-syndrome class rule; dextromethorphan is contraindicated with MAO inhibitors per phenelzine and OTC dextromethorphan labeling."
     },
@@ -627,7 +901,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["blood pressure", "headache", "signs of hypertensive crisis"],
+      "monitoringParameters": [
+        "blood pressure",
+        "headache",
+        "signs of hypertensive crisis"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus indirect sympathomimetic hypertensive-crisis class rule; sympathomimetic decongestants are contraindicated with MAO inhibitors per phenelzine labeling."
     },
@@ -640,7 +918,11 @@
       "evidenceLevel": "established",
       "source": "bundle",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["blood pressure", "headache", "signs of hypertensive crisis"],
+      "monitoringParameters": [
+        "blood pressure",
+        "headache",
+        "signs of hypertensive crisis"
+      ],
       "lastReviewed": "2026-05-31",
       "classRuleBasis": "MAOI plus indirect sympathomimetic hypertensive-crisis class rule; sympathomimetic decongestants are contraindicated with selegiline (Emsam) per its labeling."
     }
@@ -654,8 +936,123 @@
       "mechanism": "Gemfibrozil strongly inhibits CYP2C8-mediated metabolism of repaglinide, markedly increasing repaglinide plasma concentrations and the risk of severe, prolonged hypoglycemia. The gemfibrozil label states this combination is contraindicated.",
       "evidenceLevel": "established",
       "managementStrategy": "avoid",
-      "monitoringParameters": ["blood glucose", "signs/symptoms of hypoglycemia"],
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
       "lastReviewed": "2026-05-31"
+    },
+    {
+      "pairKey": "clopidogrel::repaglinide",
+      "drugA_id": "clopidogrel",
+      "drugB_id": "repaglinide",
+      "severity": "serious",
+      "mechanism": "Clopidogrel inhibits CYP2C8-mediated metabolism of repaglinide, increasing repaglinide exposure 3.9-5.1 fold with risk of hypoglycemia. The repaglinide label advises avoiding concomitant use; if unavoidable, limit repaglinide to 0.5 mg before meals (max 4 mg/day).",
+      "evidenceLevel": "established",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "cyclosporine::repaglinide",
+      "drugA_id": "cyclosporine",
+      "drugB_id": "repaglinide",
+      "severity": "serious",
+      "mechanism": "Cyclosporine increases repaglinide exposure ~2.5 fold (OATP1B1 and CYP3A4 inhibition), raising hypoglycemia risk. The repaglinide label advises limiting repaglinide to 6 mg/day with increased glucose monitoring.",
+      "evidenceLevel": "established",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "ketoconazole::repaglinide",
+      "drugA_id": "ketoconazole",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP3A4 substrate; ketoconazole is a strong CYP3A4 inhibitor named as an example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "itraconazole::repaglinide",
+      "drugA_id": "itraconazole",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP3A4 substrate; itraconazole is a strong CYP3A4 inhibitor named as an example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "clarithromycin::repaglinide",
+      "drugA_id": "clarithromycin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP3A4 substrate; clarithromycin is a CYP3A4 inhibitor named as an example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "erythromycin::repaglinide",
+      "drugA_id": "erythromycin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP3A4 substrate; erythromycin is a CYP3A4 inhibitor named as an example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "montelukast::repaglinide",
+      "drugA_id": "montelukast",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP2C8 substrate; montelukast is named as a CYP2C8 inhibitor example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::rifampin",
+      "drugA_id": "repaglinide",
+      "drugB_id": "rifampin",
+      "severity": "moderate",
+      "mechanism": "Rifampin induces CYP3A4 and CYP2C8, lowering repaglinide exposure and its glucose-lowering effect. The repaglinide label advises possible repaglinide dose increase and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
     }
   ]
 }

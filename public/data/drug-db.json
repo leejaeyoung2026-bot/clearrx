@@ -3792,7 +3792,7 @@
       "categories": [
         "antidiabetic"
       ],
-      "interactionRiskScore": null,
+      "interactionRiskScore": 6,
       "cypSubstrate": [
         "CYP2C8",
         "CYP3A4"
@@ -11362,6 +11362,21 @@
       "clinicalExample": "torsades-de-pointes"
     },
     {
+      "pairKey": "clarithromycin::repaglinide",
+      "drugA_id": "clarithromycin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP3A4 substrate; clarithromycin is a CYP3A4 inhibitor named as an example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07",
+      "source": "openfda"
+    },
+    {
       "pairKey": "clarithromycin::rivaroxaban",
       "drugA_id": "clarithromycin",
       "drugB_id": "rivaroxaban",
@@ -11836,6 +11851,21 @@
         "consider pantoprazole as alternative"
       ],
       "lastReviewed": "2026-03-07"
+    },
+    {
+      "pairKey": "clopidogrel::repaglinide",
+      "drugA_id": "clopidogrel",
+      "drugB_id": "repaglinide",
+      "severity": "serious",
+      "mechanism": "Clopidogrel inhibits CYP2C8-mediated metabolism of repaglinide, increasing repaglinide exposure 3.9-5.1 fold with risk of hypoglycemia. The repaglinide label advises avoiding concomitant use; if unavoidable, limit repaglinide to 0.5 mg before meals (max 4 mg/day).",
+      "evidenceLevel": "established",
+      "managementStrategy": "avoid",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07",
+      "source": "openfda"
     },
     {
       "pairKey": "clopidogrel::rivaroxaban",
@@ -12666,6 +12696,21 @@
         "cyclosporine levels"
       ],
       "lastReviewed": "2026-03-08"
+    },
+    {
+      "pairKey": "cyclosporine::repaglinide",
+      "drugA_id": "cyclosporine",
+      "drugB_id": "repaglinide",
+      "severity": "serious",
+      "mechanism": "Cyclosporine increases repaglinide exposure ~2.5 fold (OATP1B1 and CYP3A4 inhibition), raising hypoglycemia risk. The repaglinide label advises limiting repaglinide to 6 mg/day with increased glucose monitoring.",
+      "evidenceLevel": "established",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07",
+      "source": "openfda"
     },
     {
       "pairKey": "cyclosporine::rifampin",
@@ -15802,6 +15847,21 @@
       "effectDirection": "mutual-increase",
       "managementStrategy": "avoid",
       "clinicalExample": "torsades-de-pointes"
+    },
+    {
+      "pairKey": "erythromycin::repaglinide",
+      "drugA_id": "erythromycin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP3A4 substrate; erythromycin is a CYP3A4 inhibitor named as an example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07",
+      "source": "openfda"
     },
     {
       "pairKey": "erythromycin::rivaroxaban",
@@ -20458,6 +20518,21 @@
       "clinicalExample": "torsades-de-pointes"
     },
     {
+      "pairKey": "itraconazole::repaglinide",
+      "drugA_id": "itraconazole",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP3A4 substrate; itraconazole is a strong CYP3A4 inhibitor named as an example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07",
+      "source": "openfda"
+    },
+    {
       "pairKey": "itraconazole::rivaroxaban",
       "drugA_id": "itraconazole",
       "drugB_id": "rivaroxaban",
@@ -20828,6 +20903,21 @@
       "effectDirection": "mutual-increase",
       "managementStrategy": "avoid",
       "clinicalExample": "torsades-de-pointes"
+    },
+    {
+      "pairKey": "ketoconazole::repaglinide",
+      "drugA_id": "ketoconazole",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP3A4 substrate; ketoconazole is a strong CYP3A4 inhibitor named as an example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07",
+      "source": "openfda"
     },
     {
       "pairKey": "ketoconazole::rivaroxaban",
@@ -22616,6 +22706,21 @@
       "effectDirection": "mutual-increase",
       "managementStrategy": "monitor",
       "clinicalExample": "serotonin-syndrome"
+    },
+    {
+      "pairKey": "montelukast::repaglinide",
+      "drugA_id": "montelukast",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "Repaglinide is a CYP2C8 substrate; montelukast is named as a CYP2C8 inhibitor example in the repaglinide label. Inhibition can raise repaglinide exposure and hypoglycemia risk; the label advises possible dose reduction and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07",
+      "source": "openfda"
     },
     {
       "pairKey": "naproxen::olmesartan",
@@ -25147,6 +25252,21 @@
       "effectDirection": "mutual-increase",
       "managementStrategy": "avoid",
       "clinicalExample": "serotonin-syndrome"
+    },
+    {
+      "pairKey": "repaglinide::rifampin",
+      "drugA_id": "repaglinide",
+      "drugB_id": "rifampin",
+      "severity": "moderate",
+      "mechanism": "Rifampin induces CYP3A4 and CYP2C8, lowering repaglinide exposure and its glucose-lowering effect. The repaglinide label advises possible repaglinide dose increase and increased glucose monitoring.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "caution",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07",
+      "source": "openfda"
     },
     {
       "pairKey": "rifampin::rivaroxaban",
