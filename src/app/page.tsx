@@ -325,7 +325,7 @@ export default function Home() {
         <section>
           <h2 className="font-serif text-2xl mb-3">From the Pharmacist — Why I Built This</h2>
           <p className="font-sans text-base leading-relaxed" style={{ color: "var(--ink-muted)" }}>
-            As a licensed pharmacist, I review hundreds of medication profiles every week.
+            As a licensed pharmacist and pharmaceutical researcher, I know how dense and hard to read FDA interaction data can be.
             The tools available to patients online are either buried under ads, written in
             FDA label language nobody understands, or require creating an account just to
             see a basic result. I built ClearRx because patients deserve a clean, honest

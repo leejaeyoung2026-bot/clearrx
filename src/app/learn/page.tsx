@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Drug Interaction Learning Hub",
   description:
-    "Evidence-based articles about drug interactions, written by a licensed pharmacist. Learn what causes drug interactions, how to prevent them, and when to be concerned.",
+    "Evidence-based articles about drug interactions, compiled from FDA labels and clinical references. Learn what causes drug interactions, how to prevent them, and when to be concerned.",
 };
 
 const ARTICLES = [
@@ -80,7 +80,7 @@ const jsonLd = {
   "@type": "CollectionPage",
   name: "Drug Interaction Learning Hub",
   description:
-    "Evidence-based articles about drug interactions, written by a licensed pharmacist.",
+    "Evidence-based articles about drug interactions, compiled from FDA labels and clinical references.",
   url: "https://clearrx.vibed-lab.com/learn",
   isPartOf: {
     "@type": "WebSite",

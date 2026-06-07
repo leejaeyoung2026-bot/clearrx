@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     template: "%s | ClearRx",
   },
   description:
-    "Check drug interactions instantly. Visual network diagram showing how your medications interact. Written by a licensed pharmacist. No login, 100% private.",
+    "Check drug interactions instantly. Visual network diagram showing how your medications interact. Built by a licensed pharmacist. No login, 100% private.",
   keywords: [
     "drug interaction checker",
     "medication interaction",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ClearRx — Know Before You Swallow",
     description:
-      "Check drug interactions instantly. Visual network diagram. Written by a licensed pharmacist.",
+      "Check drug interactions instantly. Visual network diagram. Built by a licensed pharmacist.",
     type: "website",
     siteName: "ClearRx",
     locale: "en_US",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ClearRx — Know Before You Swallow",
-    description: "Check drug interactions instantly. Written by a licensed pharmacist.",
+    description: "Check drug interactions instantly. Built by a licensed pharmacist.",
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://clearrx.vibed-lab.com" },

@@ -23,14 +23,7 @@ export default function JsonLd() {
     name: "ClearRx — Drug Interaction Checker",
     url: "https://clearrx.vibed-lab.com",
     description:
-      "Check drug interactions instantly. Visual network diagram. Written by a licensed pharmacist.",
-    reviewedBy: {
-      "@type": "Person",
-      name: "Jay",
-      jobTitle: "Licensed Pharmacist",
-      url: "https://clearrx.vibed-lab.com/about",
-    },
-    lastReviewed: "2026-03-07",
+      "Check drug interactions instantly. Visual network diagram. Built by a licensed pharmacist; interaction data compiled from FDA labels and pharmacological class rules.",
     audience: { "@type": "PatientsAudience" },
     specialty: {
       "@type": "MedicalSpecialty",

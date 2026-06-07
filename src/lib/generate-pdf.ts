@@ -26,7 +26,7 @@ export async function generateDoctorReport({ drugs, interactions }: PDFOptions) 
   doc.setFontSize(10);
   doc.setFont("helvetica", "normal");
   doc.text(`Generated: ${new Date().toLocaleDateString()} | clearrx.vibed-lab.com`, 20, 33);
-  doc.text("Reviewed by Jay, Licensed Pharmacist", 20, 39);
+  doc.text("Compiled from FDA labels & pharmacological class rules. Not medical advice.", 20, 39);
 
   // Medications
   doc.setFontSize(13);

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About — Jay, Licensed Pharmacist",
   description:
-    "ClearRx was built by Jay, a licensed pharmacist and senior pharmaceutical researcher with over a decade of clinical experience, to give patients clear, honest drug interaction information.",
+    "ClearRx was built by Jay, a licensed pharmacist and pharmaceutical researcher, to give patients clear, honest drug interaction information.",
 };
 
 export default function AboutPage() {
@@ -57,21 +57,20 @@ export default function AboutPage() {
       <section className="space-y-4 text-base font-sans leading-relaxed" style={{ color: "var(--ink-muted)" }}>
         <h2 className="font-serif text-2xl" style={{ color: "var(--ink)" }}>Who I Am</h2>
         <p>
-          I&apos;m Jay, a licensed pharmacist with over a decade of clinical experience in retail,
-          hospital, and research settings. I specialize in pharmacokinetics and drug-drug
+          I&apos;m Jay, a licensed pharmacist whose work is in industrial pharmacy and
+          drug-delivery (DDS) research. I focus on pharmacokinetics and drug-drug
           interactions — specifically how the CYP450 enzyme system affects medication safety.
         </p>
         <p>
-          I review medication profiles daily. The most common question I get: &quot;Is it safe to
+          The question patients most often ask is simple: &quot;Is it safe to
           take these together?&quot; Existing tools either overwhelm patients with clinical jargon
           or bury the answer under three ad units and a pop-up.
         </p>
         <p>
-          My background spans community pharmacy — where I counseled patients face-to-face on their
-          medication regimens — to pharmaceutical research, where I studied CYP-mediated metabolism
-          and enzyme inhibition profiles at a molecular level. That combination of clinical practice
-          and research gives me a perspective that most drug interaction databases lack: I know what
-          matters at the patient&apos;s bedside, not just what the FDA label says.
+          My background is in pharmaceutical research — studying CYP-mediated metabolism
+          and enzyme inhibition profiles at a molecular level — combined with a pharmacist&apos;s
+          training in how those mechanisms translate into real medication-safety risks. That
+          research-plus-pharmacy perspective is what most consumer drug-interaction tools lack.
         </p>
       </section>
 
@@ -87,8 +86,8 @@ export default function AboutPage() {
         <p>
           The interaction database is built from FDA drug labels and published clinical guidelines.
           For clinically critical pairs — like sertraline + tramadol and their serotonin syndrome
-          risk — I have written pharmacist notes drawn from cases I have reviewed and guidelines I
-          reference daily. Those notes are marked clearly in the result.
+          risk — I have written pharmacist notes based on FDA labeling and published clinical
+          guidelines. Those notes are marked clearly in the result.
         </p>
       </section>
 
@@ -122,11 +121,11 @@ export default function AboutPage() {
           Credentials &amp; Expertise
         </p>
         <ul className="space-y-2 list-disc list-inside" style={{ color: "var(--ink-muted)" }}>
-          <li><strong>PharmD</strong> — Doctor of Pharmacy, Licensed Pharmacist</li>
+          <li><strong>Licensed Pharmacist</strong> — registered pharmacist</li>
           <li><strong>Senior Pharmaceutical Researcher</strong> — CYP-mediated drug metabolism</li>
           <li><strong>Clinical Pharmacokinetics Specialist</strong> — ADME and drug disposition</li>
           <li><strong>CYP450 Drug Interaction Expert</strong> — enzyme inhibition/induction profiling</li>
-          <li><strong>10+ years clinical experience</strong> — retail, hospital, and research settings</li>
+          <li><strong>Industrial pharmacy &amp; drug-delivery (DDS) research</strong> — formulation and drug disposition</li>
         </ul>
       </div>
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Drug Interaction Glossary",
   description:
-    "Plain-English definitions of common drug interaction terms — CYP450 enzymes, pharmacokinetics, severity levels, and more. Written by a licensed pharmacist.",
+    "Plain-English definitions of common drug interaction terms — CYP450 enzymes, pharmacokinetics, severity levels, and more. Compiled from standard pharmacology references.",
 };
 
 interface GlossaryTerm {
@@ -239,7 +239,7 @@ export default function GlossaryPage() {
     "@type": "DefinedTermSet",
     name: "ClearRx Drug Interaction Glossary",
     description:
-      "Plain-English definitions of common drug interaction and pharmacology terms, written by a licensed pharmacist.",
+      "Plain-English definitions of common drug interaction and pharmacology terms, compiled from standard pharmacology references.",
     url: "https://clearrx.vibed-lab.com/glossary",
     hasDefinedTerm: TERMS.map((t) => ({
       "@type": "DefinedTerm",
@@ -270,8 +270,8 @@ export default function GlossaryPage() {
             style={{ color: "var(--ink-muted)" }}
           >
             Plain-English definitions of the pharmacology and drug interaction
-            terms you will encounter on ClearRx. Written and reviewed by a
-            licensed pharmacist — no clinical jargon left unexplained.
+            terms you will encounter on ClearRx, compiled from standard
+            pharmacology references — no clinical jargon left unexplained.
           </p>
         </header>
 

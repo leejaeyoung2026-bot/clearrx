@@ -19,7 +19,7 @@ export default function Footer() {
         </nav>
       </div>
       <p className="text-center mt-4 opacity-40">
-        Reviewed by Jay, Licensed Pharmacist. Not medical advice.
+        Built by Jay, a licensed pharmacist. Not medical advice.
       </p>
       <div className="text-center mt-4">
         <a
