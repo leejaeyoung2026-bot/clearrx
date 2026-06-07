@@ -1053,6 +1053,930 @@
         "loss of glycemic control"
       ],
       "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "amlodipine::repaglinide",
+      "drugA_id": "amlodipine",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "amlodipine is a calcium channel antagonist; the repaglinide label lists these among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for loss of glycemic control.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "aripiprazole::repaglinide",
+      "drugA_id": "aripiprazole",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "aripiprazole is an atypical antipsychotic; the repaglinide label lists these (e.g., olanzapine, clozapine) among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor glucose.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "aspirin::repaglinide",
+      "drugA_id": "aspirin",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "aspirin is an NSAID/salicylate; the repaglinide label lists these among drugs that may increase the risk of hypoglycemia. Monitor blood glucose; dose reduction may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "atenolol::repaglinide",
+      "drugA_id": "atenolol",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "atenolol may blunt the adrenergic warning signs/symptoms of hypoglycemia (e.g., tremor, tachycardia); the repaglinide label advises increased glucose monitoring during co-administration.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "benazepril::repaglinide",
+      "drugA_id": "benazepril",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "benazepril is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "bisoprolol::repaglinide",
+      "drugA_id": "bisoprolol",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "bisoprolol may blunt the adrenergic warning signs/symptoms of hypoglycemia (e.g., tremor, tachycardia); the repaglinide label advises increased glucose monitoring during co-administration.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "canagliflozin::repaglinide",
+      "drugA_id": "canagliflozin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "canagliflozin has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "candesartan::repaglinide",
+      "drugA_id": "candesartan",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "candesartan is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "carvedilol::repaglinide",
+      "drugA_id": "carvedilol",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "carvedilol may blunt the adrenergic warning signs/symptoms of hypoglycemia (e.g., tremor, tachycardia); the repaglinide label advises increased glucose monitoring during co-administration.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "celecoxib::repaglinide",
+      "drugA_id": "celecoxib",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "celecoxib is an NSAID/salicylate; the repaglinide label lists these among drugs that may increase the risk of hypoglycemia. Monitor blood glucose; dose reduction may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "clozapine::repaglinide",
+      "drugA_id": "clozapine",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "clozapine is an atypical antipsychotic; the repaglinide label lists these (e.g., olanzapine, clozapine) among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor glucose.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "dapagliflozin::repaglinide",
+      "drugA_id": "dapagliflozin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "dapagliflozin has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "dexamethasone::repaglinide",
+      "drugA_id": "dexamethasone",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "dexamethasone is a corticosteroid; the repaglinide label lists corticosteroids among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for hyperglycemia.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "diclofenac::repaglinide",
+      "drugA_id": "diclofenac",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "diclofenac is an NSAID/salicylate; the repaglinide label lists these among drugs that may increase the risk of hypoglycemia. Monitor blood glucose; dose reduction may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "diltiazem::repaglinide",
+      "drugA_id": "diltiazem",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "diltiazem is a calcium channel antagonist; the repaglinide label lists these among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for loss of glycemic control.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "empagliflozin::repaglinide",
+      "drugA_id": "empagliflozin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "empagliflozin has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "enalapril::repaglinide",
+      "drugA_id": "enalapril",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "enalapril is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "felodipine::repaglinide",
+      "drugA_id": "felodipine",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "felodipine is a calcium channel antagonist; the repaglinide label lists these among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for loss of glycemic control.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "fluoxetine::repaglinide",
+      "drugA_id": "fluoxetine",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "fluoxetine is listed in the repaglinide label among drugs (fluoxetine / MAO inhibitors) that may increase the risk of hypoglycemia; increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "furosemide::repaglinide",
+      "drugA_id": "furosemide",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "furosemide is a diuretic; the repaglinide label lists diuretics among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for loss of glycemic control.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "glipizide::repaglinide",
+      "drugA_id": "glipizide",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "glipizide has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "glyburide::repaglinide",
+      "drugA_id": "glyburide",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "glyburide has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "hydrochlorothiazide::repaglinide",
+      "drugA_id": "hydrochlorothiazide",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "hydrochlorothiazide is a diuretic; the repaglinide label lists diuretics among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for loss of glycemic control.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "ibuprofen::repaglinide",
+      "drugA_id": "ibuprofen",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "ibuprofen is an NSAID/salicylate; the repaglinide label lists these among drugs that may increase the risk of hypoglycemia. Monitor blood glucose; dose reduction may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "insulin::repaglinide",
+      "drugA_id": "insulin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "insulin has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "insulin-aspart::repaglinide",
+      "drugA_id": "insulin-aspart",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "insulin aspart has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "insulin-glargine::repaglinide",
+      "drugA_id": "insulin-glargine",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "insulin glargine has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "insulin-lispro::repaglinide",
+      "drugA_id": "insulin-lispro",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "insulin lispro has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "irbesartan::repaglinide",
+      "drugA_id": "irbesartan",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "irbesartan is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "ketorolac::repaglinide",
+      "drugA_id": "ketorolac",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "ketorolac is an NSAID/salicylate; the repaglinide label lists these among drugs that may increase the risk of hypoglycemia. Monitor blood glucose; dose reduction may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "labetalol::repaglinide",
+      "drugA_id": "labetalol",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "labetalol may blunt the adrenergic warning signs/symptoms of hypoglycemia (e.g., tremor, tachycardia); the repaglinide label advises increased glucose monitoring during co-administration.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "levothyroxine::repaglinide",
+      "drugA_id": "levothyroxine",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "levothyroxine is a thyroid hormone; the repaglinide label lists thyroid hormones among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor glucose.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "linagliptin::repaglinide",
+      "drugA_id": "linagliptin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "linagliptin has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "liraglutide::repaglinide",
+      "drugA_id": "liraglutide",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "liraglutide has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "lisinopril::repaglinide",
+      "drugA_id": "lisinopril",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "lisinopril is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "losartan::repaglinide",
+      "drugA_id": "losartan",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "losartan is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "lurasidone::repaglinide",
+      "drugA_id": "lurasidone",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "lurasidone is an atypical antipsychotic; the repaglinide label lists these (e.g., olanzapine, clozapine) among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor glucose.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "meloxicam::repaglinide",
+      "drugA_id": "meloxicam",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "meloxicam is an NSAID/salicylate; the repaglinide label lists these among drugs that may increase the risk of hypoglycemia. Monitor blood glucose; dose reduction may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "metformin::repaglinide",
+      "drugA_id": "metformin",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "metformin has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "methylprednisolone::repaglinide",
+      "drugA_id": "methylprednisolone",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "methylprednisolone is a corticosteroid; the repaglinide label lists corticosteroids among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for hyperglycemia.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "metoprolol::repaglinide",
+      "drugA_id": "metoprolol",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "metoprolol may blunt the adrenergic warning signs/symptoms of hypoglycemia (e.g., tremor, tachycardia); the repaglinide label advises increased glucose monitoring during co-administration.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "naproxen::repaglinide",
+      "drugA_id": "naproxen",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "naproxen is an NSAID/salicylate; the repaglinide label lists these among drugs that may increase the risk of hypoglycemia. Monitor blood glucose; dose reduction may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "nebivolol::repaglinide",
+      "drugA_id": "nebivolol",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "nebivolol may blunt the adrenergic warning signs/symptoms of hypoglycemia (e.g., tremor, tachycardia); the repaglinide label advises increased glucose monitoring during co-administration.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "nicardipine::repaglinide",
+      "drugA_id": "nicardipine",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "nicardipine is a calcium channel antagonist; the repaglinide label lists these among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for loss of glycemic control.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "nifedipine::repaglinide",
+      "drugA_id": "nifedipine",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "nifedipine is a calcium channel antagonist; the repaglinide label lists these among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for loss of glycemic control.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "olanzapine::repaglinide",
+      "drugA_id": "olanzapine",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "olanzapine is an atypical antipsychotic; the repaglinide label lists these (e.g., olanzapine, clozapine) among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor glucose.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "olmesartan::repaglinide",
+      "drugA_id": "olmesartan",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "olmesartan is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "paliperidone::repaglinide",
+      "drugA_id": "paliperidone",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "paliperidone is an atypical antipsychotic; the repaglinide label lists these (e.g., olanzapine, clozapine) among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor glucose.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "phenelzine::repaglinide",
+      "drugA_id": "phenelzine",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "phenelzine is listed in the repaglinide label among drugs (fluoxetine / MAO inhibitors) that may increase the risk of hypoglycemia; increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "pioglitazone::repaglinide",
+      "drugA_id": "pioglitazone",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "pioglitazone has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "prednisolone::repaglinide",
+      "drugA_id": "prednisolone",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "prednisolone is a corticosteroid; the repaglinide label lists corticosteroids among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for hyperglycemia.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "prednisone::repaglinide",
+      "drugA_id": "prednisone",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "prednisone is a corticosteroid; the repaglinide label lists corticosteroids among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for hyperglycemia.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "propranolol::repaglinide",
+      "drugA_id": "propranolol",
+      "drugB_id": "repaglinide",
+      "severity": "moderate",
+      "mechanism": "propranolol may blunt the adrenergic warning signs/symptoms of hypoglycemia (e.g., tremor, tachycardia); the repaglinide label advises increased glucose monitoring during co-administration.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "ramipril::repaglinide",
+      "drugA_id": "ramipril",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "ramipril is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "rasagiline::repaglinide",
+      "drugA_id": "rasagiline",
+      "drugB_id": "repaglinide",
+      "severity": "minor",
+      "mechanism": "rasagiline is listed in the repaglinide label among drugs (fluoxetine / MAO inhibitors) that may increase the risk of hypoglycemia; increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::risperidone",
+      "drugA_id": "repaglinide",
+      "drugB_id": "risperidone",
+      "severity": "minor",
+      "mechanism": "risperidone is an atypical antipsychotic; the repaglinide label lists these (e.g., olanzapine, clozapine) among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor glucose.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::saxagliptin",
+      "drugA_id": "repaglinide",
+      "drugB_id": "saxagliptin",
+      "severity": "moderate",
+      "mechanism": "saxagliptin has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::selegiline",
+      "drugA_id": "repaglinide",
+      "drugB_id": "selegiline",
+      "severity": "minor",
+      "mechanism": "selegiline is listed in the repaglinide label among drugs (fluoxetine / MAO inhibitors) that may increase the risk of hypoglycemia; increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::semaglutide",
+      "drugA_id": "repaglinide",
+      "drugB_id": "semaglutide",
+      "severity": "moderate",
+      "mechanism": "semaglutide has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::sitagliptin",
+      "drugA_id": "repaglinide",
+      "drugB_id": "sitagliptin",
+      "severity": "moderate",
+      "mechanism": "sitagliptin has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::spironolactone",
+      "drugA_id": "repaglinide",
+      "drugB_id": "spironolactone",
+      "severity": "minor",
+      "mechanism": "spironolactone is a diuretic; the repaglinide label lists diuretics among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for loss of glycemic control.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::telmisartan",
+      "drugA_id": "repaglinide",
+      "drugB_id": "telmisartan",
+      "severity": "minor",
+      "mechanism": "telmisartan is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::tirzepatide",
+      "drugA_id": "repaglinide",
+      "drugB_id": "tirzepatide",
+      "severity": "moderate",
+      "mechanism": "tirzepatide has an additive glucose-lowering effect with repaglinide; the repaglinide label lists antidiabetic agents among drugs that may increase the risk of hypoglycemia. Monitor blood glucose.",
+      "evidenceLevel": "established",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::valsartan",
+      "drugA_id": "repaglinide",
+      "drugB_id": "valsartan",
+      "severity": "minor",
+      "mechanism": "valsartan is listed in the repaglinide label among drugs (ACE inhibitors / angiotensin II receptor blockers) that may increase the risk of hypoglycemia; repaglinide dose reduction and increased glucose monitoring may be required.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "signs/symptoms of hypoglycemia"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::verapamil",
+      "drugA_id": "repaglinide",
+      "drugB_id": "verapamil",
+      "severity": "minor",
+      "mechanism": "verapamil is a calcium channel antagonist; the repaglinide label lists these among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor for loss of glycemic control.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
+    },
+    {
+      "pairKey": "repaglinide::ziprasidone",
+      "drugA_id": "repaglinide",
+      "drugB_id": "ziprasidone",
+      "severity": "minor",
+      "mechanism": "ziprasidone is an atypical antipsychotic; the repaglinide label lists these (e.g., olanzapine, clozapine) among drugs that may decrease the blood-glucose-lowering effect of repaglinide. Monitor glucose.",
+      "evidenceLevel": "probable",
+      "managementStrategy": "monitor",
+      "monitoringParameters": [
+        "blood glucose",
+        "loss of glycemic control"
+      ],
+      "lastReviewed": "2026-06-07"
     }
   ]
 }
