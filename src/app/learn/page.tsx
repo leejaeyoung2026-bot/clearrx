@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const ARTICLES = [
   {
     slug: "what-is-a-drug-interaction",
-    title: "What Is a Drug Interaction? A Pharmacist Explains",
+    title: "What Is a Drug Interaction? A Plain-English Guide",
     summary: "A clear breakdown of PK vs PD interactions, why they happen, and how to read severity ratings.",
   },
   {
@@ -55,7 +55,7 @@ const ARTICLES = [
   },
   {
     slug: "antibiotic-food-interactions",
-    title: "Antibiotics and Food: What Your Pharmacist Wants You to Know",
+    title: "Antibiotics and Food: What to Know",
     summary: "How dairy, calcium, and alcohol affect antibiotic absorption, with practical timing tips.",
   },
   {
@@ -70,7 +70,7 @@ const ARTICLES = [
   },
   {
     slug: "supplement-drug-interactions",
-    title: "Supplement and Drug Interactions: What Your Pharmacist Wants You to Know",
+    title: "Supplement and Drug Interactions: What to Know",
     summary: "Fish oil, vitamin E, St. John's Wort, and magnesium can all interact with medications in dangerous ways. What to watch for and what to tell your pharmacist.",
   },
 ];
@@ -109,8 +109,9 @@ export default function LearnPage() {
       <header className="mb-12">
         <h1 className="font-serif text-4xl">Drug Interaction Learning Hub</h1>
         <p className="mt-4 font-sans text-base" style={{ color: "var(--ink-muted)" }}>
-          Evidence-based articles written by Jay, a licensed pharmacist. Understand the
-          science behind drug interactions before your next appointment.
+          Evidence-based articles on how drug interactions work, compiled from FDA labels
+          and clinical references. Understand the science behind drug interactions before
+          your next appointment.
         </p>
       </header>
 
