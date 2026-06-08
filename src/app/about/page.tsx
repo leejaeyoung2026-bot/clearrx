@@ -79,15 +79,15 @@ export default function AboutPage() {
         <h2 className="font-serif text-2xl" style={{ color: "var(--ink)" }}>Why I Built ClearRx</h2>
         <p>
           ClearRx is my answer to that problem. It&apos;s a tool I would actually hand to a patient.
-          Clean, fast, private. No account. No data sent anywhere. Results compiled from FDA labels
-          and clinical literature, with plain-English pharmacist notes on key drug pairs — not buried
-          in label copy with no accountability.
+          Clean, fast, private. No account. No data sent anywhere. Results compiled from FDA labels,
+          drug-class interaction rules, and clinical literature, with plain-English pharmacist notes
+          on key drug pairs — not buried in label copy with no accountability.
         </p>
         <p>
-          The interaction database is built from FDA drug labels and published clinical guidelines.
-          For clinically critical pairs — like sertraline + tramadol and their serotonin syndrome
-          risk — I have written pharmacist notes based on FDA labeling and published clinical
-          guidelines. Those notes are marked clearly in the result.
+          The interaction database is built from FDA drug labels, drug-class interaction rules, and
+          published clinical guidelines. For clinically critical pairs — like sertraline + tramadol
+          and their serotonin syndrome risk — I have written pharmacist notes based on FDA labeling
+          and published clinical guidelines. Those notes are marked clearly in the result.
         </p>
       </section>
 
@@ -137,8 +137,8 @@ export default function AboutPage() {
         </p>
         <ol className="list-decimal list-inside space-y-2">
           <li>
-            <strong>Evidence gathering</strong> — interaction data is cross-referenced against
-            FDA drug labels, the Lexicomp database, and published clinical literature.
+            <strong>Evidence gathering</strong> — interaction data is drawn from FDA drug labels,
+            drug-class interaction rules, and published clinical literature.
           </li>
           <li>
             <strong>Clinical translation</strong> — technical mechanisms are translated into
@@ -146,8 +146,8 @@ export default function AboutPage() {
           </li>
           <li>
             <strong>Pharmacist review</strong> — severity classifications and mechanisms are
-            compiled from FDA labels and peer-reviewed literature; key pairs receive a personally
-            written pharmacist note for clinical accuracy and practical relevance.
+            based on FDA labels, drug-class interaction rules, and clinical literature; key pairs
+            receive a personally written pharmacist note for clinical accuracy and practical relevance.
           </li>
           <li>
             <strong>Regular updates</strong> — the drug database and interaction explanations are

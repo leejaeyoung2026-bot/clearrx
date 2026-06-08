@@ -30,7 +30,7 @@ const FAQS = [
   {
     question: "Who reviews the interaction information?",
     answer:
-      "ClearRx's interaction database is compiled from FDA drug labels and peer-reviewed clinical references by Jay, a licensed pharmacist and senior pharmaceutical researcher specializing in CYP450-mediated drug interactions. Key drug pairs include a pharmacist-written plain-language note; these are marked in the result so you know when you're reading pharmacist-reviewed content.",
+      "ClearRx's interaction database is built from three sources: FDA drug labels, drug-class interaction rules, and a curated set of clinically significant pairs. Each interaction is tagged with its source so you can see where it comes from. Key drug pairs also include a plain-language note written by a licensed pharmacist; these are marked in the result so you know when you're reading pharmacist-reviewed content.",
   },
   {
     question: "What do the severity levels mean?",
@@ -70,7 +70,7 @@ const FAQS = [
   {
     question: "How often is the drug database updated?",
     answer:
-      "ClearRx is updated regularly as new drug interactions are identified, new medications are added, and existing entries are refined. The database currently contains more than 200 medications and over 1,200 interaction pairs, compiled from FDA drug labels and published clinical literature. Clinically critical pairs also include a plain-language note written by a licensed pharmacist.",
+      "ClearRx is updated regularly as new drug interactions are identified, new medications are added, and existing entries are refined. The database currently contains more than 200 medications and over 1,200 interaction pairs drawn from FDA drug labels, drug-class interaction rules, and published clinical literature. Clinically critical pairs also include a plain-language note written by a licensed pharmacist.",
   },
   {
     question: "Can I share my results with my doctor?",
