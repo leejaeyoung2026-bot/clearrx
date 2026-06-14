@@ -145,7 +145,7 @@ export default function AboutPage() {
             plain-English explanations without sacrificing accuracy.
           </li>
           <li>
-            <strong>Pharmacist review</strong> — severity classifications and mechanisms are
+            <strong>Source-based classification</strong> — severity classifications and mechanisms are
             based on FDA labels, drug-class interaction rules, and clinical literature; key pairs
             receive a personally written pharmacist note for clinical accuracy and practical relevance.
           </li>

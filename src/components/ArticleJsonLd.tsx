@@ -15,10 +15,9 @@ export default function ArticleJsonLd({
     headline: title,
     description,
     author: {
-      "@type": "Person",
-      name: "Jay",
-      jobTitle: "Licensed Pharmacist",
-      url: `${base}/about`,
+      "@type": "Organization",
+      name: "ClearRx",
+      url: base,
     },
     publisher: {
       "@type": "Organization",
