@@ -139,6 +139,9 @@ export default function InteractionModal({ interaction, plainEnglish, onClose, o
             </span>
             <span style={{ fontSize: "10px", fontFamily: "monospace", color: "var(--ink-muted)" }}>
               Evidence: {interaction.evidenceLevel}
+              {interaction.source === "derived" && (
+                <span style={{ fontStyle: "italic", opacity: 0.85 }}> (class-rule, no individual study cited)</span>
+              )}
             </span>
             <span
               style={{
