@@ -77,7 +77,7 @@ export default function PrivacyPage() {
             and web beacons to serve ads based on your prior visits to this and other websites.
           </p>
           <p>
-            Google's use of advertising cookies is governed by their{" "}
+            Google&apos;s use of advertising cookies is governed by their{" "}
             <a
               href="https://policies.google.com/technologies/ads"
               target="_blank"
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-serif text-xl mb-2" style={{ color: "var(--ink)" }}>Cookies &amp; Local Storage</h2>
           <p className="mb-3">
-            ClearRx uses your browser's localStorage for one purpose only: remembering your
+            ClearRx uses your browser&apos;s localStorage for one purpose only: remembering your
             light or dark mode preference. This is entirely client-side and never transmitted
             to any server.
           </p>
