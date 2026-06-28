@@ -22,7 +22,9 @@ db.drugs.forEach((d) => {
 });
 
 const pairKeys = new Set();
+const interactionByPairKey = new Map();
 db.interactions.forEach((i) => {
+  interactionByPairKey.set(i.pairKey, i);
   if (!ids.has(i.drugA_id)) errors.push(`dangling drugA_id: ${i.drugA_id} (${i.pairKey})`);
   if (!ids.has(i.drugB_id)) errors.push(`dangling drugB_id: ${i.drugB_id} (${i.pairKey})`);
   const expect = [i.drugA_id, i.drugB_id].sort().join('::');
@@ -46,7 +48,13 @@ if (fs.existsSync(curationPath)) {
     ...(curation.openfdaConfirmedPairs || []).map((p) => ({ ...p, list: 'openfdaConfirmedPairs' })),
   ];
   curated.forEach((p) => {
-    if (pairKeys.has(p.pairKey)) return; // shipped — OK
+    if (pairKeys.has(p.pairKey)) {
+      // shipped — verify the curated severity actually reached the DB (no silent downgrade)
+      const shipped = interactionByPairKey.get(p.pairKey);
+      if (p.severity && shipped && shipped.severity !== p.severity)
+        errors.push(`curated ${p.list} severity mismatch: ${p.pairKey} curated [${p.severity}] shipped [${shipped.severity}]`);
+      return;
+    }
     const missing = [!ids.has(p.drugA_id) && p.drugA_id, !ids.has(p.drugB_id) && p.drugB_id]
       .filter(Boolean).join(', ');
     if (missing)

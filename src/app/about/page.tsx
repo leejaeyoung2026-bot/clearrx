@@ -97,8 +97,9 @@ export default function AboutPage() {
         <p>
           ClearRx checks your medications against a curated database of clinically significant
           drug interactions. Unlike clinical tools designed for pharmacists, every result includes
-          a plain-English explanation of <em>why</em> the interaction matters, <em>what</em> could
-          happen, and <em>when</em> to talk to your healthcare provider.
+          a plain-English summary of the interaction mechanism and its severity, and key pairs add
+          a pharmacist-written note explaining <em>why</em> it matters and <em>when</em> to talk to
+          your healthcare provider.
         </p>
         <p>
           The Interaction Map visualizes your entire medication regimen as a network diagram — each
